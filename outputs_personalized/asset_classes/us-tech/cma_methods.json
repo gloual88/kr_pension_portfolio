@@ -1,0 +1,73 @@
+{
+  "historical_erp": {
+    "estimate": 0.08499999999999999,
+    "confidence": 0.55,
+    "components": {
+      "erp": 0.06,
+      "rf": 0.025
+    },
+    "rationale": "Long-run realized equity premium added to current Rf."
+  },
+  "regime_adjusted": {
+    "estimate": 0.065,
+    "confidence": 0.65,
+    "components": {
+      "historical": 0.06,
+      "regime_adj": -0.02,
+      "rf": 0.025
+    },
+    "rationale": "Regime 'late-cycle' applies -2.00% adjustment to historical ERP."
+  },
+  "bl_equilibrium": {
+    "estimate": 0.03344725973018148,
+    "confidence": 0.55,
+    "components": {
+      "lambda": 2.5,
+      "var": 0.06757807784145181,
+      "w_mkt": 0.05,
+      "rf": 0.025
+    },
+    "rationale": "Black-Litterman equilibrium return implied by market-cap weights."
+  },
+  "inverse_gordon": {
+    "estimate": 0.06,
+    "confidence": 0.5,
+    "components": {
+      "dy": 0.02,
+      "g": 0.04,
+      "\u0394v": 0.0
+    },
+    "rationale": "Grinold-Kroner: dividend yield + earnings growth + valuation change."
+  },
+  "implied_erp": {
+    "estimate": 0.05,
+    "confidence": 0.55,
+    "components": {
+      "cape": 20.0,
+      "earn_yield": 0.05,
+      "rf": 0.025
+    },
+    "rationale": "CAPE 20.0 earnings yield 5.00% implied forward return."
+  },
+  "survey_analyst": {
+    "estimate": 0.07,
+    "confidence": 0.45,
+    "components": {
+      "consensus": 0.07
+    },
+    "rationale": "Consensus survey of analysts / macro view."
+  },
+  "auto_blend": {
+    "estimate": 0.06042953626203071,
+    "confidence": 0.7,
+    "components": {
+      "historical_erp": 0.55,
+      "regime_adjusted": 0.65,
+      "bl_equilibrium": 0.55,
+      "inverse_gordon": 0.5,
+      "implied_erp": 0.55,
+      "survey_analyst": 0.45
+    },
+    "rationale": "Confidence-weighted blend of all candidate methods."
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "kofr-cash",
+  "name": "KOFR Cash Active",
+  "category": "Cash",
+  "expected_return": 0.043456521739130435,
+  "expected_volatility": 0.0014697361606914364,
+  "confidence": 0.55,
+  "regime": "late-cycle",
+  "curve_regime": "bear-parallel",
+  "method_weights": {
+    "yield_carry": 0.1,
+    "rolldown_enhanced": 0.0,
+    "term_premium_adj": 0.0,
+    "regime_adjusted": 0.5,
+    "auto_blend": 0.4
+  },
+  "rationale": "Dispersion tight (0.5pp). Non-equity: lean on yield/regime adjusted blend.",
+  "dispersion": "tight",
+  "candidates": {
+    "yield_carry": 0.04,
+    "rolldown_enhanced": 0.04,
+    "term_premium_adj": 0.045,
+    "regime_adjusted": 0.045,
+    "auto_blend": 0.042391304347826085
+  }
+}

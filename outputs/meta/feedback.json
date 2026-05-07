@@ -1,0 +1,77 @@
+{
+  "window_days": 756,
+  "mae": 0.1377091242343467,
+  "rank_correlation": 0.6036403802556155,
+  "forecasts": {
+    "kr-large-cap": 0.059468424400779915,
+    "kr-kosdaq": 0.059569640353881785,
+    "kr-dividend": 0.05946865730751724,
+    "us-large-cap": 0.060799636035674065,
+    "us-tech": 0.059542953595451205,
+    "us-dividend": 0.05945064174565486,
+    "intl-developed": 0.05708746231395208,
+    "emerging-markets": 0.07502686747838871,
+    "kr-treasuries-10y": 0.043456521739130435,
+    "kr-short-bonds": 0.043456521739130435,
+    "kr-credit": 0.043456521739130435,
+    "us-treasuries-10y": 0.043456521739130435,
+    "us-treasuries-30y": 0.043456521739130435,
+    "us-ig-credit": 0.043456521739130435,
+    "gold": 0.06175217391304348,
+    "commodities": 0.03872608695652174,
+    "kofr-cash": 0.043456521739130435,
+    "money-market": 0.043456521739130435
+  },
+  "realized": {
+    "kr-large-cap": 0.5130225498604342,
+    "kr-kosdaq": 0.19759677329862813,
+    "kr-dividend": 0.38571201545897194,
+    "us-large-cap": 0.2761903892885529,
+    "us-tech": 0.36922593276208393,
+    "us-dividend": 0.17092249051340924,
+    "intl-developed": 0.2973867993388215,
+    "emerging-markets": 0.1667654314082927,
+    "kr-treasuries-10y": 0.022001633470313475,
+    "kr-short-bonds": 0.03180657433991452,
+    "kr-credit": 0.0326669270243658,
+    "us-treasuries-10y": 0.056291529476362845,
+    "us-treasuries-30y": -0.050780638378184695,
+    "us-ig-credit": 0.06295746465584351,
+    "gold": 0.2918452007628318,
+    "commodities": 0.20768084086442617,
+    "kofr-cash": 0.033935549223731654,
+    "money-market": 0.030136678645934056
+  },
+  "errors": {
+    "kr-large-cap": -0.45355412545965423,
+    "kr-kosdaq": -0.13802713294474633,
+    "kr-dividend": -0.32624335815145467,
+    "us-large-cap": -0.21539075325287882,
+    "us-tech": -0.30968297916663273,
+    "us-dividend": -0.11147184876775437,
+    "intl-developed": -0.24029933702486944,
+    "emerging-markets": -0.09173856392990398,
+    "kr-treasuries-10y": 0.02145488826881696,
+    "kr-short-bonds": 0.011649947399215918,
+    "kr-credit": 0.010789594714764636,
+    "us-treasuries-10y": -0.01283500773723241,
+    "us-treasuries-30y": 0.09423716011731513,
+    "us-ig-credit": -0.019500942916713074,
+    "gold": -0.23009302684978833,
+    "commodities": -0.16895475390790443,
+    "kofr-cash": 0.009520972515398782,
+    "money-market": 0.013319843093196379
+  },
+  "changes": [
+    {
+      "target": "skills/cma_judge/SKILL.md",
+      "change": "Strengthen valuation tilt rule: PE>28 -> +0.10 valuation weight.",
+      "reason": "Mean absolute prediction error 13.77% exceeds 6% threshold."
+    },
+    {
+      "target": "agents/asset_class_agent.py",
+      "change": "Add post-judge cap of +200bp above auto-blend for: ['us-treasuries-30y', 'kr-treasuries-10y', 'money-market'].",
+      "reason": "Top-3 over-forecast list shows persistent positive bias."
+    }
+  ]
+}

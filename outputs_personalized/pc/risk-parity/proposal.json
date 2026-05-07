@@ -1,0 +1,53 @@
+{
+  "slug": "risk-parity",
+  "name": "Risk Parity",
+  "category": "C_RiskStructured",
+  "method": "risk_parity",
+  "weights": {
+    "kr-large-cap": 0.09285934733915761,
+    "kr-kosdaq": 0.0876905406506674,
+    "kr-dividend": 0.09320981689900393,
+    "us-large-cap": 0.09157003745765273,
+    "us-tech": 0.08907062774659373,
+    "us-dividend": 0.10295927609081548,
+    "intl-developed": 0.09016133090497963,
+    "emerging-markets": 0.0881418849674187,
+    "kr-treasuries-10y": 0.0,
+    "kr-short-bonds": 0.0,
+    "kr-credit": 0.11329670363849101,
+    "us-treasuries-10y": 0.0,
+    "us-treasuries-30y": 0.0,
+    "us-ig-credit": 0.05469836293396838,
+    "gold": 0.004841017279208469,
+    "commodities": 0.0,
+    "kofr-cash": 0.09150105409204294,
+    "money-market": 0.0
+  },
+  "expected_return": 0.05785042654796807,
+  "expected_vol": 0.10437879251369626,
+  "metrics": {
+    "ex_ante_vol": 0.10437879251369626,
+    "ex_ante_var95": -0.11385268713706229,
+    "backtest_sharpe": 1.8663582984023799,
+    "backtest_vol": 0.12006849035160697,
+    "backtest_maxdd": -0.10590610756322127,
+    "hhi": 0.09204181008194313,
+    "effective_n": 10.864627706796709,
+    "top3": 0.3094657966283104,
+    "ips_compliance": 0.9,
+    "ips_flags": [
+      "tracking_error=8.71% exceeds budget 6.00%"
+    ],
+    "tracking_error": 0.08714769076635126,
+    "factor_tilts": {
+      "growth": 0.9036579286287486,
+      "rates": -0.5306674679211152,
+      "inflation": -0.26730070201708095,
+      "dollar": 0.0
+    },
+    "diversification": 0.1869109818372606,
+    "regime_fit": 0.85,
+    "estimation_robustness": 0.8500000000000001,
+    "cma_utilization": 0.18757113529761807
+  }
+}

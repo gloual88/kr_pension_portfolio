@@ -1,0 +1,54 @@
+{
+  "slug": "tpa",
+  "name": "Total Portfolio Allocation (two-factor)",
+  "category": "D_NonTraditional",
+  "method": "tpa_two_factor",
+  "weights": {
+    "kr-large-cap": 0.02670250441649215,
+    "kr-kosdaq": 0.021857243414612915,
+    "kr-dividend": 0.03394508684079772,
+    "us-large-cap": 0.02185724341461284,
+    "us-tech": 0.026351248074053438,
+    "us-dividend": 0.038368451679120744,
+    "intl-developed": 0.021857243414612846,
+    "emerging-markets": 0.02185724341461284,
+    "kr-treasuries-10y": 0.1412368698164637,
+    "kr-short-bonds": 0.0423069651303564,
+    "kr-credit": 0.21390292403363725,
+    "us-treasuries-10y": 0.08025351352893421,
+    "us-treasuries-30y": 0.0,
+    "us-ig-credit": 0.009503455375479683,
+    "gold": 0.0,
+    "commodities": 0.0,
+    "kofr-cash": 0.15000000372310662,
+    "money-market": 0.15000000372310662
+  },
+  "expected_return": 0.047184416694236356,
+  "expected_vol": 0.032948985875056305,
+  "metrics": {
+    "ex_ante_vol": 0.032948985875056305,
+    "ex_ante_var95": -0.007016665070231264,
+    "backtest_sharpe": 2.2568251982834093,
+    "backtest_vol": 0.039046396972413425,
+    "backtest_maxdd": -0.026712598535459597,
+    "hhi": 0.1249659133167084,
+    "effective_n": 8.002182142786744,
+    "top3": 0.5139029314798504,
+    "ips_compliance": 0.8,
+    "ips_flags": [
+      "vol=3.29% outside [6.00%,12.00%]",
+      "tracking_error=9.23% exceeds budget 6.00%"
+    ],
+    "tracking_error": 0.09234568750552567,
+    "factor_tilts": {
+      "growth": 0.21471226073263455,
+      "rates": -0.3058292031730422,
+      "inflation": -0.6120058474106338,
+      "dollar": 0.0
+    },
+    "diversification": 0.37311452580562704,
+    "regime_fit": 0.5,
+    "estimation_robustness": 0.65,
+    "cma_utilization": -0.18787668562781143
+  }
+}

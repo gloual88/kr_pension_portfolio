@@ -1,0 +1,45 @@
+{
+  "slug": "max-entropy",
+  "name": "Maximum Entropy",
+  "category": "E_Researcher",
+  "method": "max_entropy",
+  "weights": {
+    "kr-large-cap": 0.1,
+    "kr-dividend": 0.1,
+    "us-large-cap": 0.1,
+    "us-tech": 0.1,
+    "kr-treasuries-10y": 0.1,
+    "us-treasuries-10y": 0.1,
+    "us-ig-credit": 0.1,
+    "gold": 0.1,
+    "kofr-cash": 0.1,
+    "money-market": 0.1
+  },
+  "expected_return": 0.05183196604137575,
+  "expected_vol": 0.0646098359735797,
+  "metrics": {
+    "ex_ante_vol": 0.0646098359735797,
+    "ex_ante_var95": -0.054451214135162844,
+    "backtest_sharpe": 2.464976086765596,
+    "backtest_vol": 0.07877839971296084,
+    "backtest_maxdd": -0.055373876152209456,
+    "hhi": 0.10000000000000003,
+    "effective_n": 9.999999999999996,
+    "top3": 0.30000000000000004,
+    "ips_compliance": 0.9,
+    "ips_flags": [
+      "tracking_error=8.21% exceeds budget 6.00%"
+    ],
+    "tracking_error": 0.08212163981990384,
+    "factor_tilts": {
+      "growth": 0.30000000000000004,
+      "rates": -0.5,
+      "inflation": -0.5,
+      "dollar": 0.0
+    },
+    "diversification": 0.4250810256895905,
+    "regime_fit": 0.65,
+    "estimation_robustness": 0.75,
+    "cma_utilization": 0.0
+  }
+}

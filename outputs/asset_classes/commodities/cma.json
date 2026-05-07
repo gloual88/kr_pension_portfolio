@@ -1,0 +1,26 @@
+{
+  "slug": "commodities",
+  "name": "Crude Oil Futures Enhanced (H)",
+  "category": "RealAssets",
+  "expected_return": 0.03872608695652174,
+  "expected_volatility": 0.3211145138922386,
+  "confidence": 0.55,
+  "regime": "late-cycle",
+  "curve_regime": "bear-parallel",
+  "method_weights": {
+    "yield_carry": 0.1,
+    "rolldown_enhanced": 0.0,
+    "term_premium_adj": 0.0,
+    "regime_adjusted": 0.5,
+    "auto_blend": 0.4
+  },
+  "rationale": "Dispersion tight (1.3pp). Non-equity: lean on yield/regime adjusted blend.",
+  "dispersion": "tight",
+  "candidates": {
+    "yield_carry": 0.03,
+    "rolldown_enhanced": 0.03,
+    "term_premium_adj": 0.04,
+    "regime_adjusted": 0.043,
+    "auto_blend": 0.035565217391304346
+  }
+}

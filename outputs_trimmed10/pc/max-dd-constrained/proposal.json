@@ -1,0 +1,46 @@
+{
+  "slug": "max-dd-constrained",
+  "name": "Max Drawdown Constrained",
+  "category": "D_NonTraditional",
+  "method": "max_dd_constrained",
+  "weights": {
+    "kr-large-cap": 0.1849067773043971,
+    "kr-dividend": 0.005127265701376346,
+    "us-large-cap": 0.005127265701376346,
+    "us-tech": 0.005127265701376346,
+    "kr-treasuries-10y": 0.2498557089787413,
+    "us-treasuries-10y": 0.2498557089787413,
+    "us-ig-credit": 0.0,
+    "gold": 0.0,
+    "kofr-cash": 0.24657556052905027,
+    "money-market": 0.05342444710494096
+  },
+  "expected_return": 0.046670869340623596,
+  "expected_vol": 0.039820776692842424,
+  "metrics": {
+    "ex_ante_vol": 0.039820776692842424,
+    "ex_ante_var95": -0.01883430831910219,
+    "backtest_sharpe": 2.277782819329437,
+    "backtest_vol": 0.05389520076126205,
+    "backtest_maxdd": -0.03627932721821936,
+    "hhi": 0.22277881207103833,
+    "effective_n": 4.48875721485186,
+    "top3": 0.7462869784865329,
+    "ips_compliance": 0.8,
+    "ips_flags": [
+      "vol=3.98% outside [6.00%,12.00%]",
+      "tracking_error=8.05% exceeds budget 6.00%"
+    ],
+    "tracking_error": 0.08045755887778203,
+    "factor_tilts": {
+      "growth": -0.29942284354895643,
+      "rates": -0.39487271903064114,
+      "inflation": -0.8099659569942266,
+      "dollar": 0.0
+    },
+    "diversification": 0.35791732157457046,
+    "regime_fit": 0.5,
+    "estimation_robustness": 0.55,
+    "cma_utilization": -0.1965556512475495
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "slug": "inverse-volatility",
+  "name": "Inverse Volatility",
+  "category": "A_Heuristic",
+  "method": "inverse_volatility",
+  "weights": {
+    "kr-large-cap": 0.09390133033183343,
+    "kr-kosdaq": 0.08861456562190474,
+    "kr-dividend": 0.0938777637706944,
+    "us-large-cap": 0.09317445965834179,
+    "us-tech": 0.08943574956613716,
+    "us-dividend": 0.09625493378962811,
+    "intl-developed": 0.09092192423797993,
+    "emerging-markets": 0.0894821049648251,
+    "kr-treasuries-10y": 0.0363649750109966,
+    "kr-short-bonds": 0.013710456763617887,
+    "kr-credit": 0.07228087395495522,
+    "us-treasuries-10y": 0.02203677012413447,
+    "us-treasuries-30y": 0.006600105163019735,
+    "us-ig-credit": 0.015659465312430034,
+    "gold": 0.004936401739207043,
+    "commodities": 0.0,
+    "kofr-cash": 0.06417618251208375,
+    "money-market": 0.02857193747821068
+  },
+  "expected_return": 0.05663989859864217,
+  "expected_vol": 0.10457586244190172,
+  "metrics": {
+    "ex_ante_vol": 0.10457586244190172,
+    "ex_ante_var95": -0.11538739511828615,
+    "backtest_sharpe": 1.8478366837589226,
+    "backtest_vol": 0.12066575960949089,
+    "backtest_maxdd": -0.1047927036288061,
+    "hhi": 0.08017074286369419,
+    "effective_n": 12.473378245979259,
+    "top3": 0.2840340278921559,
+    "ips_compliance": 0.9,
+    "ips_flags": [
+      "tracking_error=8.63% exceeds budget 6.00%"
+    ],
+    "tracking_error": 0.08627082098981426,
+    "factor_tilts": {
+      "growth": 0.758601320910579,
+      "rates": -0.533449138221109,
+      "inflation": -0.349134234537335,
+      "dollar": 0.0
+    },
+    "diversification": 0.19157102123673536,
+    "regime_fit": 0.5,
+    "estimation_robustness": 0.8,
+    "cma_utilization": 0.17085873594995382
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "slug": "mean-downside",
+  "name": "Mean-Downside Risk (Sortino)",
+  "category": "B_ReturnOptimized",
+  "method": "mean_downside",
+  "weights": {
+    "kr-large-cap": 0.02151801431274834,
+    "kr-kosdaq": 0.022598936077172754,
+    "kr-dividend": 0.04088468664603591,
+    "us-large-cap": 0.0623878854738801,
+    "us-tech": 0.050436492527151634,
+    "us-dividend": 0.06904134384696717,
+    "intl-developed": 0.035385026729730165,
+    "emerging-markets": 0.07445675563881154,
+    "kr-treasuries-10y": 0.06628997515572202,
+    "kr-short-bonds": 0.07389837791085874,
+    "kr-credit": 0.06985021019462662,
+    "us-treasuries-10y": 0.06740824482812657,
+    "us-treasuries-30y": 0.05250249118260874,
+    "us-ig-credit": 0.05532411020637858,
+    "gold": 0.0642892953451075,
+    "commodities": 0.024492610146050524,
+    "kofr-cash": 0.07461751120035903,
+    "money-market": 0.07461803257766404
+  },
+  "expected_return": 0.05171076614602777,
+  "expected_vol": 0.06106705604241422,
+  "metrics": {
+    "ex_ante_vol": 0.06106705604241422,
+    "ex_ante_var95": -0.048744541043743615,
+    "backtest_sharpe": 2.256126862688156,
+    "backtest_vol": 0.06349154898838187,
+    "backtest_maxdd": -0.055196664604137746,
+    "hhi": 0.06160814658417415,
+    "effective_n": 16.231619606243424,
+    "top3": 0.2236922994168346,
+    "ips_compliance": 0.9,
+    "ips_flags": [
+      "tracking_error=9.29% exceeds budget 6.00%"
+    ],
+    "tracking_error": 0.09291641270296058,
+    "factor_tilts": {
+      "growth": 0.34017536063309595,
+      "rates": -0.53172524507517,
+      "inflation": -0.4333771053652128,
+      "dollar": 0.0
+    },
+    "diversification": 0.360510593838661,
+    "regime_fit": 0.5,
+    "estimation_robustness": 0.5,
+    "cma_utilization": -0.01651540406069908
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "regime": "late-cycle",
+  "confidence": 0.501,
+  "scores": {
+    "growth": 0.663,
+    "inflation": 0.59,
+    "monetary": -0.515,
+    "financial": -0.237
+  },
+  "recession_probability_12m": 0.2,
+  "readings": {
+    "kr_gdp_yoy": 3.63,
+    "kr_industrial_production_yoy": 1.2,
+    "kr_exports_yoy": 49.19,
+    "kr_unemployment": 2.7,
+    "kr_cpi_yoy": 2.16,
+    "kr_core_cpi_yoy": 2.2,
+    "kr_brent_oil": 113.89,
+    "kr_usd_krw": 1484.8,
+    "kr_base_rate": 2.5,
+    "kr_ktb_10y": 3.932,
+    "kr_ktb_3y": 3.615,
+    "kr_curve_3y_10y": 0.317,
+    "kr_corp_aa_spread_bp": 65.0,
+    "us_fed_funds": 3.64,
+    "us_vix": 16.99
+  },
+  "provenance": {
+    "kr_gdp_yoy": "ECOS 200Y106/1400 @ 2026-01-01",
+    "kr_industrial_production_yoy": "ECOS 901Y033/A00 @ 2026-03-01",
+    "kr_exports_yoy": "ECOS 901Y118/T002 @ 2026-03-01",
+    "kr_unemployment": "ECOS 901Y027/I61BC @ 2026-03-01",
+    "kr_cpi_yoy": "ECOS 901Y009/0 @ 2026-03-01 (YoY computed)",
+    "kr_usd_krw": "ECOS 731Y001/0000001 @ 2026-05-04",
+    "kr_base_rate": "ECOS 722Y001/0101000 @ 2026-04-01",
+    "kr_ktb_10y": "ECOS 817Y002/010210000 @ 2026-05-04",
+    "kr_ktb_3y": "ECOS 817Y002/010200000 @ 2026-05-04",
+    "kr_curve_3y_10y": "derived: KTB 10Y - KTB 3Y",
+    "kr_corp_aa_spread_bp": "derived: (Corp AA- 3Y - KTB 3Y) \u00d7 100",
+    "us_fed_funds": "FRED DFF @ 2026-05-01",
+    "us_vix": "FRED VIXCLS @ 2026-05-01",
+    "kr_brent_oil": "FRED DCOILBRENTEU @ 2026-04-27"
+  },
+  "notes": "\uc131\uc7a5 GDP +3.6%, \uc218\ucd9c +49.2%, \uc2e4\uc5c5 2.7%. \uc778\ud50c\ub808 CPI +2.2%, \uc720\uac00 $114, USD/KRW 1485. BOK 2.50%, KTB10Y 3.93%, AA-spread 65bp, VIX 17.0."
+}

@@ -1,0 +1,45 @@
+{
+  "slug": "hrp",
+  "name": "Hierarchical Risk Parity",
+  "category": "C_RiskStructured",
+  "method": "hrp",
+  "weights": {
+    "kr-large-cap": 0.11070421344190667,
+    "kr-dividend": 0.11069635229482949,
+    "us-large-cap": 0.11084816737839012,
+    "us-tech": 0.1103973263075695,
+    "kr-treasuries-10y": 0.09284611121653409,
+    "us-treasuries-10y": 0.0830637430468616,
+    "us-ig-credit": 0.08040872824367004,
+    "gold": 0.0010353490687222114,
+    "kofr-cash": 0.18597013097414414,
+    "money-market": 0.11402987802737215
+  },
+  "expected_return": 0.05210194449959149,
+  "expected_vol": 0.0658819545229646,
+  "metrics": {
+    "ex_ante_vol": 0.0658819545229646,
+    "ex_ante_var95": -0.05627387069068526,
+    "backtest_sharpe": 2.3236727070813625,
+    "backtest_vol": 0.07743258965089002,
+    "backtest_maxdd": -0.06446124741496306,
+    "hhi": 0.11855831515210404,
+    "effective_n": 8.434667772707911,
+    "top3": 0.41084817637990645,
+    "ips_compliance": 0.9,
+    "ips_flags": [
+      "tracking_error=8.07% exceeds budget 6.00%"
+    ],
+    "tracking_error": 0.0807164953576795,
+    "factor_tilts": {
+      "growth": 0.34714493340297015,
+      "rates": -0.2893036297021379,
+      "inflation": -0.6961200078821494,
+      "dollar": 0.0
+    },
+    "diversification": 0.3184266862069163,
+    "regime_fit": 0.8,
+    "estimation_robustness": 0.8,
+    "cma_utilization": -0.036908067134244674
+  }
+}

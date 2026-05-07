@@ -1,0 +1,54 @@
+{
+  "slug": "max-diversification",
+  "name": "Maximum Diversification",
+  "category": "C_RiskStructured",
+  "method": "max_diversification",
+  "weights": {
+    "kr-large-cap": 0.016406187599548955,
+    "kr-kosdaq": 0.029523776220104218,
+    "kr-dividend": 0.029811559674250913,
+    "us-large-cap": 0.016406187599548944,
+    "us-tech": 0.03226103024469351,
+    "us-dividend": 0.05216668054030947,
+    "intl-developed": 0.023664509776569406,
+    "emerging-markets": 0.027260264427227187,
+    "kr-treasuries-10y": 0.07281163625275867,
+    "kr-short-bonds": 0.06835141260039276,
+    "kr-credit": 0.12854239114743882,
+    "us-treasuries-10y": 0.09384677895204994,
+    "us-treasuries-30y": 0.0306443265026494,
+    "us-ig-credit": 0.03413878591191753,
+    "gold": 0.024425296128200494,
+    "commodities": 0.01973916742436284,
+    "kofr-cash": 0.1500000044989886,
+    "money-market": 0.15000000449898845
+  },
+  "expected_return": 0.049089455957929684,
+  "expected_vol": 0.03759671854944927,
+  "metrics": {
+    "ex_ante_vol": 0.03759671854944927,
+    "ex_ante_var95": -0.012757146055914367,
+    "backtest_sharpe": 2.429878699585686,
+    "backtest_vol": 0.04093573201559118,
+    "backtest_maxdd": -0.03259079434855061,
+    "hhi": 0.09075855429740128,
+    "effective_n": 11.01824514219519,
+    "top3": 0.42854240014541584,
+    "ips_compliance": 0.8,
+    "ips_flags": [
+      "vol=3.76% outside [6.00%,12.00%]",
+      "tracking_error=9.32% exceeds budget 6.00%"
+    ],
+    "tracking_error": 0.09324016811910463,
+    "factor_tilts": {
+      "growth": 0.21261779885851373,
+      "rates": -0.2746180645885534,
+      "inflation": -0.570156917597507,
+      "dollar": 0.0
+    },
+    "diversification": 0.44324084293811705,
+    "regime_fit": 0.9,
+    "estimation_robustness": 0.75,
+    "cma_utilization": -0.14086839366444123
+  }
+}

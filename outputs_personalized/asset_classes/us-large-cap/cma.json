@@ -1,0 +1,30 @@
+{
+  "slug": "us-large-cap",
+  "name": "US Large Cap (S&P 500)",
+  "category": "Equity",
+  "expected_return": 0.060799636265826816,
+  "expected_volatility": 0.18932901198277796,
+  "confidence": 0.55,
+  "regime": "late-cycle",
+  "curve_regime": "bear-parallel",
+  "method_weights": {
+    "historical_erp": 0.05000000000000001,
+    "regime_adjusted": 0.25000000000000006,
+    "bl_equilibrium": 0.0,
+    "inverse_gordon": 0.30000000000000004,
+    "implied_erp": 0.30000000000000004,
+    "survey_analyst": 0.0,
+    "auto_blend": 0.10000000000000002
+  },
+  "rationale": "Dispersion wide (7.3pp). Late-cycle: tilt to valuation + regime-adjusted.",
+  "dispersion": "wide",
+  "candidates": {
+    "historical_erp": 0.11299999999999999,
+    "regime_adjusted": 0.093,
+    "bl_equilibrium": 0.0518875975261297,
+    "inverse_gordon": 0.043,
+    "implied_erp": 0.04,
+    "survey_analyst": 0.073,
+    "auto_blend": 0.0699963626582681
+  }
+}

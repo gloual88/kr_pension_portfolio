@@ -1,0 +1,53 @@
+{
+  "slug": "max-sharpe",
+  "name": "Maximum Sharpe Ratio",
+  "category": "B_ReturnOptimized",
+  "method": "max_sharpe",
+  "weights": {
+    "kr-large-cap": 0.09034610825197682,
+    "kr-kosdaq": 0.08928807419576505,
+    "kr-dividend": 0.09589279496296138,
+    "us-large-cap": 0.0902331588612919,
+    "us-tech": 0.09085588794807516,
+    "us-dividend": 0.09834157570906618,
+    "intl-developed": 0.0892880741957854,
+    "emerging-markets": 0.09141720510824548,
+    "kr-treasuries-10y": 0.033811538610257756,
+    "kr-short-bonds": 0.0,
+    "kr-credit": 0.1329386416199243,
+    "us-treasuries-10y": 0.0034252923974330707,
+    "us-treasuries-30y": 0.0,
+    "us-ig-credit": 0.0,
+    "gold": 0.002481056948533984,
+    "commodities": 0.0023094648194642593,
+    "kofr-cash": 0.044685563185606784,
+    "money-market": 0.04468556318561261
+  },
+  "expected_return": 0.05661427160994583,
+  "expected_vol": 0.10519378446694758,
+  "metrics": {
+    "ex_ante_vol": 0.10519378446694758,
+    "ex_ante_var95": -0.11642950383818293,
+    "backtest_sharpe": 1.8342718441855907,
+    "backtest_vol": 0.12097047541558466,
+    "backtest_maxdd": -0.10525800638834149,
+    "hhi": 0.09056027761764832,
+    "effective_n": 11.042368975745287,
+    "top3": 0.32717301229195184,
+    "ips_compliance": 0.9,
+    "ips_flags": [
+      "tracking_error=8.67% exceeds budget 6.00%"
+    ],
+    "tracking_error": 0.08670749461541431,
+    "factor_tilts": {
+      "growth": 0.8336741546648652,
+      "rates": -0.5354258375702841,
+      "inflation": -0.30290648242027907,
+      "dollar": 0.0
+    },
+    "diversification": 0.18046040455557805,
+    "regime_fit": 0.5,
+    "estimation_robustness": 0.4,
+    "cma_utilization": 0.16990429086823974
+  }
+}

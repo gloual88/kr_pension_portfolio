@@ -1,0 +1,53 @@
+{
+  "slug": "adversarial-diversifier",
+  "name": "Adversarial Diversifier",
+  "category": "D_NonTraditional",
+  "method": "adversarial_diversifier",
+  "weights": {
+    "kr-large-cap": 0.09200977301836263,
+    "kr-kosdaq": 0.09200977301834498,
+    "kr-dividend": 0.09200977301836336,
+    "us-large-cap": 0.09200977301835593,
+    "us-tech": 0.09200977301834563,
+    "us-dividend": 0.09200977301841501,
+    "intl-developed": 0.09200977301835285,
+    "emerging-markets": 0.09200977301834373,
+    "kr-treasuries-10y": 0.0,
+    "kr-short-bonds": 0.0,
+    "kr-credit": 0.0,
+    "us-treasuries-10y": 0.08633480014355886,
+    "us-treasuries-30y": 0.08633480014398148,
+    "us-ig-credit": 0.0,
+    "gold": 0.0022556498810814263,
+    "commodities": 0.002255649882680078,
+    "kofr-cash": 0.0433704579009274,
+    "money-market": 0.043370457900886616
+  },
+  "expected_return": 0.0566226294220625,
+  "expected_vol": 0.10402622238952718,
+  "metrics": {
+    "ex_ante_vol": 0.10402622238952718,
+    "ex_ante_var95": -0.1145005064087097,
+    "backtest_sharpe": 1.8004141758228134,
+    "backtest_vol": 0.12063441987376045,
+    "backtest_maxdd": -0.10501137082546641,
+    "hhi": 0.08640595122869922,
+    "effective_n": 11.573276907202844,
+    "top3": 0.276029319055141,
+    "ips_compliance": 0.9,
+    "ips_flags": [
+      "tracking_error=8.65% exceeds budget 6.00%"
+    ],
+    "tracking_error": 0.08645020626545982,
+    "factor_tilts": {
+      "growth": 0.565664233742024,
+      "rates": -0.5482331994585605,
+      "inflation": -0.4389187623622945,
+      "dollar": 0.0
+    },
+    "diversification": 0.22528320625962409,
+    "regime_fit": 0.5,
+    "estimation_robustness": 0.3,
+    "cma_utilization": 0.17021560222768964
+  }
+}

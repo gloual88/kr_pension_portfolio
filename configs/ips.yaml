@@ -1,0 +1,238 @@
+# Investment Policy Statement (IPS) — Korea Pension Edition
+#
+# 18 KR-listed ETFs (DC/IRP eligible, no leverage/inverse).
+# Macro sensitivity uses KR-relevant axes: growth (KR GDP/IP/exports),
+# rates (BOK/KTB), inflation (KR CPI + oil), krw (USD/KRW level).
+
+investment_universe:
+  description: "18 KR-listed ETFs (KR + KR-listed global), DC/IRP eligible"
+  asset_classes:
+    # ---- KR Equity (3) ----
+    - slug: kr-large-cap
+      name: "KR Large Cap (KOSPI 200)"
+      category: "Equity"
+      etf: "069500"
+      etf_name: "KODEX 200"
+      currency_hedge: false
+      history_start: "2002-10"
+      macro_sensitivity: {growth: +1, rates: -1, inflation: 0, krw: +1}
+
+    - slug: kr-kosdaq
+      name: "KR KOSDAQ 150"
+      category: "Equity"
+      etf: "229200"
+      etf_name: "KODEX 코스닥150"
+      currency_hedge: false
+      history_start: "2015-10"
+      macro_sensitivity: {growth: +1, rates: -1, inflation: 0, krw: +1}
+
+    - slug: kr-dividend
+      name: "KR Dividend Growth"
+      category: "Equity"
+      etf: "211900"
+      etf_name: "KODEX 배당성장"
+      currency_hedge: false
+      history_start: "2014-12"
+      macro_sensitivity: {growth: +1, rates: 0, inflation: 0, krw: +1}
+
+    # ---- US/Global Equity (3) ----
+    - slug: us-large-cap
+      name: "US Large Cap (S&P 500)"
+      category: "Equity"
+      etf: "360750"
+      etf_name: "TIGER 미국S&P500"
+      currency_hedge: false
+      proxy_ticker: "SPY"
+      history_start: "2020-08"
+      macro_sensitivity: {growth: +1, rates: -1, inflation: -1, krw: -1}
+
+    - slug: us-tech
+      name: "US Tech (Nasdaq 100)"
+      category: "Equity"
+      etf: "133690"
+      etf_name: "TIGER 미국나스닥100"
+      currency_hedge: false
+      proxy_ticker: "QQQ"
+      history_start: "2010-10"
+      macro_sensitivity: {growth: +1, rates: -1, inflation: -1, krw: -1}
+
+    - slug: us-dividend
+      name: "US Dividend (Dow Jones)"
+      category: "Equity"
+      etf: "458730"
+      etf_name: "TIGER 미국배당다우존스"
+      currency_hedge: false
+      proxy_ticker: "SCHD"
+      history_start: "2023-06"
+      macro_sensitivity: {growth: +1, rates: 0, inflation: 0, krw: -1}
+
+    # ---- Intl/EM (2) ----
+    - slug: intl-developed
+      name: "Japan Nikkei 225"
+      category: "Equity"
+      etf: "241180"
+      etf_name: "TIGER 일본니케이225"
+      currency_hedge: false
+      proxy_ticker: "EWJ"
+      history_start: "2016-03"
+      macro_sensitivity: {growth: +1, rates: 0, inflation: 0, krw: -1}
+
+    - slug: emerging-markets
+      name: "Emerging Markets MSCI"
+      category: "Equity"
+      etf: "195980"
+      etf_name: "TIGER 신흥국MSCI"
+      currency_hedge: false
+      proxy_ticker: "EEM"
+      history_start: "2014-05"
+      macro_sensitivity: {growth: +1, rates: -1, inflation: 0, krw: -1}
+
+    # ---- KR Fixed Income (3) ----
+    - slug: kr-treasuries-10y
+      name: "KR Treasuries 10Y"
+      category: "FixedIncome"
+      etf: "152380"
+      etf_name: "KODEX 국고채10년"
+      currency_hedge: false
+      history_start: "2011-10"
+      macro_sensitivity: {growth: -1, rates: -1, inflation: -1, krw: +1}
+
+    - slug: kr-short-bonds
+      name: "KR Short Term Bonds (MSB)"
+      category: "FixedIncome"
+      etf: "157450"
+      etf_name: "TIGER 단기통안채"
+      currency_hedge: false
+      history_start: "2012-05"
+      macro_sensitivity: {growth: 0, rates: -1, inflation: -1, krw: 0}
+
+    - slug: kr-credit
+      name: "KR Composite Bond Active"
+      category: "FixedIncome"
+      etf: "273130"
+      etf_name: "KODEX 종합채권액티브"
+      currency_hedge: false
+      history_start: "2017-06"
+      macro_sensitivity: {growth: +1, rates: -1, inflation: 0, krw: 0}
+
+    # ---- US Fixed Income (3) ----
+    - slug: us-treasuries-10y
+      name: "US Treasuries 10Y Futures"
+      category: "FixedIncome"
+      etf: "305080"
+      etf_name: "TIGER 미국채10년선물"
+      currency_hedge: false
+      proxy_ticker: "IEF"
+      history_start: "2018-08"
+      macro_sensitivity: {growth: -1, rates: -1, inflation: -1, krw: -1}
+
+    - slug: us-treasuries-30y
+      name: "US Treasuries Ultra 30Y (H)"
+      category: "FixedIncome"
+      etf: "304660"
+      etf_name: "KODEX 미국채울트라30년선물(H)"
+      currency_hedge: true
+      proxy_ticker: "TLT"
+      history_start: "2018-09"
+      macro_sensitivity: {growth: -1, rates: -1, inflation: -1, krw: 0}
+
+    - slug: us-ig-credit
+      name: "US IG Corporate Bonds (H)"
+      category: "FixedIncome"
+      etf: "332620"
+      etf_name: "TIGER 미국투자등급회사채액티브(H)"
+      currency_hedge: true
+      proxy_ticker: "LQD"
+      history_start: "2019-10"
+      macro_sensitivity: {growth: +1, rates: -1, inflation: 0, krw: 0}
+
+    # ---- Real Assets (2) ----
+    - slug: gold
+      name: "Gold Futures (H)"
+      category: "RealAssets"
+      etf: "132030"
+      etf_name: "KODEX 골드선물(H)"
+      currency_hedge: true
+      proxy_ticker: "GLD"
+      history_start: "2010-10"
+      macro_sensitivity: {growth: 0, rates: -1, inflation: +1, krw: 0}
+
+    - slug: commodities
+      name: "Crude Oil Futures Enhanced (H)"
+      category: "RealAssets"
+      etf: "130680"
+      etf_name: "TIGER 원유선물Enhanced(H)"
+      currency_hedge: true
+      proxy_ticker: "DBC"
+      history_start: "2010-09"
+      macro_sensitivity: {growth: +1, rates: 0, inflation: +1, krw: 0}
+
+    # ---- Cash (2) ----
+    - slug: kofr-cash
+      name: "KOFR Cash Active"
+      category: "Cash"
+      etf: "423160"
+      etf_name: "KODEX KOFR금리액티브"
+      currency_hedge: false
+      history_start: "2022-04"
+      macro_sensitivity: {growth: 0, rates: +1, inflation: -1, krw: 0}
+
+    - slug: money-market
+      name: "Money Market Active"
+      category: "Cash"
+      etf: "357870"
+      etf_name: "TIGER 머니마켓액티브"
+      currency_hedge: false
+      history_start: "2020-08"
+      macro_sensitivity: {growth: 0, rates: +1, inflation: -1, krw: 0}
+
+# Layer 2: Objective (KR pension investor, retirement focus)
+objective:
+  target_real_return:
+    base: "KR_CPI"
+    spread_low: 0.025    # KR CPI + 2.5%
+    spread_high: 0.040   # KR CPI + 4.0%
+  expected_volatility_band:
+    low: 0.06
+    high: 0.12
+  max_drawdown_limit: -0.20
+
+# Layer 3: Active risk
+active_risk_budget:
+  benchmark: "kr_60_40"   # KOSPI200 60% + KR T 10Y 40%
+  benchmark_weights:
+    kr-large-cap: 0.60
+    kr-treasuries-10y: 0.40
+  max_tracking_error: 0.06    # 6%
+
+# Constraints — DC/IRP regulatory cap: risky assets ≤ 70%
+# Equity (8) + RealAssets (2) sum ≤ 70%. Cash + FixedIncome ≥ 30%.
+constraints:
+  position_limits:
+    min: 0.0
+    max: 0.25
+  category_bounds:
+    Equity:      {min: 0.20, max: 0.55}
+    RealAssets:  {min: 0.00, max: 0.15}
+    FixedIncome: {min: 0.20, max: 0.70}
+    Cash:        {min: 0.00, max: 0.30}
+  # DC/IRP regulation enforced by category bounds: Equity 55% + RealAssets 15% = 70% max
+  rebalancing:
+    frequency: "quarterly"
+    drift_trigger: 0.05
+
+# Korean pension regulatory context
+regulatory:
+  account_type: "DC_IRP"          # Defined Contribution / Individual Retirement Pension
+  risky_asset_limit: 0.70         # Equity + RealAssets + risky credit ≤ 70%
+  leverage_inverse_allowed: false # 레버리지/인버스 ETF 매수 금지
+  default_locale: "ko_KR"
+
+# Governance
+governance:
+  human_role: "IPS author / 연금 운용자"
+  autonomy_level: "L4"
+  escalation_triggers:
+    - "Any portfolio violating IPS bounds or 70% risky cap"
+    - "Macro regime change with confidence > 0.8"
+    - "USD/KRW > 1500 or < 1100 outside ±2σ band"

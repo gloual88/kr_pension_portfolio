@@ -1,0 +1,13 @@
+{
+  "proposed_method": "max_entropy",
+  "name": "Maximum Entropy",
+  "rationale": "Maximizes Shannon entropy of portfolio weights subject to a Sharpe-ratio floor. Spans the gap between heuristic (1/N) and optimization-based methods, providing stability when expected returns are weakly identified (Bera & Park 2008).",
+  "constraints": [
+    "sum(w) = 1",
+    "w >= 0",
+    "Sharpe >= 0.30"
+  ],
+  "literature": [
+    "Bera, A.K. and Park, S.Y. (2008) 'Optimal Portfolio Diversification Using the Maximum Entropy Principle.' Econometric Reviews."
+  ]
+}

@@ -1,0 +1,159 @@
+# Investment Policy Statement (IPS) — KR Pension, Trimmed 10-ETF Universe
+#
+# 18 → 10 ETFs (구독자 가독성 / 부담 경감 목적).
+# Drop: kr-kosdaq, us-dividend, intl-developed, emerging-markets,
+#       kr-short-bonds, kr-credit, us-treasuries-30y, commodities
+# 카테고리 균형: Equity 4 (KR 2 + US 2), FI 3 (KR 1 + US 2), RealAsset 1 (Gold), Cash 2
+#
+# 모든 다른 설정(category bounds, benchmark, governance)은 ips.yaml과 동일.
+
+investment_universe:
+  description: "10 KR-listed ETFs (trimmed for subscriber-friendly portfolio)"
+  asset_classes:
+    # ---- KR Equity (2) ----
+    - slug: kr-large-cap
+      name: "KR Large Cap (KOSPI 200)"
+      category: "Equity"
+      etf: "069500"
+      etf_name: "KODEX 200"
+      currency_hedge: false
+      history_start: "2002-10"
+      macro_sensitivity: {growth: +1, rates: -1, inflation: 0, krw: +1}
+
+    - slug: kr-dividend
+      name: "KR Dividend Growth"
+      category: "Equity"
+      etf: "211900"
+      etf_name: "KODEX 배당성장"
+      currency_hedge: false
+      history_start: "2014-12"
+      macro_sensitivity: {growth: +1, rates: 0, inflation: 0, krw: +1}
+
+    # ---- US Equity (2) ----
+    - slug: us-large-cap
+      name: "US Large Cap (S&P 500)"
+      category: "Equity"
+      etf: "360750"
+      etf_name: "TIGER 미국S&P500"
+      currency_hedge: false
+      proxy_ticker: "SPY"
+      history_start: "2020-08"
+      macro_sensitivity: {growth: +1, rates: -1, inflation: -1, krw: -1}
+
+    - slug: us-tech
+      name: "US Tech (Nasdaq 100)"
+      category: "Equity"
+      etf: "133690"
+      etf_name: "TIGER 미국나스닥100"
+      currency_hedge: false
+      proxy_ticker: "QQQ"
+      history_start: "2010-10"
+      macro_sensitivity: {growth: +1, rates: -1, inflation: -1, krw: -1}
+
+    # ---- KR Fixed Income (1) ----
+    - slug: kr-treasuries-10y
+      name: "KR Treasuries 10Y"
+      category: "FixedIncome"
+      etf: "152380"
+      etf_name: "KODEX 국고채10년"
+      currency_hedge: false
+      history_start: "2011-10"
+      macro_sensitivity: {growth: -1, rates: -1, inflation: -1, krw: +1}
+
+    # ---- US Fixed Income (2) ----
+    - slug: us-treasuries-10y
+      name: "US Treasuries 10Y Futures"
+      category: "FixedIncome"
+      etf: "305080"
+      etf_name: "TIGER 미국채10년선물"
+      currency_hedge: false
+      proxy_ticker: "IEF"
+      history_start: "2018-08"
+      macro_sensitivity: {growth: -1, rates: -1, inflation: -1, krw: -1}
+
+    - slug: us-ig-credit
+      name: "US IG Corporate Bonds (H)"
+      category: "FixedIncome"
+      etf: "332620"
+      etf_name: "TIGER 미국투자등급회사채액티브(H)"
+      currency_hedge: true
+      proxy_ticker: "LQD"
+      history_start: "2019-10"
+      macro_sensitivity: {growth: +1, rates: -1, inflation: 0, krw: 0}
+
+    # ---- Real Assets (1) ----
+    - slug: gold
+      name: "Gold Futures (H)"
+      category: "RealAssets"
+      etf: "132030"
+      etf_name: "KODEX 골드선물(H)"
+      currency_hedge: true
+      proxy_ticker: "GLD"
+      history_start: "2010-10"
+      macro_sensitivity: {growth: 0, rates: -1, inflation: +1, krw: 0}
+
+    # ---- Cash (2) ----
+    - slug: kofr-cash
+      name: "KOFR Cash Active"
+      category: "Cash"
+      etf: "423160"
+      etf_name: "KODEX KOFR금리액티브"
+      currency_hedge: false
+      history_start: "2022-04"
+      macro_sensitivity: {growth: 0, rates: +1, inflation: -1, krw: 0}
+
+    - slug: money-market
+      name: "Money Market Active"
+      category: "Cash"
+      etf: "357870"
+      etf_name: "TIGER 머니마켓액티브"
+      currency_hedge: false
+      history_start: "2020-08"
+      macro_sensitivity: {growth: 0, rates: +1, inflation: -1, krw: 0}
+
+# Layer 2: Objective (동일)
+objective:
+  target_real_return:
+    base: "KR_CPI"
+    spread_low: 0.025
+    spread_high: 0.040
+  expected_volatility_band:
+    low: 0.06
+    high: 0.12
+  max_drawdown_limit: -0.20
+
+# Layer 3: Active risk (동일)
+active_risk_budget:
+  benchmark: "kr_60_40"
+  benchmark_weights:
+    kr-large-cap: 0.60
+    kr-treasuries-10y: 0.40
+  max_tracking_error: 0.06
+
+# Constraints (동일 — 카테고리 cap이 trimmed에서도 그대로 유지됨)
+constraints:
+  position_limits:
+    min: 0.0
+    max: 0.25
+  category_bounds:
+    Equity:      {min: 0.20, max: 0.55}
+    RealAssets:  {min: 0.00, max: 0.15}
+    FixedIncome: {min: 0.20, max: 0.70}
+    Cash:        {min: 0.00, max: 0.30}
+  rebalancing:
+    frequency: "quarterly"
+    drift_trigger: 0.05
+
+regulatory:
+  account_type: "DC_IRP"
+  risky_asset_limit: 0.70
+  leverage_inverse_allowed: false
+  default_locale: "ko_KR"
+
+governance:
+  human_role: "IPS author / 연금 운용자"
+  autonomy_level: "L4"
+  escalation_triggers:
+    - "Any portfolio violating IPS bounds or 70% risky cap"
+    - "Macro regime change with confidence > 0.8"
+    - "USD/KRW > 1500 or < 1100 outside ±2σ band"

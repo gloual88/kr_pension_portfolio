@@ -1,0 +1,48 @@
+{
+  "yield_carry": {
+    "estimate": 0.04,
+    "confidence": 0.65,
+    "components": {
+      "ytw": 0.04
+    },
+    "rationale": "Yield-to-worst as forward-return anchor."
+  },
+  "rolldown_enhanced": {
+    "estimate": 0.04,
+    "confidence": 0.55,
+    "components": {
+      "ytw": 0.04,
+      "roll": 0.0
+    },
+    "rationale": "Yield + roll-down on the curve."
+  },
+  "term_premium_adj": {
+    "estimate": 0.045,
+    "confidence": 0.5,
+    "components": {
+      "ytw": 0.04,
+      "tp": 0.005
+    },
+    "rationale": "Yield adjusted for current term premium estimate."
+  },
+  "regime_adjusted": {
+    "estimate": 0.045,
+    "confidence": 0.6,
+    "components": {
+      "hist": 0.04,
+      "adj": 0.005
+    },
+    "rationale": "Regime 'late-cycle' adjustment to historical return."
+  },
+  "auto_blend": {
+    "estimate": 0.042391304347826085,
+    "confidence": 0.7,
+    "components": {
+      "yield_carry": 0.65,
+      "rolldown_enhanced": 0.55,
+      "term_premium_adj": 0.5,
+      "regime_adjusted": 0.6
+    },
+    "rationale": "Confidence-weighted blend of all candidate methods."
+  }
+}

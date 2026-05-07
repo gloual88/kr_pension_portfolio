@@ -1,0 +1,30 @@
+{
+  "slug": "us-dividend",
+  "name": "US Dividend (Dow Jones)",
+  "category": "Equity",
+  "expected_return": 0.05945064174565486,
+  "expected_volatility": 0.15470381733610553,
+  "confidence": 0.55,
+  "regime": "late-cycle",
+  "curve_regime": "bear-parallel",
+  "method_weights": {
+    "historical_erp": 0.05000000000000001,
+    "regime_adjusted": 0.25000000000000006,
+    "bl_equilibrium": 0.0,
+    "inverse_gordon": 0.30000000000000004,
+    "implied_erp": 0.30000000000000004,
+    "survey_analyst": 0.0,
+    "auto_blend": 0.10000000000000002
+  },
+  "rationale": "Dispersion moderate (5.7pp). Late-cycle: tilt to valuation + regime-adjusted.",
+  "dispersion": "moderate",
+  "candidates": {
+    "historical_erp": 0.08499999999999999,
+    "regime_adjusted": 0.065,
+    "bl_equilibrium": 0.027992466788696227,
+    "inverse_gordon": 0.06,
+    "implied_erp": 0.05,
+    "survey_analyst": 0.07,
+    "auto_blend": 0.05950641745654858
+  }
+}

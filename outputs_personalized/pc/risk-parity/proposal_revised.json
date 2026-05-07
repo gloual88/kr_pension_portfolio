@@ -1,0 +1,22 @@
+{
+  "weights": {
+    "kr-large-cap": 0.09285934733915761,
+    "kr-kosdaq": 0.0876905406506674,
+    "kr-dividend": 0.09320981689900393,
+    "us-large-cap": 0.09157003745765273,
+    "us-tech": 0.08907062774659373,
+    "us-dividend": 0.10295927609081548,
+    "intl-developed": 0.09016133090497963,
+    "emerging-markets": 0.0881418849674187,
+    "kr-treasuries-10y": 0.0,
+    "kr-short-bonds": 0.0,
+    "kr-credit": 0.11329670363849101,
+    "us-treasuries-10y": 0.0,
+    "us-treasuries-30y": 0.0,
+    "us-ig-credit": 0.05469836293396838,
+    "gold": 0.004841017279208469,
+    "commodities": 0.0,
+    "kofr-cash": 0.09150105409204294,
+    "money-market": 0.0
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "window_days": 756,
+  "mae": 0.16278793525143018,
+  "rank_correlation": 0.6917637567037023,
+  "forecasts": {
+    "kr-large-cap": 0.05946904153437007,
+    "kr-dividend": 0.05946971866741962,
+    "us-large-cap": 0.06080224705142964,
+    "us-tech": 0.05954387055184255,
+    "kr-treasuries-10y": 0.043456521739130435,
+    "us-treasuries-10y": 0.043456521739130435,
+    "us-ig-credit": 0.043456521739130435,
+    "gold": 0.06175217391304348,
+    "kofr-cash": 0.043456521739130435,
+    "money-market": 0.043456521739130435
+  },
+  "realized": {
+    "kr-large-cap": 0.519359166683288,
+    "kr-dividend": 0.38553955649171723,
+    "us-large-cap": 0.2781358053309537,
+    "us-tech": 0.3729509747858746,
+    "kr-treasuries-10y": 0.016527057590086436,
+    "us-treasuries-10y": 0.05209984930794165,
+    "us-ig-credit": 0.05997190334309521,
+    "gold": 0.29828839796205053,
+    "kofr-cash": 0.03422203517562372,
+    "money-market": 0.030136678645934056
+  },
+  "errors": {
+    "kr-large-cap": -0.4598901251489179,
+    "kr-dividend": -0.3260698378242976,
+    "us-large-cap": -0.21733355827952408,
+    "us-tech": -0.313407104234032,
+    "kr-treasuries-10y": 0.026929464149044,
+    "us-treasuries-10y": -0.008643327568811213,
+    "us-ig-credit": -0.016515381603964777,
+    "gold": -0.23653622404900704,
+    "kofr-cash": 0.009234486563506714,
+    "money-market": 0.013319843093196379
+  },
+  "changes": [
+    {
+      "target": "skills/cma_judge/SKILL.md",
+      "change": "Strengthen valuation tilt rule: PE>28 -> +0.10 valuation weight.",
+      "reason": "Mean absolute prediction error 16.28% exceeds 6% threshold."
+    },
+    {
+      "target": "agents/asset_class_agent.py",
+      "change": "Add post-judge cap of +200bp above auto-blend for: ['kr-treasuries-10y', 'money-market', 'kofr-cash'].",
+      "reason": "Top-3 over-forecast list shows persistent positive bias."
+    }
+  ]
+}

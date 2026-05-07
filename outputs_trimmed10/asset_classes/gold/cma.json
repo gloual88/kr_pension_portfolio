@@ -1,0 +1,25 @@
+{
+  "slug": "gold",
+  "name": "Gold Futures (H)",
+  "category": "RealAssets",
+  "expected_return": 0.06175217391304348,
+  "expected_volatility": 0.18388031480989497,
+  "confidence": 0.55,
+  "regime": "late-cycle",
+  "method_weights": {
+    "yield_carry": 0.1,
+    "rolldown_enhanced": 0.0,
+    "term_premium_adj": 0.0,
+    "regime_adjusted": 0.5,
+    "auto_blend": 0.4
+  },
+  "rationale": "Dispersion tight (2.7pp). Non-equity: lean on yield/regime adjusted blend.",
+  "dispersion": "tight",
+  "candidates": {
+    "yield_carry": 0.045,
+    "rolldown_enhanced": 0.045,
+    "term_premium_adj": 0.049999999999999996,
+    "regime_adjusted": 0.07200000000000001,
+    "auto_blend": 0.05313043478260869
+  }
+}

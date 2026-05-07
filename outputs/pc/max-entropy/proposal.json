@@ -1,0 +1,53 @@
+{
+  "slug": "max-entropy",
+  "name": "Maximum Entropy",
+  "category": "E_Researcher",
+  "method": "max_entropy",
+  "weights": {
+    "kr-large-cap": 0.05555555555555555,
+    "kr-kosdaq": 0.05555555555555555,
+    "kr-dividend": 0.05555555555555555,
+    "us-large-cap": 0.05555555555555555,
+    "us-tech": 0.05555555555555555,
+    "us-dividend": 0.05555555555555555,
+    "intl-developed": 0.05555555555555555,
+    "emerging-markets": 0.05555555555555555,
+    "kr-treasuries-10y": 0.05555555555555555,
+    "kr-short-bonds": 0.05555555555555555,
+    "kr-credit": 0.05555555555555555,
+    "us-treasuries-10y": 0.05555555555555555,
+    "us-treasuries-30y": 0.05555555555555555,
+    "us-ig-credit": 0.05555555555555555,
+    "gold": 0.05555555555555555,
+    "commodities": 0.05555555555555555,
+    "kofr-cash": 0.05555555555555555,
+    "money-market": 0.05555555555555555
+  },
+  "expected_return": 0.052141373222994926,
+  "expected_vol": 0.07342679061175703,
+  "metrics": {
+    "ex_ante_vol": 0.07342679061175703,
+    "ex_ante_var95": -0.06864569733334538,
+    "backtest_sharpe": 2.1957298997343093,
+    "backtest_vol": 0.08030297142635677,
+    "backtest_maxdd": -0.0727550295189876,
+    "hhi": 0.05555555555555555,
+    "effective_n": 18.0,
+    "top3": 0.16666666666666666,
+    "ips_compliance": 0.9,
+    "ips_flags": [
+      "tracking_error=8.39% exceeds budget 6.00%"
+    ],
+    "tracking_error": 0.08392843845712421,
+    "factor_tilts": {
+      "growth": 0.44444444444444453,
+      "rates": -0.5555555555555557,
+      "inflation": -0.33333333333333337,
+      "dollar": 0.0
+    },
+    "diversification": 0.3336961873788115,
+    "regime_fit": 0.65,
+    "estimation_robustness": 0.75,
+    "cma_utilization": 0.0
+  }
+}

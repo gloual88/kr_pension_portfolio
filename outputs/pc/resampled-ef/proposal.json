@@ -1,0 +1,54 @@
+{
+  "slug": "resampled-ef",
+  "name": "Resampled Efficient Frontier",
+  "category": "B_ReturnOptimized",
+  "method": "resampled_ef",
+  "weights": {
+    "kr-large-cap": 0.027106073182444824,
+    "kr-kosdaq": 0.023862555594023623,
+    "kr-dividend": 0.030867938690128955,
+    "us-large-cap": 0.026245079057019737,
+    "us-tech": 0.024975435678573625,
+    "us-dividend": 0.035545042708193995,
+    "intl-developed": 0.023754438707982325,
+    "emerging-markets": 0.025395940638629485,
+    "kr-treasuries-10y": 0.10946642971811447,
+    "kr-short-bonds": 0.032181968415069116,
+    "kr-credit": 0.25000000002034917,
+    "us-treasuries-10y": 0.06447593376160567,
+    "us-treasuries-30y": 3.3831686094577956e-05,
+    "us-ig-credit": 0.015391968335596898,
+    "gold": 0.006424801955922497,
+    "commodities": 0.004272553523381233,
+    "kofr-cash": 0.15000000416289602,
+    "money-market": 0.15000000416397377
+  },
+  "expected_return": 0.047417640955699024,
+  "expected_vol": 0.034133899972696,
+  "metrics": {
+    "ex_ante_vol": 0.034133899972696,
+    "ex_ante_var95": -0.008732624499385902,
+    "backtest_sharpe": 2.302160963209659,
+    "backtest_vol": 0.039981207840573685,
+    "backtest_maxdd": -0.026838089947778143,
+    "hhi": 0.13101441768082658,
+    "effective_n": 7.632747736483249,
+    "top3": 0.550000008347219,
+    "ips_compliance": 0.8,
+    "ips_flags": [
+      "vol=3.41% outside [6.00%,12.00%]",
+      "tracking_error=9.19% exceeds budget 6.00%"
+    ],
+    "tracking_error": 0.09192636450417728,
+    "factor_tilts": {
+      "growth": 0.31344083097050923,
+      "rates": -0.30556000971657393,
+      "inflation": -0.5466813311640433,
+      "dollar": 0.0
+    },
+    "diversification": 0.3651902192986176,
+    "regime_fit": 0.5,
+    "estimation_robustness": 0.65,
+    "cma_utilization": -0.17923231201070539
+  }
+}

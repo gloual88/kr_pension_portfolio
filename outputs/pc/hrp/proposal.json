@@ -1,0 +1,53 @@
+{
+  "slug": "hrp",
+  "name": "Hierarchical Risk Parity",
+  "category": "C_RiskStructured",
+  "method": "hrp",
+  "weights": {
+    "kr-large-cap": 0.05460097638634179,
+    "kr-kosdaq": 0.054408216597191306,
+    "kr-dividend": 0.054599498603201665,
+    "us-large-cap": 0.054732139905218476,
+    "us-tech": 0.05443870768306202,
+    "us-dividend": 0.05501662170579045,
+    "intl-developed": 0.05458990422301881,
+    "emerging-markets": 0.05444141891568439,
+    "kr-treasuries-10y": 0.04550804499996463,
+    "kr-short-bonds": 0.034920478437908194,
+    "kr-credit": 0.0781919945571586,
+    "us-treasuries-10y": 0.037146822076473025,
+    "us-treasuries-30y": 0.03148420702112978,
+    "us-ig-credit": 0.03430130930126963,
+    "gold": 0.0014176275349439306,
+    "commodities": 0.00020202322364453937,
+    "kofr-cash": 0.1951042730953135,
+    "money-market": 0.10489573573268529
+  },
+  "expected_return": 0.05295294257647807,
+  "expected_vol": 0.06295860174348168,
+  "metrics": {
+    "ex_ante_vol": 0.06295860174348168,
+    "ex_ante_var95": -0.05061395729154929,
+    "backtest_sharpe": 1.9699469177630724,
+    "backtest_vol": 0.07301320724800331,
+    "backtest_maxdd": -0.06140613230928649,
+    "hhi": 0.08587553506165806,
+    "effective_n": 11.644760050484772,
+    "top3": 0.37819200338515735,
+    "ips_compliance": 0.9,
+    "ips_flags": [
+      "tracking_error=8.24% exceeds budget 6.00%"
+    ],
+    "tracking_error": 0.08238739139362253,
+    "factor_tilts": {
+      "growth": 0.43538373700401417,
+      "rates": -0.23559193458834693,
+      "inflation": -0.5566107581931664,
+      "dollar": 0.0
+    },
+    "diversification": 0.2584993234542639,
+    "regime_fit": 0.8,
+    "estimation_robustness": 0.8,
+    "cma_utilization": 0.004433512976671668
+  }
+}

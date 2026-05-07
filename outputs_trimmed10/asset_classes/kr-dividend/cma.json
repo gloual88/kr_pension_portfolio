@@ -1,0 +1,29 @@
+{
+  "slug": "kr-dividend",
+  "name": "KR Dividend Growth",
+  "category": "Equity",
+  "expected_return": 0.05946971866741962,
+  "expected_volatility": 0.18151119715438935,
+  "confidence": 0.55,
+  "regime": "late-cycle",
+  "method_weights": {
+    "historical_erp": 0.05000000000000001,
+    "regime_adjusted": 0.25000000000000006,
+    "bl_equilibrium": 0.0,
+    "inverse_gordon": 0.30000000000000004,
+    "implied_erp": 0.30000000000000004,
+    "survey_analyst": 0.0,
+    "auto_blend": 0.10000000000000002
+  },
+  "rationale": "Dispersion moderate (5.6pp). Late-cycle: tilt to valuation + regime-adjusted.",
+  "dispersion": "moderate",
+  "candidates": {
+    "historical_erp": 0.08499999999999999,
+    "regime_adjusted": 0.065,
+    "bl_equilibrium": 0.02911973943843152,
+    "inverse_gordon": 0.06,
+    "implied_erp": 0.05,
+    "survey_analyst": 0.07,
+    "auto_blend": 0.0596971866741961
+  }
+}

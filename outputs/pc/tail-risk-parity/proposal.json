@@ -1,0 +1,53 @@
+{
+  "slug": "tail-risk-parity",
+  "name": "Tail Risk Parity",
+  "category": "D_NonTraditional",
+  "method": "tail_risk_parity",
+  "weights": {
+    "kr-large-cap": 0.05879151535344918,
+    "kr-kosdaq": 0.05879151535344918,
+    "kr-dividend": 0.05879151535344918,
+    "us-large-cap": 0.0005442389913639403,
+    "us-tech": 0.05879151535344918,
+    "us-dividend": 0.05879151535344918,
+    "intl-developed": 0.05879151535344918,
+    "emerging-markets": 0.05879151535344918,
+    "kr-treasuries-10y": 0.05879151535344918,
+    "kr-short-bonds": 0.05879151535344918,
+    "kr-credit": 0.05879151535344918,
+    "us-treasuries-10y": 0.05879151535344918,
+    "us-treasuries-30y": 0.05879151535344918,
+    "us-ig-credit": 0.05879151535344918,
+    "gold": 0.05879151535344918,
+    "commodities": 0.05879151535344918,
+    "kofr-cash": 0.05879151535344918,
+    "money-market": 0.05879151535344918
+  },
+  "expected_return": 0.05237194693804735,
+  "expected_vol": 0.07103961638709091,
+  "metrics": {
+    "ex_ante_vol": 0.07103961638709091,
+    "ex_ante_var95": -0.0644882220187172,
+    "backtest_sharpe": 2.1741341540498174,
+    "backtest_vol": 0.07914826543089551,
+    "backtest_maxdd": -0.06670499927249895,
+    "hhi": 0.05875981491451218,
+    "effective_n": 17.01843345583829,
+    "top3": 0.17637454606034755,
+    "ips_compliance": 0.9,
+    "ips_flags": [
+      "tracking_error=8.12% exceeds budget 6.00%"
+    ],
+    "tracking_error": 0.08117495921938715,
+    "factor_tilts": {
+      "growth": 0.4120848464655082,
+      "rates": -0.5296678771724066,
+      "inflation": -0.29450181575860984,
+      "dollar": 0.0
+    },
+    "diversification": 0.3460557846878988,
+    "regime_fit": 0.8,
+    "estimation_robustness": 0.65,
+    "cma_utilization": -0.017557145236497245
+  }
+}

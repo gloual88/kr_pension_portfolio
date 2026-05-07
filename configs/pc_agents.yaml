@@ -1,0 +1,115 @@
+# Portfolio Construction (PC) agents.
+# Reference: Exhibit 5 in Ang, Azimbayev, Kim (2026).
+
+pc_agents:
+  # A. Heuristic
+  - slug: equal-weight
+    name: "Equal Weight (1/N)"
+    category: "A_Heuristic"
+    method: "equal_weight"
+
+  - slug: market-cap-weight
+    name: "Market-Cap Weight"
+    category: "A_Heuristic"
+    method: "market_cap_weight"
+
+  - slug: inverse-volatility
+    name: "Inverse Volatility"
+    category: "A_Heuristic"
+    method: "inverse_volatility"
+
+  - slug: inverse-variance
+    name: "Inverse Variance"
+    category: "A_Heuristic"
+    method: "inverse_variance"
+
+  - slug: volatility-targeting
+    name: "Volatility Targeting"
+    category: "A_Heuristic"
+    method: "volatility_targeting"
+
+  # B. Return-optimized
+  - slug: max-sharpe
+    name: "Maximum Sharpe Ratio"
+    category: "B_ReturnOptimized"
+    method: "max_sharpe"
+
+  - slug: black-litterman
+    name: "Black-Litterman"
+    category: "B_ReturnOptimized"
+    method: "black_litterman"
+
+  - slug: robust-mv
+    name: "Robust Mean-Variance"
+    category: "B_ReturnOptimized"
+    method: "robust_mv"
+
+  - slug: resampled-ef
+    name: "Resampled Efficient Frontier"
+    category: "B_ReturnOptimized"
+    method: "resampled_ef"
+
+  - slug: mean-downside
+    name: "Mean-Downside Risk (Sortino)"
+    category: "B_ReturnOptimized"
+    method: "mean_downside"
+
+  # C. Risk-structured
+  - slug: gmv
+    name: "Global Minimum Variance"
+    category: "C_RiskStructured"
+    method: "gmv"
+
+  - slug: risk-parity
+    name: "Risk Parity"
+    category: "C_RiskStructured"
+    method: "risk_parity"
+
+  - slug: hrp
+    name: "Hierarchical Risk Parity"
+    category: "C_RiskStructured"
+    method: "hrp"
+
+  - slug: max-diversification
+    name: "Maximum Diversification"
+    category: "C_RiskStructured"
+    method: "max_diversification"
+
+  - slug: min-correlation
+    name: "Minimum Correlation"
+    category: "C_RiskStructured"
+    method: "min_correlation"
+
+  # D. Non-traditional
+  - slug: cvar-min
+    name: "CVaR Minimization"
+    category: "D_NonTraditional"
+    method: "cvar_min"
+
+  - slug: max-dd-constrained
+    name: "Max Drawdown Constrained"
+    category: "D_NonTraditional"
+    method: "max_dd_constrained"
+
+  - slug: tail-risk-parity
+    name: "Tail Risk Parity"
+    category: "D_NonTraditional"
+    method: "tail_risk_parity"
+
+  - slug: tpa
+    name: "Total Portfolio Allocation (two-factor)"
+    category: "D_NonTraditional"
+    method: "tpa_two_factor"
+
+  - slug: adversarial-diversifier
+    name: "Adversarial Diversifier"
+    category: "D_NonTraditional"
+    method: "adversarial_diversifier"
+    runs_after_others: true
+
+  # E. PC-Researcher proposed (for March 2026 run: max entropy)
+  - slug: max-entropy
+    name: "Maximum Entropy"
+    category: "E_Researcher"
+    method: "max_entropy"
+    proposed_by: "pc-researcher"

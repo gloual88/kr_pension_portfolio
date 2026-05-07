@@ -1,0 +1,46 @@
+{
+  "slug": "gmv",
+  "name": "Global Minimum Variance",
+  "category": "C_RiskStructured",
+  "method": "gmv",
+  "weights": {
+    "kr-large-cap": 0.04692009938704691,
+    "kr-dividend": 0.07223266273016131,
+    "us-large-cap": 0.07069642182014378,
+    "us-tech": 0.038277915677708246,
+    "kr-treasuries-10y": 0.2500000010571737,
+    "us-treasuries-10y": 0.17211906117791553,
+    "us-ig-credit": 0.04198044408083177,
+    "gold": 0.0077733877259766205,
+    "kofr-cash": 0.15000000317152107,
+    "money-market": 0.15000000317152107
+  },
+  "expected_return": 0.04734879670514585,
+  "expected_vol": 0.03738126783503425,
+  "metrics": {
+    "ex_ante_vol": 0.03738126783503425,
+    "ex_ante_var95": -0.0141433888834855,
+    "backtest_sharpe": 2.433684033232451,
+    "backtest_vol": 0.0452033387511814,
+    "backtest_maxdd": -0.028010102042293705,
+    "hhi": 0.15282999307260978,
+    "effective_n": 6.543218251177296,
+    "top3": 0.5721190654066103,
+    "ips_compliance": 0.8,
+    "ips_flags": [
+      "vol=3.74% outside [6.00%,12.00%]",
+      "tracking_error=9.15% exceeds budget 6.00%"
+    ],
+    "tracking_error": 0.09147110984949156,
+    "factor_tilts": {
+      "growth": -0.1520115185391972,
+      "rates": -0.32776732458375435,
+      "inflation": -0.8233200183500068,
+      "dollar": 0.0
+    },
+    "diversification": 0.5248946049724993,
+    "regime_fit": 0.5,
+    "estimation_robustness": 0.7000000000000001,
+    "cma_utilization": -0.17128343271743773
+  }
+}

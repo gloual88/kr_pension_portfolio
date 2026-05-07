@@ -1,0 +1,53 @@
+{
+  "slug": "black-litterman",
+  "name": "Black-Litterman",
+  "category": "B_ReturnOptimized",
+  "method": "black_litterman",
+  "weights": {
+    "kr-large-cap": 0.05978546953801958,
+    "kr-kosdaq": 0.04814140706987828,
+    "kr-dividend": 0.05795885575793516,
+    "us-large-cap": 0.057785361428548045,
+    "us-tech": 0.0507158811744552,
+    "us-dividend": 0.07014591740908771,
+    "intl-developed": 0.055092377832010736,
+    "emerging-markets": 0.05060868638400889,
+    "kr-treasuries-10y": 0.05772308468928411,
+    "kr-short-bonds": 0.0692398142415428,
+    "kr-credit": 0.04234488611505937,
+    "us-treasuries-10y": 0.0683807803023,
+    "us-treasuries-30y": 0.08682139874158605,
+    "us-ig-credit": 0.07259371636967914,
+    "gold": 0.06806999357753381,
+    "commodities": 0.03522831399608474,
+    "kofr-cash": 0.019475825020462256,
+    "money-market": 0.02988823035252419
+  },
+  "expected_return": 0.052997512228988464,
+  "expected_vol": 0.0711916973062362,
+  "metrics": {
+    "ex_ante_vol": 0.0711916973062362,
+    "ex_ante_var95": -0.06411282983977008,
+    "backtest_sharpe": 2.1287527452513824,
+    "backtest_vol": 0.08160101656616715,
+    "backtest_maxdd": -0.06945074784978789,
+    "hhi": 0.06022933598330099,
+    "effective_n": 16.603204795039698,
+    "top3": 0.22956103252035293,
+    "ips_compliance": 0.9,
+    "ips_flags": [
+      "tracking_error=8.38% exceeds budget 6.00%"
+    ],
+    "tracking_error": 0.08376033191288472,
+    "factor_tilts": {
+      "growth": 0.38747560934159675,
+      "rates": -0.6828464242589088,
+      "inflation": -0.33673206837708414,
+      "dollar": 0.0
+    },
+    "diversification": 0.3647703421126858,
+    "regime_fit": 0.75,
+    "estimation_robustness": 0.65,
+    "cma_utilization": 0.006120565539433435
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "slug": "min-correlation",
+  "name": "Minimum Correlation",
+  "category": "C_RiskStructured",
+  "method": "min_correlation",
+  "weights": {
+    "kr-large-cap": 0.08854035598126106,
+    "kr-kosdaq": 0.0919408213273165,
+    "kr-dividend": 0.09095392913311892,
+    "us-large-cap": 0.0896287267875363,
+    "us-tech": 0.09318908979867052,
+    "us-dividend": 0.09858046318240211,
+    "intl-developed": 0.09213561432793342,
+    "emerging-markets": 0.09069379635106184,
+    "kr-treasuries-10y": 0.027152753690429413,
+    "kr-short-bonds": 0.023231396068939498,
+    "kr-credit": 0.050105965859802246,
+    "us-treasuries-10y": 0.03788545200773753,
+    "us-treasuries-30y": 0.011591852242452495,
+    "us-ig-credit": 0.016779841375854202,
+    "gold": 0.0048654875080639745,
+    "commodities": 0.0,
+    "kofr-cash": 0.04897552539911437,
+    "money-market": 0.04374892895830569
+  },
+  "expected_return": 0.05665041714407039,
+  "expected_vol": 0.10462655732321126,
+  "metrics": {
+    "ex_ante_vol": 0.10462655732321126,
+    "ex_ante_var95": -0.11546026965261212,
+    "backtest_sharpe": 1.8456305714006584,
+    "backtest_vol": 0.11987884662164479,
+    "backtest_maxdd": -0.10490955516546219,
+    "hhi": 0.0776901484985307,
+    "effective_n": 12.871644852357468,
+    "top3": 0.28390516730900606,
+    "ips_compliance": 0.9,
+    "ips_flags": [
+      "tracking_error=8.72% exceeds budget 6.00%"
+    ],
+    "tracking_error": 0.08718525607568342,
+    "factor_tilts": {
+      "growth": 0.7259185461843375,
+      "rates": -0.5328810846417054,
+      "inflation": -0.3705382374451219,
+      "dollar": 0.0
+    },
+    "diversification": 0.19933181558989602,
+    "regime_fit": 0.5,
+    "estimation_robustness": 0.65,
+    "cma_utilization": 0.17125039330522657
+  }
+}

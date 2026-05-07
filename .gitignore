@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# 가상환경
+venv/
+.venv/
+pykrx_venv/
+
+# 시크릿 / 환경변수 — 커밋 절대 금지
+.env
+.env.*
+.streamlit/secrets.toml
+**/secrets.toml
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# 로그 / 임시
+*.log
+streamlit.err.log
+streamlit.out.log
+
+# 캐시 디렉토리
+.streamlit/cache/
+
+# 큰 파일 (필요시 주석 해제)
+# outputs/raw_data/
+# *.parquet
+
+# 백테스트 분기별 스냅샷 — 대시보드가 읽지 않음 (12000+ 파일 차단)
+outputs/backtest_kr/quarters/
+outputs/backtest_kr_llm/quarters/
+outputs/backtest_kr_llm_phase2/quarters/
+outputs_*/backtest_*/quarters/

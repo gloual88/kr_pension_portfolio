@@ -1,0 +1,30 @@
+{
+  "slug": "intl-developed",
+  "name": "Japan Nikkei 225",
+  "category": "Equity",
+  "expected_return": 0.05708746236414986,
+  "expected_volatility": 0.22637824136978396,
+  "confidence": 0.55,
+  "regime": "late-cycle",
+  "curve_regime": "bear-parallel",
+  "method_weights": {
+    "historical_erp": 0.05000000000000001,
+    "regime_adjusted": 0.25000000000000006,
+    "bl_equilibrium": 0.0,
+    "inverse_gordon": 0.30000000000000004,
+    "implied_erp": 0.30000000000000004,
+    "survey_analyst": 0.0,
+    "auto_blend": 0.10000000000000002
+  },
+  "rationale": "Dispersion tight (2.2pp). Late-cycle: tilt to valuation + regime-adjusted.",
+  "dispersion": "tight",
+  "candidates": {
+    "historical_erp": 0.065,
+    "regime_adjusted": 0.045,
+    "bl_equilibrium": 0.04422017866080283,
+    "inverse_gordon": 0.066,
+    "implied_erp": 0.05714285714285714,
+    "survey_analyst": 0.066,
+    "auto_blend": 0.056446052212927075
+  }
+}
