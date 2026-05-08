@@ -35,16 +35,22 @@ render_sidebar()
 st.title("KR 연금 자율주행 SAA — 대시보드")
 st.caption("Andrew Ang 2026 reverse 구현 + ECOS/FRED 매크로 + DC/IRP 70% 한도 + v2 Multi-Regime (KR/US/Global) + Score Injection")
 
-# v2 production highlight
+# v2 production highlight (latest = v0.5 aggressive)
+v2_score_aggr = load_metrics("v2_score_aggressive")
 v2_score_metrics = load_metrics("v2_score")
-if v2_score_metrics and "agentic" in v2_score_metrics:
-    a = v2_score_metrics["agentic"]
+if v2_score_aggr and "agentic" in v2_score_aggr:
+    a = v2_score_aggr["agentic"]
     st.success(
-        f"🥇 **v2 Score Injection 적용 중** — Walk-Forward Sharpe **{a['sharpe']:.3f}** "
+        f"🥇 **v0.5 Aggressive IPS 적용 중** — Walk-Forward Sharpe **{a['sharpe']:.3f}** "
         f"(v1 baseline 1.117 대비 +{(a['sharpe']-1.117)*100/1.117:.1f}%) | "
         f"Annual Return {a['ann_return']*100:.2f}% / MDD {a['max_drawdown']*100:.2f}% / "
-        f"Total {a['total_return']*100:.1f}%. "
+        f"Total **{a['total_return']*100:.1f}%** (v0.3 64% 대비 +20pp). "
         f"상세는 좌측 메뉴의 **v2 Multi-Regime** 페이지 참고."
+    )
+elif v2_score_metrics and "agentic" in v2_score_metrics:
+    a = v2_score_metrics["agentic"]
+    st.success(
+        f"🥇 **v2 Score Injection 적용 중** — Walk-Forward Sharpe **{a['sharpe']:.3f}**"
     )
 
 # ============================================================

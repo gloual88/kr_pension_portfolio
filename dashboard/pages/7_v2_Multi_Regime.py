@@ -121,15 +121,15 @@ st.markdown("---")
 # ============================================================
 st.subheader("백테스트 비교 (2018-Q1 ~ 2026-Q2, 34 quarters)")
 
-variants = ["baseline", "v2_baseline", "v2_phase2", "v2_score"]
+variants = ["baseline", "v2_baseline", "v2_score", "v2_score_aggressive"]
 metrics = {v: load_metrics(v) for v in variants}
 
 cols = st.columns(4)
 ordered = [
     ("baseline",   "v1 baseline",      "#888888"),
     ("v2_baseline","v2 baseline",      "#2E86AB"),
-    ("v2_phase2",  "v2 Phase 2 LLM",   "#E63946"),
-    ("v2_score",   "v2 Score Injection ★", "#06A77D"),
+    ("v2_score",   "v0.3 score injection", "#06A77D"),
+    ("v2_score_aggressive", "v0.5 aggressive IPS ★", "#D62828"),
 ]
 for i, (v, label, color) in enumerate(ordered):
     with cols[i]:
@@ -157,10 +157,11 @@ for v, label, color in ordered:
     if nav is None:
         continue
     nav_idx = nav["agentic"] / nav["agentic"].iloc[0]
+    is_prod = v == "v2_score_aggressive"
     fig.add_trace(go.Scatter(
         x=nav.index, y=nav_idx, name=label,
-        line=dict(color=color, width=2 if v == "v2_score" else 1.5,
-                  dash="solid" if v in ("v2_score", "baseline") else "dot"),
+        line=dict(color=color, width=2.4 if is_prod else 1.5,
+                  dash="solid" if v in ("v2_score_aggressive", "baseline") else "dot"),
     ))
 
 # 60/40 BM
@@ -291,6 +292,45 @@ if w_base is not None and w_score is not None:
                 "특히 KR이 strong growth + late-cycle인 시기엔 equity 비중을 더 높게 유지.")
 else:
     st.info("v2 baseline 또는 v2 score 비중 데이터 없음.")
+
+st.markdown("---")
+
+# ============================================================
+# v0.5 — IPS 적극화 (변동성 band + risky 하한)
+# ============================================================
+st.subheader("v0.5 — IPS 적극화 적용 결과")
+
+m_v03 = load_metrics("v2_score")
+m_v05 = load_metrics("v2_score_aggressive")
+
+if m_v03 and m_v05:
+    a03 = m_v03.get("agentic", {})
+    a05 = m_v05.get("agentic", {})
+
+    col_a, col_b = st.columns(2)
+    with col_a:
+        st.markdown("**v0.3 (보수 IPS)**")
+        st.write(f"- IPS: σ band [6%, 12%], risky 하한 0%")
+        st.write(f"- Sharpe: **{a03.get('sharpe', 0):.3f}**")
+        st.write(f"- Annual Return: {a03.get('ann_return', 0)*100:.2f}%")
+        st.write(f"- Annual Vol: **{a03.get('ann_vol', 0)*100:.2f}%** (하한 6% 미달)")
+        st.write(f"- Total Return: {a03.get('total_return', 0)*100:.1f}%")
+    with col_b:
+        st.markdown("**v0.5 (적극 IPS) ★**")
+        st.write(f"- IPS: σ band [**8%, 14%**], risky 하한 **40%**")
+        st.write(f"- Sharpe: **{a05.get('sharpe', 0):.3f}** (+{(a05.get('sharpe', 0)-a03.get('sharpe', 0)):.3f})")
+        st.write(f"- Annual Return: **{a05.get('ann_return', 0)*100:.2f}%** (+{(a05.get('ann_return', 0)-a03.get('ann_return', 0))*100:.2f}pp)")
+        st.write(f"- Annual Vol: {a05.get('ann_vol', 0)*100:.2f}%")
+        st.write(f"- Total Return: **{a05.get('total_return', 0)*100:.1f}%** (+{(a05.get('total_return', 0)-a03.get('total_return', 0))*100:.1f}pp)")
+
+    st.success(
+        "**v0.5 IPS 적극화 효과**: 변동성 band 6%→8% 상향 + Equity 하한 35% / RealAssets 5% / Cash 천장 20%. "
+        "이는 모델이 강제로 위험자산 40% 이상 보유하게 만듦 → 2018-2026 강세장 참여 확대. "
+        "BM Sharpe 1.310과의 격차 0.158 → 0.128로 19% 축소. "
+        "남은 격차는 PC ensemble 가중 조정 (v0.5.1)으로 추가 해소 가능."
+    )
+else:
+    st.warning("v0.5 비교 데이터 없음.")
 
 st.markdown("---")
 
