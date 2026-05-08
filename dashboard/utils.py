@@ -39,6 +39,7 @@ BT_V2_BASELINE       = OUTPUTS_DIR / "v2_baseline"          # bundled
 BT_V2_SCORE          = OUTPUTS_DIR / "v2_score"             # bundled
 BT_V2_PHASE2         = OUTPUTS_DIR / "v2_phase2"            # bundled
 BT_V2_SCORE_GLOBALBM = OUTPUTS_DIR / "v2_score_globalbm"    # v0.4.1 global BM
+BT_V2_SCORE_SENS     = OUTPUTS_DIR / "v2_score_sens"        # v0.4.2 macro_sensitivity
 
 # Variant → directory mapping (used by all loaders below)
 VARIANT_DIRS = {
@@ -49,15 +50,17 @@ VARIANT_DIRS = {
     "v2_score":    BT_V2_SCORE,
     "v2_phase2":   BT_V2_PHASE2,
     "v2_score_globalbm": BT_V2_SCORE_GLOBALBM,
+    "v2_score_sens":     BT_V2_SCORE_SENS,
 }
 VARIANT_LABELS = {
     "baseline":   "v1 Baseline (stub, single regime, KR 60/40 BM)",
     "llm":        "v1 Phase 1 (Claude CIO)",
     "llm_phase2": "v1 Phase 2 (Claude CIO + CMA)",
     "v2_baseline": "v2 Baseline (KR/US/Global, label, KR 60/40 BM)",
-    "v2_score":    "v2 Score Injection (KR/US/Global, score, KR 60/40 BM)",
+    "v2_score":    "v2 Score Injection (KR/US/Global, score) ★",
     "v2_phase2":   "v2 Phase 2 LLM (KR/US/Global + Claude)",
-    "v2_score_globalbm": "v2 Score + Global BM (KR30+US30+Bond40) ★",
+    "v2_score_globalbm": "v2 Score + Global BM (KR30+US30+Bond40)",
+    "v2_score_sens":     "v2 Score + macro_sensitivity (자산별 sens 곱)",
 }
 
 # ----- Categories -----
