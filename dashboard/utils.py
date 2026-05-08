@@ -130,6 +130,32 @@ def load_metrics(variant: str = "baseline") -> Optional[dict]:
     return load_json(bt_dir / "metrics.json")
 
 
+@st.cache_data(show_spinner=False)
+def load_variant_current_cio(variant: str) -> Optional[dict]:
+    """Load latest single-shot CIO payload for a v2 variant (cio/final_portfolio.json)."""
+    bt_dir = VARIANT_DIRS.get(variant)
+    if bt_dir is None:
+        return None
+    return load_json(bt_dir / "cio" / "final_portfolio.json")
+
+
+@st.cache_data(show_spinner=False)
+def load_variant_current_macro(variant: str) -> Optional[dict]:
+    """Load latest single-shot macro payload for a v2 variant (macro/macro-view.json)."""
+    bt_dir = VARIANT_DIRS.get(variant)
+    if bt_dir is None:
+        return None
+    return load_json(bt_dir / "macro" / "macro-view.json")
+
+
+@st.cache_data(show_spinner=False)
+def load_variant_board_memo(variant: str) -> Optional[str]:
+    bt_dir = VARIANT_DIRS.get(variant)
+    if bt_dir is None:
+        return None
+    return load_md(bt_dir / "cio" / "board_memo.md")
+
+
 def available_variants() -> list:
     """Return list of variants whose metrics.json exists."""
     return [v for v in VARIANT_DIRS if (VARIANT_DIRS[v] / "metrics.json").exists()]

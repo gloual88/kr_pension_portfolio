@@ -21,8 +21,10 @@ import streamlit as st
 from utils import (
     render_sidebar,
     load_metrics, load_nav, load_weights, load_regime_history,
+    load_variant_current_cio, load_variant_current_macro, load_variant_board_memo,
     VARIANT_LABELS, BT_V2_SCORE,
     HYBRID_OUTPUTS_DIR,
+    CATEGORY_COLORS, category_of, category_totals, display_name, risk_asset_weight,
 )
 
 
@@ -31,6 +33,88 @@ render_sidebar()
 
 st.title("v2 Multi-Regime — KR / US / Global")
 st.caption("v0.3 score injection 아키텍처 — 자산별 regime 매핑 + 연속 score 기반 CMA 조정")
+
+# ============================================================
+# 현재 추천 포트폴리오 (v2 score 단일 시점)
+# ============================================================
+st.subheader("현재 추천 포트폴리오 — v2 Score Injection (Production ★)")
+
+cio_v2 = load_variant_current_cio("v2_score")
+macro_v2 = load_variant_current_macro("v2_score")
+
+if cio_v2 is None or macro_v2 is None:
+    st.warning(
+        "v2 score 단일시점 결과 없음. `kr_pension_hybrid/run_pipeline.py` 실행 후 "
+        "outputs/run_v2_score/cio/, macro/ 를 outputs/v2_score/cio/, macro/ 로 복사."
+    )
+else:
+    weights = cio_v2["weights"]
+    regimes = macro_v2.get("regimes", {})
+    risk_w = risk_asset_weight(weights)
+    cat_totals = category_totals(weights)
+    m = cio_v2.get("metrics", {})
+
+    # 4-regime KPI bar
+    kr = regimes.get("kr", {}); us = regimes.get("us", {}); gl = regimes.get("global", {})
+    c1, c2, c3, c4 = st.columns(4)
+    with c1:
+        st.metric("위험자산 비중", f"{risk_w*100:.1f}%",
+                   f"한도 70% — 여유 {(0.70-risk_w)*100:.1f}%p",
+                   delta_color="normal" if risk_w <= 0.70 else "inverse")
+    with c2:
+        st.metric("KR Regime", kr.get("regime", "?"),
+                   f"신뢰도 {kr.get('confidence', 0):.2f} | P(rec) {kr.get('recession_probability_12m', 0)*100:.0f}%",
+                   delta_color="off")
+    with c3:
+        st.metric("US Regime", us.get("regime", "?"),
+                   f"신뢰도 {us.get('confidence', 0):.2f} | P(rec) {us.get('recession_probability_12m', 0)*100:.0f}%",
+                   delta_color="off")
+    with c4:
+        st.metric("Global Regime", gl.get("regime", "?"),
+                   f"신뢰도 {gl.get('confidence', 0):.2f}",
+                   delta_color="off")
+
+    st.markdown(f"**선택 앙상블:** `{cio_v2.get('chosen_ensemble', '?')}` — "
+                 f"E[r] {m.get('expected_return', 0)*100:.2f}% / "
+                 f"σ {m.get('expected_vol', 0)*100:.2f}% / "
+                 f"BT Sharpe {m.get('backtest_sharpe', 0):.2f}")
+
+    left, right = st.columns([3, 2])
+    with left:
+        st.markdown("**카테고리별 비중**")
+        fig = go.Figure(data=[go.Pie(
+            labels=list(cat_totals.keys()),
+            values=list(cat_totals.values()),
+            hole=0.45,
+            marker=dict(colors=[CATEGORY_COLORS[k] for k in cat_totals.keys()]),
+            textinfo="label+percent",
+            textposition="outside",
+            sort=False,
+        )])
+        fig.update_layout(height=350, margin=dict(t=10, b=10, l=10, r=10),
+                           showlegend=False)
+        st.plotly_chart(fig, use_container_width=True)
+
+    with right:
+        st.markdown("**Top 10 비중 (regime domain 표시)**")
+        rows = []
+        for slug, w in weights.items():
+            from utils import asset_class_meta
+            meta = asset_class_meta().get(slug, {})
+            rows.append({
+                "ETF": display_name(slug),
+                "카테고리": category_of(slug),
+                "비중": w,
+            })
+        df = pd.DataFrame(rows).sort_values("비중", ascending=False).head(10)
+        df["비중"] = df["비중"].apply(lambda x: f"{x*100:.2f}%")
+        st.dataframe(df, hide_index=True, use_container_width=True, height=350)
+
+    with st.expander("Board Memo (CIO 의사결정 메모)"):
+        memo = load_variant_board_memo("v2_score")
+        st.markdown(memo or "_Board memo 없음_")
+
+st.markdown("---")
 
 # ============================================================
 # 헤드라인 KPI — 4 variants
