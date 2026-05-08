@@ -1,0 +1,158 @@
+{
+  "regime": "late-cycle",
+  "confidence": 0.524,
+  "scores": {
+    "growth": 0.663,
+    "inflation": 0.693,
+    "monetary": -0.491,
+    "financial": -0.251
+  },
+  "recession_probability_12m": 0.2,
+  "readings": {
+    "kr_gdp_yoy": 3.63,
+    "kr_industrial_production_yoy": 1.2,
+    "kr_exports_yoy": 49.19,
+    "kr_unemployment": 2.7,
+    "kr_cpi_yoy": 2.57,
+    "kr_core_cpi_yoy": 2.2,
+    "kr_brent_oil": 118.26,
+    "kr_usd_krw": 1450.8,
+    "kr_base_rate": 2.5,
+    "kr_ktb_10y": 3.888,
+    "kr_ktb_3y": 3.546,
+    "kr_curve_3y_10y": 0.342,
+    "kr_ktb_10y_change_20d": 0.228,
+    "kr_ktb_3y_change_20d": 0.208,
+    "kr_curve_3y_10y_change_20d": 0.02,
+    "kr_corp_aa_spread_bp": 65.0,
+    "us_fed_funds": 3.64,
+    "us_vix": 17.39
+  },
+  "curve_signal": {
+    "regime": "bear-parallel",
+    "shape": "normal",
+    "move": "bear",
+    "twist": "parallel",
+    "slope": 0.342,
+    "slope_bp": 34.2,
+    "avg_rate_change_20d": 0.218,
+    "avg_rate_change_20d_bp": 21.8,
+    "curve_change_20d": 0.02,
+    "curve_change_20d_bp": 2.0,
+    "notes": "KTB 3Y-10Y +34bp, 20d d3Y +21bp, d10Y +23bp, curve d +2bp -> bear-parallel (normal)."
+  },
+  "provenance": {
+    "kr_gdp_yoy": "ECOS 200Y106/1400 @ 2026-01-01",
+    "kr_industrial_production_yoy": "ECOS 901Y033/A00 @ 2026-03-01",
+    "kr_exports_yoy": "ECOS 901Y118/T002 @ 2026-03-01",
+    "kr_unemployment": "ECOS 901Y027/I61BC @ 2026-03-01",
+    "kr_cpi_yoy": "ECOS 901Y009/0 @ 2026-04-01 (YoY computed)",
+    "kr_usd_krw": "ECOS 731Y001/0000001 @ 2026-05-08",
+    "kr_base_rate": "ECOS 722Y001/0101000 @ 2026-04-01",
+    "kr_ktb_10y": "ECOS 817Y002/010210000 @ 2026-05-07",
+    "kr_ktb_3y": "ECOS 817Y002/010200000 @ 2026-05-07",
+    "kr_curve_3y_10y": "derived: KTB 10Y - KTB 3Y",
+    "kr_ktb_10y_change_20d": "derived: KTB 10Y 20-business-day change",
+    "kr_ktb_3y_change_20d": "derived: KTB 3Y 20-business-day change",
+    "kr_curve_3y_10y_change_20d": "derived: (KTB 10Y - KTB 3Y) 20-business-day change",
+    "kr_corp_aa_spread_bp": "derived: (Corp AA- 3Y - KTB 3Y) \u00d7 100",
+    "us_fed_funds": "FRED DFF @ 2026-05-06",
+    "us_vix": "FRED VIXCLS @ 2026-05-06",
+    "kr_brent_oil": "FRED DCOILBRENTEU @ 2026-05-01"
+  },
+  "notes": "\uc131\uc7a5 GDP +3.6%, \uc218\ucd9c +49.2%, \uc2e4\uc5c5 2.7%. \uc778\ud50c\ub808 CPI +2.6%, \uc720\uac00 $118, USD/KRW 1451. BOK 2.50%, KTB10Y 3.89%, AA-spread 65bp, VIX 17.4.",
+  "regimes": {
+    "kr": {
+      "regime": "late-cycle",
+      "confidence": 0.524,
+      "scores": {
+        "growth": 0.663,
+        "inflation": 0.693,
+        "monetary": -0.491,
+        "financial": -0.251
+      },
+      "recession_probability_12m": 0.2,
+      "curve_signal": {
+        "regime": "bear-parallel",
+        "shape": "normal",
+        "move": "bear",
+        "twist": "parallel",
+        "slope": 0.342,
+        "slope_bp": 34.2,
+        "avg_rate_change_20d": 0.218,
+        "avg_rate_change_20d_bp": 21.8,
+        "curve_change_20d": 0.02,
+        "curve_change_20d_bp": 2.0,
+        "notes": "KTB 3Y-10Y +34bp, 20d d3Y +21bp, d10Y +23bp, curve d +2bp -> bear-parallel (normal)."
+      },
+      "notes": "\uc131\uc7a5 GDP +3.6%, \uc218\ucd9c +49.2%, \uc2e4\uc5c5 2.7%. \uc778\ud50c\ub808 CPI +2.6%, \uc720\uac00 $118, USD/KRW 1451. BOK 2.50%, KTB10Y 3.89%, AA-spread 65bp, VIX 17.4."
+    },
+    "us": {
+      "regime": "late-cycle",
+      "confidence": 0.401,
+      "scores": {
+        "growth": 0.006,
+        "inflation": 0.82,
+        "monetary": -0.593,
+        "financial": 0.186
+      },
+      "recession_probability_12m": 0.15,
+      "curve_signal": {
+        "regime": "normal",
+        "shape": "normal",
+        "slope_bp": 49.0,
+        "notes": "UST 2s10s +49bp -> normal (normal)."
+      },
+      "notes": "GDP +2.7%, \uc2e4\uc5c5 4.3%. CPI +3.3%. Fed 3.64%, UST10Y 4.36%, 2s10s +49bp. INDPRO YoY +0.7%, HY OAS 275bp."
+    },
+    "global": {
+      "regime": "late-cycle",
+      "confidence": 0.495,
+      "scores": {
+        "growth": 0.334,
+        "inflation": 1.0,
+        "monetary": -0.542,
+        "financial": -0.105
+      },
+      "notes": "DXY 118.4, VIX 17.4, Brent $118, HY OAS 275bp, 2s10s +49bp."
+    }
+  },
+  "us_readings": {
+    "us_gdp_yoy": 2.6597223313364227,
+    "us_unemployment": 4.3,
+    "us_cpi_yoy": 3.3202055812236786,
+    "us_fed_funds": 3.64,
+    "us_ust_10y": 4.36,
+    "us_curve_2s10s": 0.49,
+    "us_indpro_yoy": 0.7416835246099485,
+    "us_hy_oas_bp": 275.0,
+    "us_vix": 18.0,
+    "us_sp500_pe_trailing": 22.0,
+    "global_dxy": 118.3926,
+    "global_brent_oil": 118.26,
+    "global_vix": 17.39
+  },
+  "us_provenance": {
+    "us_gdp_yoy": "FRED:GDPC1@2026-01-01",
+    "us_unemployment": "FRED:UNRATE@2026-03-01",
+    "us_cpi_yoy": "FRED:CPIAUCSL@2026-03-01",
+    "us_fed_funds": "FRED:DFF@2026-05-06",
+    "us_ust_10y": "FRED:DGS10@2026-05-06",
+    "us_curve_2s10s": "FRED:T10Y2Y@2026-05-07",
+    "us_indpro_yoy": "FRED:INDPRO@2026-03-01",
+    "us_hy_oas_bp": "FRED:BAMLH0A0HYM2@2026-05-06",
+    "global_dxy": "FRED:DTWEXBGS@2026-05-01",
+    "global_brent_oil": "FRED:DCOILBRENTEU@2026-05-01",
+    "global_vix": "FRED:VIXCLS@2026-05-06"
+  },
+  "global_readings": {
+    "global_dxy": 118.3926,
+    "global_brent_oil": 118.26,
+    "global_vix": 17.39,
+    "global_hy_oas_bp": 275.0,
+    "global_curve_2s10s": 0.49,
+    "global_growth_blend": 0.33447753141321335,
+    "global_inflation_blend": 0.7563527906118392,
+    "global_monetary_blend": -0.5421666666666667
+  }
+}
