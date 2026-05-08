@@ -40,7 +40,8 @@ BT_V2_SCORE          = OUTPUTS_DIR / "v2_score"             # bundled
 BT_V2_PHASE2         = OUTPUTS_DIR / "v2_phase2"            # bundled
 BT_V2_SCORE_GLOBALBM   = OUTPUTS_DIR / "v2_score_globalbm"    # v0.4.1 global BM
 BT_V2_SCORE_SENS       = OUTPUTS_DIR / "v2_score_sens"        # v0.4.2 macro_sensitivity
-BT_V2_SCORE_AGGRESSIVE = OUTPUTS_DIR / "v2_score_aggressive"  # v0.5 aggressive IPS
+BT_V2_SCORE_AGGRESSIVE = OUTPUTS_DIR / "v2_score_aggressive"      # v0.5 aggressive IPS
+BT_V2_SCORE_AGG_PCR    = OUTPUTS_DIR / "v2_score_aggressive_pcr"  # v0.5.1 + PC re-weight
 
 # Variant → directory mapping (used by all loaders below)
 VARIANT_DIRS = {
@@ -53,6 +54,7 @@ VARIANT_DIRS = {
     "v2_score_globalbm": BT_V2_SCORE_GLOBALBM,
     "v2_score_sens":     BT_V2_SCORE_SENS,
     "v2_score_aggressive": BT_V2_SCORE_AGGRESSIVE,
+    "v2_score_aggressive_pcr": BT_V2_SCORE_AGG_PCR,
 }
 VARIANT_LABELS = {
     "baseline":   "v1 Baseline (stub, single regime, KR 60/40 BM)",
@@ -63,7 +65,8 @@ VARIANT_LABELS = {
     "v2_phase2":   "v2 Phase 2 LLM (KR/US/Global + Claude)",
     "v2_score_globalbm": "v2 Score + Global BM (KR30+US30+Bond40)",
     "v2_score_sens":     "v2 Score + macro_sensitivity (자산별 sens 곱)",
-    "v2_score_aggressive": "v2 Score + Aggressive IPS (risky 40% floor) ★",
+    "v2_score_aggressive": "v2 Score + Aggressive IPS (risky 40% floor)",
+    "v2_score_aggressive_pcr": "v2 Score + Aggr IPS + PC re-weight (return-seek tilt) ★",
 }
 
 # ----- Categories -----
