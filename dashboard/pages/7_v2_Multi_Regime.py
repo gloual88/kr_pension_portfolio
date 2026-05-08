@@ -15,7 +15,6 @@ from pathlib import Path
 
 import pandas as pd
 import plotly.graph_objects as go
-import plotly.express as px
 import streamlit as st
 
 from utils import (
@@ -413,6 +412,22 @@ if m_kr_bm and m_global_bm:
     )
 else:
     st.warning("v0.4.1 BM 비교 데이터 미완. 백테스트 재실행 필요.")
+
+st.markdown("---")
+
+# ============================================================
+# v1 → v0.5.1 진화 차트 (영상 제작자용 데모 자료)
+# ============================================================
+st.subheader("v1 → v0.5.1 전체 진화")
+chart_path = Path(__file__).resolve().parents[1] / "static" / "progression_chart.png"
+if chart_path.exists():
+    st.image(str(chart_path), use_container_width=True)
+    st.caption(
+        "6 버전 walk-forward 비교 (2018-Q1 ~ 2026-Q2). "
+        "Sharpe 1.117 → 1.190, Total Return 61% → 87% (+25.8pp). "
+        "MDD는 -13.86% → -15.54%로 거의 그대로 (강세장 참여 확대의 자연스러운 trade-off). "
+        "글로벌 60/40 BM Sharpe 1.310 (점선)과 격차 0.158 → 0.120으로 24% 축소."
+    )
 
 st.markdown("---")
 
