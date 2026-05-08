@@ -30,16 +30,31 @@ MACRO_FILE = OUTPUTS_DIR / "macro" / "macro-view.json"
 ASSETS_DIR = OUTPUTS_DIR / "asset_classes"
 IPS_FILE = PROJECT_DIR / "configs" / "ips.yaml"
 
+# v2 hybrid (KR/US/Global multi-regime) — bundled into v1 outputs/ for Cloud deploy
+# Source data lives in kr_pension_hybrid/outputs/v2_*_wf/, copied via:
+#   cp metrics.json nav_*.csv weights_quarterly.csv regime_history.csv → outputs/v2_*/
+# Re-copy after re-running v2 walk-forward.
+HYBRID_OUTPUTS_DIR = PROJECT_DIR.parent / "kr_pension_hybrid" / "outputs"   # source of truth
+BT_V2_BASELINE = OUTPUTS_DIR / "v2_baseline"     # bundled copy
+BT_V2_SCORE    = OUTPUTS_DIR / "v2_score"        # bundled copy
+BT_V2_PHASE2   = OUTPUTS_DIR / "v2_phase2"       # bundled copy
+
 # Variant → directory mapping (used by all loaders below)
 VARIANT_DIRS = {
     "baseline":   BT_BASELINE,
     "llm":        BT_LLM,
     "llm_phase2": BT_LLM_PHASE2,
+    "v2_baseline": BT_V2_BASELINE,
+    "v2_score":    BT_V2_SCORE,
+    "v2_phase2":   BT_V2_PHASE2,
 }
 VARIANT_LABELS = {
-    "baseline":   "Baseline (stub LLM)",
-    "llm":        "Phase 1 (Claude CIO)",
-    "llm_phase2": "Phase 2 (Claude CIO + CMA)",
+    "baseline":   "v1 Baseline (stub, single regime)",
+    "llm":        "v1 Phase 1 (Claude CIO)",
+    "llm_phase2": "v1 Phase 2 (Claude CIO + CMA)",
+    "v2_baseline": "v2 Baseline (KR/US/Global, label)",
+    "v2_score":    "v2 Score Injection (KR/US/Global, score) ★",
+    "v2_phase2":   "v2 Phase 2 LLM (KR/US/Global + Claude)",
 }
 
 # ----- Categories -----
@@ -183,14 +198,12 @@ def render_sidebar():
     check_password()
 
     st.sidebar.markdown("### KR 연금 자율주행 SAA")
-    st.sidebar.caption("Source: kr_pension_portfolio/outputs/")
+    st.sidebar.caption("Source: kr_pension_portfolio + kr_pension_hybrid")
     nav_dates = []
-    nav_b = load_nav("baseline")
-    if nav_b is not None and not nav_b.empty:
-        nav_dates.append(("baseline", nav_b.index.min(), nav_b.index.max()))
-    nav_l = load_nav("llm")
-    if nav_l is not None and not nav_l.empty:
-        nav_dates.append(("llm", nav_l.index.min(), nav_l.index.max()))
+    for v in ["baseline", "llm", "v2_baseline", "v2_score", "v2_phase2"]:
+        n = load_nav(v)
+        if n is not None and not n.empty:
+            nav_dates.append((v, n.index.min(), n.index.max()))
     if nav_dates:
         st.sidebar.markdown("**백테스트 기간**")
         for v, lo, hi in nav_dates:

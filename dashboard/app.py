@@ -33,7 +33,19 @@ st.set_page_config(
 render_sidebar()
 
 st.title("KR 연금 자율주행 SAA — 대시보드")
-st.caption("Andrew Ang 2026 reverse 구현 + ECOS/FRED 14/15 매크로 + DC/IRP 70% 한도 + Phase 1 LLM 옵션")
+st.caption("Andrew Ang 2026 reverse 구현 + ECOS/FRED 매크로 + DC/IRP 70% 한도 + v2 Multi-Regime (KR/US/Global) + Score Injection")
+
+# v2 production highlight
+v2_score_metrics = load_metrics("v2_score")
+if v2_score_metrics and "agentic" in v2_score_metrics:
+    a = v2_score_metrics["agentic"]
+    st.success(
+        f"🥇 **v2 Score Injection 적용 중** — Walk-Forward Sharpe **{a['sharpe']:.3f}** "
+        f"(v1 baseline 1.117 대비 +{(a['sharpe']-1.117)*100/1.117:.1f}%) | "
+        f"Annual Return {a['ann_return']*100:.2f}% / MDD {a['max_drawdown']*100:.2f}% / "
+        f"Total {a['total_return']*100:.1f}%. "
+        f"상세는 좌측 메뉴의 **v2 Multi-Regime** 페이지 참고."
+    )
 
 # ============================================================
 # 데이터 로드
@@ -197,5 +209,6 @@ guide = """
 - **Baseline vs LLM**: stub 매핑 vs Claude (Phase 1) 비교 (LLM 백테스트 후)
 - **현재 포트폴리오**: 기본 실행 결과의 최종 비중, 카테고리 합계, Board Memo
 - **월간 연금 포트폴리오**: 10-ETF 축약 유니버스 + 21개 PC 모델 비중 + CIO 최종 추천
+- **v2 Multi-Regime ★**: KR/US/Global 3-regime + score injection (production 추천)
 """
 st.markdown(guide)
