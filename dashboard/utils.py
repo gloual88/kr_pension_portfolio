@@ -35,9 +35,10 @@ IPS_FILE = PROJECT_DIR / "configs" / "ips.yaml"
 #   cp metrics.json nav_*.csv weights_quarterly.csv regime_history.csv → outputs/v2_*/
 # Re-copy after re-running v2 walk-forward.
 HYBRID_OUTPUTS_DIR = PROJECT_DIR.parent / "kr_pension_hybrid" / "outputs"   # source of truth
-BT_V2_BASELINE = OUTPUTS_DIR / "v2_baseline"     # bundled copy
-BT_V2_SCORE    = OUTPUTS_DIR / "v2_score"        # bundled copy
-BT_V2_PHASE2   = OUTPUTS_DIR / "v2_phase2"       # bundled copy
+BT_V2_BASELINE       = OUTPUTS_DIR / "v2_baseline"          # bundled
+BT_V2_SCORE          = OUTPUTS_DIR / "v2_score"             # bundled
+BT_V2_PHASE2         = OUTPUTS_DIR / "v2_phase2"            # bundled
+BT_V2_SCORE_GLOBALBM = OUTPUTS_DIR / "v2_score_globalbm"    # v0.4.1 global BM
 
 # Variant → directory mapping (used by all loaders below)
 VARIANT_DIRS = {
@@ -47,14 +48,16 @@ VARIANT_DIRS = {
     "v2_baseline": BT_V2_BASELINE,
     "v2_score":    BT_V2_SCORE,
     "v2_phase2":   BT_V2_PHASE2,
+    "v2_score_globalbm": BT_V2_SCORE_GLOBALBM,
 }
 VARIANT_LABELS = {
-    "baseline":   "v1 Baseline (stub, single regime)",
+    "baseline":   "v1 Baseline (stub, single regime, KR 60/40 BM)",
     "llm":        "v1 Phase 1 (Claude CIO)",
     "llm_phase2": "v1 Phase 2 (Claude CIO + CMA)",
-    "v2_baseline": "v2 Baseline (KR/US/Global, label)",
-    "v2_score":    "v2 Score Injection (KR/US/Global, score) ★",
+    "v2_baseline": "v2 Baseline (KR/US/Global, label, KR 60/40 BM)",
+    "v2_score":    "v2 Score Injection (KR/US/Global, score, KR 60/40 BM)",
     "v2_phase2":   "v2 Phase 2 LLM (KR/US/Global + Claude)",
+    "v2_score_globalbm": "v2 Score + Global BM (KR30+US30+Bond40) ★",
 }
 
 # ----- Categories -----

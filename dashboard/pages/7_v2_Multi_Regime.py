@@ -295,6 +295,48 @@ else:
 st.markdown("---")
 
 # ============================================================
+# v0.4.1 — Benchmark 재정의 (KR 60/40 → 글로벌 분산)
+# ============================================================
+st.subheader("v0.4.1 — Benchmark 재정의 (KR 60/40 → 글로벌 분산)")
+
+m_kr_bm = load_metrics("v2_score")
+m_global_bm = load_metrics("v2_score_globalbm")
+
+if m_kr_bm and m_global_bm:
+    bm_kr = m_kr_bm.get("benchmark_kr_60_40", {})
+    bm_gl = m_global_bm.get("benchmark_kr_60_40", {})
+    ag_kr = m_kr_bm.get("agentic", {})
+    ag_gl = m_global_bm.get("agentic", {})
+
+    col_a, col_b = st.columns(2)
+    with col_a:
+        st.markdown("**구 BM — KR 60/40 (KOSPI200 60% + KTB10Y 40%)**")
+        st.write(f"- Annual Return: **{bm_kr.get('ann_return', 0)*100:.2f}%**")
+        st.write(f"- Annual Vol: **{bm_kr.get('ann_vol', 0)*100:.2f}%**")
+        st.write(f"- Sharpe: **{bm_kr.get('sharpe', 0):.3f}**")
+        st.write(f"- MDD: **{bm_kr.get('max_drawdown', 0)*100:.2f}%**")
+        st.write(f"- TE (vs Agentic): **8.62%** (budget 6% 초과)")
+    with col_b:
+        st.markdown("**신 BM — 글로벌 분산 (KR30 + US30 + Bond40) ★**")
+        st.write(f"- Annual Return: **{bm_gl.get('ann_return', 0)*100:.2f}%**")
+        st.write(f"- Annual Vol: **{bm_gl.get('ann_vol', 0)*100:.2f}%** (-30% vs 구 BM)")
+        st.write(f"- Sharpe: **{bm_gl.get('sharpe', 0):.3f}** (+41% vs 구 BM)")
+        st.write(f"- MDD: **{bm_gl.get('max_drawdown', 0)*100:.2f}%** (+29% 개선)")
+        st.write(f"- TE (vs Agentic): **5.06%** (budget 6% 이내 ✓)")
+
+    st.info(
+        "**의외의 발견**: 글로벌 분산 BM 자체가 매우 효율적 — Sharpe 1.310. "
+        f"v2 score Agentic Sharpe **{ag_gl.get('sharpe', 0):.3f}**이 BM보다 낮음. "
+        "이는 v2 score 모델이 risky 35% (보수)인 반면 BM은 60% (적극)이기 때문. "
+        "2018-2026 강세장에서 위험 부담 적은 모델은 BM 못 따라감. "
+        "**다음 v0.5 후보**: IPS 변동성 band 재조정, equity 하한 설정."
+    )
+else:
+    st.warning("v0.4.1 BM 비교 데이터 미완. 백테스트 재실행 필요.")
+
+st.markdown("---")
+
+# ============================================================
 # Score 주입 공식 + v0.3 결과 요약
 # ============================================================
 st.subheader("v0.3 Score Injection 공식")

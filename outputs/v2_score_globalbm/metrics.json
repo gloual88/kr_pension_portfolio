@@ -1,0 +1,21 @@
+{
+  "agentic": {
+    "ann_return": 0.06267902137711512,
+    "ann_vol": 0.054407400647503816,
+    "sharpe": 1.1520311691271874,
+    "max_drawdown": -0.1368750881035593,
+    "total_return": 0.6396797644793184
+  },
+  "benchmark_kr_60_40": {
+    "ann_return": 0.12707905635871786,
+    "ann_vol": 0.09699745280215528,
+    "sharpe": 1.310127768178817,
+    "max_drawdown": -0.19097246630766862,
+    "total_return": 1.606868605799776
+  },
+  "n_rebalances": 34,
+  "total_turnover": 3.52157490359203,
+  "total_cost": 0.001760787451796015,
+  "avg_turnover_per_rebal": 0.10357573245858911,
+  "variant": "baseline"
+}
