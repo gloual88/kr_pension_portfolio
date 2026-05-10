@@ -42,7 +42,8 @@ outputs/backtest_kr/quarters/
 outputs/backtest_kr_llm/quarters/
 outputs/backtest_kr_llm_phase2/quarters/
 outputs/backtest_kr_lock70/quarters/
-outputs/backtest_kr_lock70_llm_phase2/
+outputs/backtest_kr_lock70_llm_phase2/quarters/
+outputs/backtest_kr_lock70_llm_phase2/quarter_runs.jsonl
 outputs_*/backtest_*/quarters/
 
 # 일회성 smoke test 산출물

@@ -463,19 +463,41 @@ def build():
     add_h2(doc, "Walk-forward Backtest (2018-01-02 ~ 2026-05-08, 34 분기 QS 리밸런싱)")
     add_table(
         doc,
-        headers=["지표", "AI 자율 (lock70)", "KR 60/40 BM", "차이"],
+        headers=["지표", "AI baseline ★", "AI Phase 2 LLM", "KR 60/40 BM"],
         rows=[
-            ["연환산 수익률", "11.15%", "12.82%", "-1.67%p"],
-            ["연환산 변동성", "9.33%", "13.79%", "-4.46%p (32% 낮음)"],
-            ["Sharpe Ratio", "1.195", "0.929", "+0.266 (29% 높음)"],
-            ["Max Drawdown", "-21.57%", "-26.73%", "+5.16%p (양호)"],
-            ["총 누적 수익률", "132.85%", "152.58%", "-19.7%p"],
-            ["거래 비용", "9 bp 누적", "—", "—"],
+            ["연환산 수익률", "11.15%", "11.15%", "12.82%"],
+            ["연환산 변동성", "9.33%", "9.26%", "13.79%"],
+            ["Sharpe Ratio", "1.195", "1.204", "0.929"],
+            ["Max Drawdown", "-21.57%", "-21.56%", "-26.73%"],
+            ["총 누적 수익률", "132.85%", "133.00%", "152.58%"],
+            ["거래 비용 (누적)", "9 bp", "10 bp", "—"],
+            ["분기당 평균 턴오버", "5.52%", "5.70%", "—"],
         ],
-        widths=[3.5, 4.5, 4.0, 4.0],
+        widths=[3.5, 4.0, 4.0, 4.0],
     )
 
+    add_callout(doc, "★ 영상에는 baseline 수치(Sharpe 1.195)를 사용하세요 — production 운영 기준이며, Phase 2 대비 turnover/비용이 낮습니다. Phase 2 결과는 'LLM Phase 2까지 검증한 데이터'라는 *기술 신뢰성* 메시지로만 활용 가능.", color=GOLD)
+
     add_callout(doc, "핵심 메시지: 'AI 자율은 BM 대비 변동성을 32% 낮추면서 Sharpe를 29% 높입니다.' 이 한 줄이 Result 막의 narration이어야 합니다.", color=GOLD)
+
+    # 비교 차트 임베드 (있으면)
+    chart_path = Path(__file__).resolve().parents[1] / "docs" / "lock70_nav_comparison.png"
+    if chart_path.exists():
+        p = doc.add_paragraph()
+        p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        run = p.add_run()
+        run.add_picture(str(chart_path), width=Cm(15.5))
+        cap = doc.add_paragraph()
+        cap.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        rc = cap.add_run("[ 그림: 3-line NAV 비교 — baseline / Phase 2 LLM / KR 60/40 BM ]")
+        set_kr_font(rc, 9, color=GRAY)
+
+    add_h2(doc, "LLM Phase 2의 가치 — Why baseline은 충분한가")
+    add_bullet(doc, "한국에서 LLM의 부가가치는 매우 작음 — Phase 1 검증 (2026-05-01) 동일 결론, lock70 + Phase 2 (2026-05-10) 재확인.")
+    add_bullet(doc, "lock70 IPS가 ensemble 자유도를 좁힘 — 위험자산 70% 고정 상태에서 LLM은 카테고리 *내부* 분배만 다르게 가능.")
+    add_bullet(doc, "Phase 2 ROI 낮음: 분기당 ~$0.4 cost로 Sharpe +0.7% 개선 (1.195 → 1.204), σ -7bp. 통계적으로 noise 수준.")
+    add_bullet(doc, "Production 운영에는 baseline 추천: 결정적, API cost 0, 결과 거의 동일.")
+    add_bullet(doc, "LLM의 진짜 가치는 의사결정이 아닌 *설명*에 있음 — board memo, regime narrative, Q&A.")
 
     add_h2(doc, "현재 시점 모델 포트폴리오 (2026-05-10 산출, 18-ETF 풀 유니버스)")
     add_table(
