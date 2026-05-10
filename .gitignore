@@ -41,4 +41,10 @@ streamlit.out.log
 outputs/backtest_kr/quarters/
 outputs/backtest_kr_llm/quarters/
 outputs/backtest_kr_llm_phase2/quarters/
+outputs/backtest_kr_lock70/quarters/
+outputs/backtest_kr_lock70_llm_phase2/
 outputs_*/backtest_*/quarters/
+
+# 일회성 smoke test 산출물
+outputs_aplusb_test/
+outputs_risky70_test/

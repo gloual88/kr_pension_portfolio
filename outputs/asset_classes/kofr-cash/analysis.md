@@ -27,14 +27,14 @@
 
 - Mean: 3.16%
 - Volatility: 0.15%
-- Sharpe: 21.48
+- Sharpe: 21.47
 - Max drawdown: -0.0%
 
 ## Signals
 
-- macro: -0.55
+- macro: -0.59
 - momentum: +0.07
 - trend: +0.04
 - mean_reversion: -0.82
-- sentiment: +0.28
-- composite: -0.20
+- sentiment: -0.39
+- composite: -0.34

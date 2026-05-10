@@ -1,58 +1,58 @@
 # Board Memo — Strategic Asset Allocation
 
-_Date: 2026-05-06  |  Pipeline: agentic SAA (offline run)_
+_Date: 2026-05-10  |  Pipeline: agentic SAA (offline run)_
 
 ## Recommendation
 
-The CIO recommends an allocation produced by the **inverse_te** ensemble across 21 portfolio construction agents. Selection rationale: Regime 'late-cycle' favors 'inverse_te'. Diagnostics: {'simple_average': 0.662, 'inverse_te': 0.664, 'backtest_sharpe': 0.662, 'meta_optimization': 0.2, 'regime_conditional': 0.662, 'composite_score': 0.658, 'trimmed_mean': 0.657}.
+The CIO recommends an allocation produced by the **inverse_te** ensemble across 21 portfolio construction agents. Selection rationale: Regime 'late-cycle' favors 'inverse_te'. Diagnostics: {'simple_average': 0.77, 'inverse_te': 0.769, 'backtest_sharpe': 0.77, 'meta_optimization': 0.2, 'regime_conditional': 0.77, 'composite_score': 0.769, 'trimmed_mean': 0.77}.
 
-- Expected return (3y, nominal): **4.93%**
-- Expected volatility: **4.71%**
-- Tracking error vs 60/40: **8.80%** (budget 6%)
-- Backtest Sharpe: **2.29** (60/40 benchmark: 1.71)
-- Backtest max drawdown: **-4.3%** (60/40 benchmark: -13.5%)
-- Effective N (Meucci 2009): **12.9**
+- Expected return (3y, nominal): **5.43%**
+- Expected volatility: **9.07%**
+- Tracking error vs 60/40: **8.65%** (budget 6%)
+- Backtest Sharpe: **2.26** (60/40 benchmark: 1.81)
+- Backtest max drawdown: **-9.1%** (60/40 benchmark: -13.5%)
+- Effective N (Meucci 2009): **16.0**
 
 ## Macro Rationale
 
-The macro-agent classifies the environment as **late-cycle** with confidence 0.51 and a 12m recession probability of 20%. Notes: 성장 GDP +3.6%, 수출 +49.2%, 실업 2.7%. 인플레 CPI +2.2%, 유가 $114, USD/KRW 1470. BOK 2.50%, KTB10Y 3.93%, AA-spread 65bp, VIX 18.3.
+The macro-agent classifies the environment as **late-cycle** with confidence 0.52 and a 12m recession probability of 20%. Notes: 성장 GDP +3.6%, 수출 +49.2%, 실업 2.7%. 인플레 CPI +2.6%, 유가 $118, USD/KRW 1451. BOK 2.50%, KTB10Y 3.91%, AA-spread 65bp, VIX 17.1.
 
 ## Largest Positions
 
 | Asset class | Weight |
 |-------------|-------:|
-| kofr-cash | 13.80% |
-| kr-credit | 13.14% |
-| money-market | 11.27% |
-| kr-short-bonds | 7.15% |
-| kr-treasuries-10y | 6.49% |
+| gold | 7.75% |
+| us-dividend | 7.40% |
+| kr-credit | 7.32% |
+| commodities | 7.25% |
+| kr-dividend | 6.92% |
 
 ## Top Contributing PC Agents
 
 | PC Agent | Ensemble weight |
 |----------|----------------:|
-| inverse-volatility | 9.81% |
-| volatility-targeting | 9.81% |
-| min-correlation | 8.93% |
-| max-diversification | 5.96% |
-| risk-parity | 5.92% |
-| mean-downside | 5.19% |
-| robust-mv | 4.69% |
-| resampled-ef | 4.62% |
+| inverse-volatility | 9.47% |
+| volatility-targeting | 9.47% |
+| min-correlation | 8.54% |
+| max-diversification | 7.61% |
+| inverse-variance | 6.68% |
+| hrp | 6.51% |
+| equal-weight | 5.83% |
+| cvar-min | 5.83% |
 
 ## Yield-Curve FI Reallocation
 
 - Curve regime: **bear-parallel**
-- FI category total preserved at **40.27%** (equity / cash / real-asset weights unchanged from optimizer output)
+- FI category total preserved at **25.56%** (equity / cash / real-asset weights unchanged from optimizer output)
 
 | FI ETF | Pre-tilt | Post-tilt | Δ (pp) |
 |--------|---------:|----------:|-------:|
-| kr-treasuries-10y | 7.75% | 6.49% | -1.26 |
-| us-treasuries-10y | 7.26% | 6.08% | -1.18 |
-| us-treasuries-30y | 3.75% | 3.15% | -0.61 |
-| us-ig-credit | 4.01% | 4.25% | +0.25 |
-| kr-credit | 12.38% | 13.14% | +0.76 |
-| kr-short-bonds | 5.12% | 7.15% | +2.03 |
+| kr-treasuries-10y | 4.73% | 3.95% | -0.79 |
+| us-treasuries-10y | 4.17% | 3.48% | -0.69 |
+| us-treasuries-30y | 2.85% | 2.38% | -0.47 |
+| us-ig-credit | 3.35% | 3.54% | +0.19 |
+| kr-credit | 6.93% | 7.32% | +0.39 |
+| kr-short-bonds | 3.52% | 4.89% | +1.37 |
 
 ## Key Risks to Monitor
 
@@ -68,8 +68,8 @@ The macro-agent classifies the environment as **late-cycle** with confidence 0.5
 
 ## IPS Compliance
 
-IPS flags: vol=4.71% outside [6.00%,12.00%]; tracking_error=8.80% exceeds budget 6.00%
+IPS flags: tracking_error=8.65% exceeds budget 6.00%
 
 ## Dissent / Adversarial View
 
-The strategy review's lowest-ranked methods were: market-cap-weight, max-sharpe, adversarial-diversifier. The Adversarial Diversifier in particular receives nonzero weight in the ensemble despite peer rejection because boosting-style ensemble diversification benefits from orthogonal forecasters (Schapire 1990).
+The strategy review's lowest-ranked methods were: resampled-ef, max-sharpe, adversarial-diversifier. The Adversarial Diversifier in particular receives nonzero weight in the ensemble despite peer rejection because boosting-style ensemble diversification benefits from orthogonal forecasters (Schapire 1990).

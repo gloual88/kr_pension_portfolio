@@ -145,8 +145,8 @@ c1, c2, c3, c4 = st.columns(4)
 with c1:
     st.metric("위험자산 비중",
               f"{risk_w*100:.1f}%",
-              f"한도 70% — 여유 {(0.70-risk_w)*100:.1f}%p",
-              delta_color="normal" if risk_w <= 0.70 else "inverse")
+              "CIO mandate: lock 70%",
+              delta_color="off")
 with c2:
     st.metric("기대 수익률 (E[r])",
               f"{cio_m.get('expected_return', 0)*100:.2f}%",
@@ -189,9 +189,9 @@ with c2:
     df_w["비중"] = df_w["비중"].apply(lambda x: f"{x*100:.2f}%")
     st.dataframe(df_w, hide_index=True, use_container_width=True, height=380)
 
-st.caption(f"DC/IRP 한도: Equity {cat_totals['Equity']*100:.1f}% + "
+st.caption(f"DC/IRP lock70: Equity {cat_totals['Equity']*100:.1f}% + "
            f"RealAssets {cat_totals['RealAssets']*100:.1f}% = "
-           f"**{risk_w*100:.1f}%** ≤ 70%")
+           f"**{risk_w*100:.1f}%** (CIO mandate target 70%)")
 
 # ------------------------------------------------------------
 # 1b. FI 수익률곡선 재배분 (FI 합계 보존)
@@ -306,8 +306,8 @@ else:
     )
     st.plotly_chart(heat, use_container_width=True)
 
-    st.caption("색이 진할수록 비중이 큰 종목. 동일 IPS 제약(Equity 20-55%, FI 20-70%, "
-               "RealAsset ≤15%, Cash ≤30%, position ≤25%) 하에서 21개 모델이 산출한 비중.")
+    st.caption("색이 진할수록 비중이 큰 종목. lock70 IPS 제약(Equity 55% lock, RealAssets 15% lock, "
+               "FI 25-30%, Cash ≤5%, position ≤25%) 하에서 21개 모델이 카테고리 *내부* 분배만 결정.")
 
 st.markdown("---")
 

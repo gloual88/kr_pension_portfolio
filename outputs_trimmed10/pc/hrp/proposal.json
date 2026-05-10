@@ -4,42 +4,42 @@
   "category": "C_RiskStructured",
   "method": "hrp",
   "weights": {
-    "kr-large-cap": 0.11070421344190667,
-    "kr-dividend": 0.11069635229482949,
-    "us-large-cap": 0.11084816737839012,
-    "us-tech": 0.1103973263075695,
-    "kr-treasuries-10y": 0.09284611121653409,
-    "us-treasuries-10y": 0.0830637430468616,
-    "us-ig-credit": 0.08040872824367004,
-    "gold": 0.0010353490687222114,
-    "kofr-cash": 0.18597013097414414,
-    "money-market": 0.11402987802737215
+    "kr-large-cap": 0.13751504750972668,
+    "kr-dividend": 0.13751428068822688,
+    "us-large-cap": 0.13757630486517353,
+    "us-tech": 0.13739436358232196,
+    "kr-treasuries-10y": 0.08632332040109615,
+    "us-treasuries-10y": 0.08237321461138569,
+    "us-ig-credit": 0.0813034619912326,
+    "gold": 0.14999999656775595,
+    "kofr-cash": 0.05000000978308057,
+    "money-market": 0.0
   },
-  "expected_return": 0.05210194449959149,
-  "expected_vol": 0.0658819545229646,
+  "expected_return": 0.05704541886284726,
+  "expected_vol": 0.08886677390394868,
   "metrics": {
-    "ex_ante_vol": 0.0658819545229646,
-    "ex_ante_var95": -0.05627387069068526,
-    "backtest_sharpe": 2.3236727070813625,
-    "backtest_vol": 0.07743258965089002,
-    "backtest_maxdd": -0.06446124741496306,
-    "hhi": 0.11855831515210404,
-    "effective_n": 8.434667772707911,
-    "top3": 0.41084817637990645,
+    "ex_ante_vol": 0.08886677390394868,
+    "ex_ante_var95": -0.08914042420914833,
+    "backtest_sharpe": 2.443029037866158,
+    "backtest_vol": 0.10885586930558012,
+    "backtest_maxdd": -0.07861574589711162,
+    "hhi": 0.12147233150022774,
+    "effective_n": 8.23232737570469,
+    "top3": 0.4250913489426562,
     "ips_compliance": 0.9,
     "ips_flags": [
-      "tracking_error=8.07% exceeds budget 6.00%"
+      "tracking_error=8.15% exceeds budget 6.00%"
     ],
-    "tracking_error": 0.0807164953576795,
+    "tracking_error": 0.08145790219256192,
     "factor_tilts": {
-      "growth": 0.34714493340297015,
-      "rates": -0.2893036297021379,
-      "inflation": -0.6961200078821494,
+      "growth": 0.46260692362419986,
+      "rates": -0.762485699745612,
+      "inflation": -0.3436672166753019,
       "dollar": 0.0
     },
-    "diversification": 0.3184266862069163,
+    "diversification": 0.3611230454033424,
     "regime_fit": 0.8,
     "estimation_robustness": 0.8,
-    "cma_utilization": -0.036908067134244674
+    "cma_utilization": 0.14823063011842744
   }
 }

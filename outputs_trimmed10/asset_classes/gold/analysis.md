@@ -3,7 +3,8 @@
 **Slug:** `gold`  
 **Category:** RealAssets  
 **ETF:** 132030  
-**Regime context:** late-cycle (P(rec) 20%)
+**Regime context:** late-cycle (P(rec) 20%)  
+**Yield-curve context:** bear-parallel
 
 ## CMA Decision
 
@@ -24,16 +25,16 @@
 
 ## Historical Statistics (annualized)
 
-- Mean: 11.10%
+- Mean: 11.23%
 - Volatility: 18.39%
-- Sharpe: 0.60
+- Sharpe: 0.61
 - Max drawdown: -44.9%
 
 ## Signals
 
-- macro: +0.55
-- momentum: +0.79
-- trend: +0.55
-- mean_reversion: -0.48
-- sentiment: -0.39
-- composite: +0.20
+- macro: +0.59
+- momentum: +0.82
+- trend: +0.51
+- mean_reversion: -0.57
+- sentiment: -0.22
+- composite: +0.23

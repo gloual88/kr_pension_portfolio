@@ -3,7 +3,8 @@
 **Slug:** `kofr-cash`  
 **Category:** Cash  
 **ETF:** 423160  
-**Regime context:** late-cycle (P(rec) 20%)
+**Regime context:** late-cycle (P(rec) 20%)  
+**Yield-curve context:** bear-parallel
 
 ## CMA Decision
 
@@ -26,14 +27,14 @@
 
 - Mean: 3.22%
 - Volatility: 0.15%
-- Sharpe: 22.10
+- Sharpe: 22.08
 - Max drawdown: -0.0%
 
 ## Signals
 
-- macro: -0.55
+- macro: -0.59
 - momentum: +0.07
 - trend: +0.04
 - mean_reversion: -0.82
-- sentiment: +0.07
-- composite: -0.24
+- sentiment: +0.16
+- composite: -0.23

@@ -1,22 +1,22 @@
 ﻿method,name,category,kr-large-cap,kr-dividend,us-large-cap,us-tech,kr-treasuries-10y,us-treasuries-10y,us-ig-credit,gold,kofr-cash,money-market
-equal-weight,Equal Weight (1/N),A_Heuristic,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0
-market-cap-weight,Market-Cap Weight,A_Heuristic,9.04,9.04,25.0,9.04,9.04,9.04,9.04,2.71,9.04,9.04
-inverse-volatility,Inverse Volatility,A_Heuristic,8.7,8.68,8.49,7.38,14.28,10.07,8.18,4.22,15.0,15.0
-inverse-variance,Inverse Variance,A_Heuristic,11.08,11.07,11.06,10.98,9.37,8.31,7.95,0.18,18.67,11.33
-volatility-targeting,Volatility Targeting,A_Heuristic,8.7,8.68,8.49,7.38,14.28,10.07,8.18,4.22,15.0,15.0
-max-sharpe,Maximum Sharpe Ratio,B_ReturnOptimized,5.17,6.96,6.78,4.02,25.0,16.06,4.24,1.77,15.0,15.0
-black-litterman,Black-Litterman,B_ReturnOptimized,10.65,10.29,10.14,9.27,10.81,11.56,11.97,9.67,7.31,8.33
-robust-mv,Robust Mean-Variance,B_ReturnOptimized,6.16,6.39,7.13,2.51,13.82,13.96,11.26,8.77,15.24,14.76
-resampled-ef,Resampled Efficient Frontier,B_ReturnOptimized,5.5,6.56,6.67,4.24,24.48,15.91,4.38,2.25,15.0,15.0
-mean-downside,Mean-Downside Risk (Sortino),B_ReturnOptimized,4.56,7.47,10.93,8.78,11.6,11.36,9.51,10.09,12.85,12.85
-gmv,Global Minimum Variance,C_RiskStructured,4.69,7.22,7.07,3.83,25.0,17.21,4.2,0.78,15.0,15.0
-risk-parity,Risk Parity,C_RiskStructured,8.05,8.05,8.0,7.01,19.66,0.0,13.66,5.56,15.0,15.0
-hrp,Hierarchical Risk Parity,C_RiskStructured,11.07,11.07,11.08,11.04,9.28,8.31,8.04,0.1,18.6,11.4
-max-diversification,Maximum Diversification,C_RiskStructured,5.11,7.25,6.4,5.03,15.55,18.2,7.45,5.02,15.0,15.0
-min-correlation,Minimum Correlation,C_RiskStructured,7.74,8.34,9.45,8.4,10.12,14.27,8.11,3.58,15.0,15.0
-cvar-min,CVaR Minimization,D_NonTraditional,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0
-max-dd-constrained,Max Drawdown Constrained,D_NonTraditional,18.49,0.51,0.51,0.51,24.99,24.99,0.0,0.0,24.66,5.34
-tail-risk-parity,Tail Risk Parity,D_NonTraditional,11.1,11.1,0.1,11.1,11.1,11.1,11.1,11.1,11.1,11.1
-tpa,Total Portfolio Allocation (two-factor),D_NonTraditional,6.05,7.24,3.76,4.93,20.74,17.08,10.2,0.0,15.0,15.0
-adversarial-diversifier,Adversarial Diversifier,D_NonTraditional,6.62,6.62,6.62,6.62,2.32,25.0,1.18,15.0,16.75,13.25
-max-entropy,Maximum Entropy,E_Researcher,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0
+equal-weight,Equal Weight (1/N),A_Heuristic,13.75,13.75,13.75,13.75,8.43,8.43,8.43,15.0,2.35,2.35
+market-cap-weight,Market-Cap Weight,A_Heuristic,10.34,10.34,23.98,10.34,8.42,8.42,8.42,15.0,2.37,2.37
+inverse-volatility,Inverse Volatility,A_Heuristic,13.91,13.91,13.83,13.36,9.95,8.16,7.35,15.0,2.27,2.27
+inverse-variance,Inverse Variance,A_Heuristic,13.76,13.76,13.75,13.72,8.67,8.24,8.1,15.0,5.0,0.0
+volatility-targeting,Volatility Targeting,A_Heuristic,13.91,13.91,13.83,13.36,9.95,8.16,7.35,15.0,2.27,2.27
+max-sharpe,Maximum Sharpe Ratio,B_ReturnOptimized,13.43,14.42,14.31,12.85,14.78,8.57,2.32,15.0,2.17,2.17
+black-litterman,Black-Litterman,B_ReturnOptimized,14.03,13.75,13.62,13.6,7.79,8.31,8.91,15.0,2.05,2.95
+robust-mv,Robust Mean-Variance,B_ReturnOptimized,14.91,14.93,16.12,9.05,7.76,9.9,7.36,15.0,2.62,2.36
+resampled-ef,Resampled Efficient Frontier,B_ReturnOptimized,13.61,14.19,14.25,12.95,14.44,8.66,2.56,15.0,2.17,2.17
+mean-downside,Mean-Downside Risk (Sortino),B_ReturnOptimized,9.05,12.97,17.94,15.04,8.7,9.04,7.27,15.0,2.5,2.5
+gmv,Global Minimum Variance,C_RiskStructured,13.19,14.57,14.48,12.76,14.39,9.07,2.23,15.0,2.16,2.16
+risk-parity,Risk Parity,C_RiskStructured,13.92,13.91,13.93,13.24,13.07,0.0,11.93,15.0,5.0,0.0
+hrp,Hierarchical Risk Parity,C_RiskStructured,13.75,13.75,13.76,13.74,8.63,8.24,8.13,15.0,5.0,0.0
+max-diversification,Maximum Diversification,C_RiskStructured,13.29,14.45,14.0,13.26,9.5,10.92,5.18,15.0,2.2,2.2
+min-correlation,Minimum Correlation,C_RiskStructured,13.44,13.69,14.15,13.71,8.19,9.93,7.35,15.0,2.27,2.27
+cvar-min,CVaR Minimization,D_NonTraditional,13.75,13.75,13.75,13.75,8.43,8.43,8.43,15.0,2.35,2.35
+max-dd-constrained,Max Drawdown Constrained,D_NonTraditional,23.88,23.88,4.24,3.0,10.91,14.57,0.0,15.0,2.34,2.18
+tail-risk-parity,Tail Risk Parity,D_NonTraditional,15.85,15.85,7.45,15.85,8.47,8.47,8.47,15.0,2.29,2.29
+tpa,Total Portfolio Allocation (two-factor),D_NonTraditional,14.05,14.68,12.83,13.45,11.11,9.15,5.46,15.0,2.14,2.14
+adversarial-diversifier,Adversarial Diversifier,D_NonTraditional,13.75,13.75,13.75,13.75,5.68,10.07,10.07,15.0,2.07,2.11
+max-entropy,Maximum Entropy,E_Researcher,13.75,13.75,13.75,13.75,8.43,8.43,8.43,15.0,2.35,2.35

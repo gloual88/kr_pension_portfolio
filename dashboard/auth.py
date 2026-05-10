@@ -20,8 +20,14 @@ import streamlit as st
 
 
 def _expected_password() -> str | None:
-    if "APP_PASSWORD" in st.secrets:
-        return str(st.secrets["APP_PASSWORD"])
+    # st.secrets._parse() raises StreamlitSecretNotFoundError when no
+    # secrets.toml exists (typical local dev). Treat that as "no password set"
+    # so the gate fails open — matches documented behavior.
+    try:
+        if "APP_PASSWORD" in st.secrets:
+            return str(st.secrets["APP_PASSWORD"])
+    except Exception:
+        pass
     return os.environ.get("APP_PASSWORD")
 
 

@@ -3,9 +3,10 @@
   "name": "Gold Futures (H)",
   "category": "RealAssets",
   "expected_return": 0.06175217391304348,
-  "expected_volatility": 0.18388031480989497,
+  "expected_volatility": 0.18386894171539359,
   "confidence": 0.55,
   "regime": "late-cycle",
+  "curve_regime": "bear-parallel",
   "method_weights": {
     "yield_carry": 0.1,
     "rolldown_enhanced": 0.0,

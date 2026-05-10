@@ -7,22 +7,22 @@
 
 | Asset class | Weight |
 |-------------|--------|
-| us-ig-credit | 12.0% |
-| us-treasuries-10y | 11.6% |
-| kr-treasuries-10y | 10.8% |
-| kr-large-cap | 10.6% |
-| kr-dividend | 10.3% |
-| us-large-cap | 10.1% |
-| gold | 9.7% |
-| us-tech | 9.3% |
+| gold | 15.0% |
+| kr-large-cap | 14.0% |
+| kr-dividend | 13.7% |
+| us-large-cap | 13.6% |
+| us-tech | 13.6% |
+| us-ig-credit | 8.9% |
+| us-treasuries-10y | 8.3% |
+| kr-treasuries-10y | 7.8% |
 
 ## Diagnostics
 
-- E[r]: 5.31%, σ: 6.47%
-- Backtest Sharpe: 2.45, MaxDD: -5.6%
-- Effective N: 9.8, Top-3 weight: 34%
+- E[r]: 5.71%, σ: 8.88%
+- Backtest Sharpe: 2.45, MaxDD: -7.9%
+- Effective N: 8.3, Top-3 weight: 43%
 - IPS compliance: 0.90 (flags: 1)
-- Diversification score: 0.44
+- Diversification score: 0.37
 - Regime fit: 0.75
 - Estimation robustness: 0.65
-- CMA utilization: +0.00
+- CMA utilization: +0.15

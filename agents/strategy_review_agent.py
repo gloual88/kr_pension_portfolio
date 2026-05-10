@@ -19,8 +19,12 @@ from ..skills.strategy_review.voting import (
 
 
 def _composite_metric(metrics: Dict[str, float]) -> float:
-    """Weighted composite: sharpe(25) + ips(15) + div(15) + regime(20) + est(15) + cma(10)."""
-    sh = max(0.0, min(1.0, metrics.get("backtest_sharpe", 0.0) / 0.6))
+    """Weighted composite: sharpe(25) + ips(15) + div(15) + regime(20) + est(15) + cma(10).
+
+    Sharpe denominator widened 0.6 → 1.2 (parity with cio_agent._score_portfolio) so that
+    high-Sharpe PC methods are differentiated in peer voting instead of saturating at 1.0.
+    """
+    sh = max(0.0, min(1.0, metrics.get("backtest_sharpe", 0.0) / 1.2))
     ips = float(metrics.get("ips_compliance", 1.0))
     div = float(metrics.get("diversification", 0.5))
     reg = float(metrics.get("regime_fit", 0.5))

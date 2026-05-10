@@ -24,6 +24,8 @@ OUTPUTS_DIR = PROJECT_DIR / "outputs"
 BT_BASELINE = OUTPUTS_DIR / "backtest_kr"
 BT_LLM = OUTPUTS_DIR / "backtest_kr_llm"
 BT_LLM_PHASE2 = OUTPUTS_DIR / "backtest_kr_llm_phase2"
+BT_LOCK70_BASELINE = OUTPUTS_DIR / "backtest_kr_lock70"
+BT_LOCK70_PHASE2   = OUTPUTS_DIR / "backtest_kr_lock70_llm_phase2"
 CIO_FILE = OUTPUTS_DIR / "cio" / "final_portfolio.json"
 BOARD_MEMO_FILE = OUTPUTS_DIR / "cio" / "board_memo.md"
 MACRO_FILE = OUTPUTS_DIR / "macro" / "macro-view.json"
@@ -45,6 +47,8 @@ BT_V2_SCORE_AGG_PCR    = OUTPUTS_DIR / "v2_score_aggressive_pcr"  # v0.5.1 + PC 
 
 # Variant → directory mapping (used by all loaders below)
 VARIANT_DIRS = {
+    "lock70_baseline":   BT_LOCK70_BASELINE,
+    "lock70_phase2":     BT_LOCK70_PHASE2,
     "baseline":   BT_BASELINE,
     "llm":        BT_LLM,
     "llm_phase2": BT_LLM_PHASE2,
@@ -57,9 +61,11 @@ VARIANT_DIRS = {
     "v2_score_aggressive_pcr": BT_V2_SCORE_AGG_PCR,
 }
 VARIANT_LABELS = {
-    "baseline":   "v1 Baseline (stub, single regime, KR 60/40 BM)",
-    "llm":        "v1 Phase 1 (Claude CIO)",
-    "llm_phase2": "v1 Phase 2 (Claude CIO + CMA)",
+    "lock70_baseline":   "v1 lock70 Baseline (위험자산 70% 고정, 2026-05-10) ★",
+    "lock70_phase2":     "v1 lock70 Phase 2 (Claude CIO + CMA, 위험자산 70% 고정)",
+    "baseline":   "v1 Baseline (구 IPS, stub, single regime, KR 60/40 BM)",
+    "llm":        "v1 Phase 1 (구 IPS, Claude CIO)",
+    "llm_phase2": "v1 Phase 2 (구 IPS, Claude CIO + CMA)",
     "v2_baseline": "v2 Baseline (KR/US/Global, label, KR 60/40 BM)",
     "v2_score":    "v2 Score Injection (KR/US/Global, score)",
     "v2_phase2":   "v2 Phase 2 LLM (KR/US/Global + Claude)",

@@ -3,9 +3,10 @@
   "name": "US IG Corporate Bonds (H)",
   "category": "FixedIncome",
   "expected_return": 0.043456521739130435,
-  "expected_volatility": 0.09475009421306647,
+  "expected_volatility": 0.09473696081888487,
   "confidence": 0.55,
   "regime": "late-cycle",
+  "curve_regime": "bear-parallel",
   "method_weights": {
     "yield_carry": 0.1,
     "rolldown_enhanced": 0.0,

@@ -9,7 +9,7 @@
 ## CMA Decision
 
 - Expected return (3y, nominal): **5.96%**
-- Expected volatility (annualized): **28.31%**
+- Expected volatility (annualized): **28.30%**
 - Dispersion across methods: moderate
 - Rationale: Dispersion moderate (5.0pp). Late-cycle: tilt to valuation + regime-adjusted.
 
@@ -27,16 +27,16 @@
 
 ## Historical Statistics (annualized)
 
-- Mean: 10.55%
-- Volatility: 28.31%
+- Mean: 10.52%
+- Volatility: 28.30%
 - Sharpe: 0.37
 - Max drawdown: -57.2%
 
 ## Signals
 
-- macro: +0.30
+- macro: +0.31
 - momentum: +0.85
-- trend: +0.77
-- mean_reversion: -0.79
-- sentiment: -0.26
-- composite: +0.17
+- trend: +0.75
+- mean_reversion: -0.78
+- sentiment: +0.01
+- composite: +0.23

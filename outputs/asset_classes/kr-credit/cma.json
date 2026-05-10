@@ -3,7 +3,7 @@
   "name": "KR Composite Bond Active",
   "category": "FixedIncome",
   "expected_return": 0.043456521739130435,
-  "expected_volatility": 0.030939162801813833,
+  "expected_volatility": 0.030929400930065853,
   "confidence": 0.55,
   "regime": "late-cycle",
   "curve_regime": "bear-parallel",

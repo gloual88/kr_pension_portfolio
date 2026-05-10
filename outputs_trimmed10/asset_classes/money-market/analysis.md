@@ -3,7 +3,8 @@
 **Slug:** `money-market`  
 **Category:** Cash  
 **ETF:** 357870  
-**Regime context:** late-cycle (P(rec) 20%)
+**Regime context:** late-cycle (P(rec) 20%)  
+**Yield-curve context:** bear-parallel
 
 ## CMA Decision
 
@@ -31,9 +32,9 @@
 
 ## Signals
 
-- macro: -0.55
+- macro: -0.59
 - momentum: +0.07
 - trend: +0.04
 - mean_reversion: -0.83
-- sentiment: -0.25
+- sentiment: -0.19
 - composite: -0.30

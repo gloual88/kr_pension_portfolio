@@ -3,7 +3,7 @@
   "name": "US Treasuries Ultra 30Y (H)",
   "category": "FixedIncome",
   "expected_return": 0.043456521739130435,
-  "expected_volatility": 0.14052684315032557,
+  "expected_volatility": 0.14049690530546396,
   "confidence": 0.55,
   "regime": "late-cycle",
   "curve_regime": "bear-parallel",

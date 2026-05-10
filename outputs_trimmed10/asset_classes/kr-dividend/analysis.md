@@ -3,12 +3,13 @@
 **Slug:** `kr-dividend`  
 **Category:** Equity  
 **ETF:** 211900  
-**Regime context:** late-cycle (P(rec) 20%)
+**Regime context:** late-cycle (P(rec) 20%)  
+**Yield-curve context:** bear-parallel
 
 ## CMA Decision
 
 - Expected return (3y, nominal): **5.95%**
-- Expected volatility (annualized): **18.15%**
+- Expected volatility (annualized): **18.17%**
 - Dispersion across methods: moderate
 - Rationale: Dispersion moderate (5.6pp). Late-cycle: tilt to valuation + regime-adjusted.
 
@@ -26,16 +27,16 @@
 
 ## Historical Statistics (annualized)
 
-- Mean: 13.68%
-- Volatility: 18.15%
-- Sharpe: 0.75
+- Mean: 13.93%
+- Volatility: 18.17%
+- Sharpe: 0.77
 - Max drawdown: -50.4%
 
 ## Signals
 
 - macro: +0.21
 - momentum: +0.96
-- trend: +0.86
-- mean_reversion: -0.86
-- sentiment: +0.25
-- composite: +0.28
+- trend: +0.85
+- mean_reversion: -0.88
+- sentiment: +0.39
+- composite: +0.31

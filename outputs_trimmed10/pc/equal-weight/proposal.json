@@ -4,42 +4,42 @@
   "category": "A_Heuristic",
   "method": "equal_weight",
   "weights": {
-    "kr-large-cap": 0.1,
-    "kr-dividend": 0.1,
-    "us-large-cap": 0.1,
-    "us-tech": 0.1,
-    "kr-treasuries-10y": 0.1,
-    "us-treasuries-10y": 0.1,
-    "us-ig-credit": 0.1,
-    "gold": 0.1,
-    "kofr-cash": 0.1,
-    "money-market": 0.1
+    "kr-large-cap": 0.13749998502291805,
+    "kr-dividend": 0.13749998502291805,
+    "us-large-cap": 0.13749998502291805,
+    "us-tech": 0.13749998502291805,
+    "kr-treasuries-10y": 0.08431513693753724,
+    "us-treasuries-10y": 0.08431513693753724,
+    "us-ig-credit": 0.08431513693753724,
+    "gold": 0.14999999734088748,
+    "kofr-cash": 0.023527325877414403,
+    "money-market": 0.023527325877414403
   },
-  "expected_return": 0.05183196604137575,
-  "expected_vol": 0.0646098359735797,
+  "expected_return": 0.055201536524363874,
+  "expected_vol": 0.08888293832671472,
   "metrics": {
-    "ex_ante_vol": 0.0646098359735797,
-    "ex_ante_var95": -0.054451214135162844,
-    "backtest_sharpe": 2.464976086765596,
-    "backtest_vol": 0.07877839971296084,
-    "backtest_maxdd": -0.055373876152209456,
-    "hhi": 0.10000000000000003,
-    "effective_n": 9.999999999999996,
-    "top3": 0.30000000000000004,
+    "ex_ante_vol": 0.08888293832671472,
+    "ex_ante_var95": -0.09101089702308182,
+    "backtest_sharpe": 2.4453163283511987,
+    "backtest_vol": 0.1088265636547533,
+    "backtest_maxdd": -0.07860727296870418,
+    "hhi": 0.12055917980374806,
+    "effective_n": 8.29468151349277,
+    "top3": 0.4249999673867236,
     "ips_compliance": 0.9,
     "ips_flags": [
-      "tracking_error=8.21% exceeds budget 6.00%"
+      "tracking_error=8.15% exceeds budget 6.00%"
     ],
-    "tracking_error": 0.08212163981990384,
+    "tracking_error": 0.08154971639517729,
     "factor_tilts": {
-      "growth": 0.30000000000000004,
-      "rates": -0.5,
-      "inflation": -0.5,
+      "growth": 0.46568480315413496,
+      "rates": -0.7683907114674247,
+      "inflation": -0.3406848983348519,
       "dollar": 0.0
     },
-    "diversification": 0.4250810256895905,
+    "diversification": 0.364442376532455,
     "regime_fit": 0.5,
     "estimation_robustness": 0.85,
-    "cma_utilization": 0.0
+    "cma_utilization": 0.12928880112986701
   }
 }

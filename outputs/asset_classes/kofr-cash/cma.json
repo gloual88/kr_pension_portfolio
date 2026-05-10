@@ -3,7 +3,7 @@
   "name": "KOFR Cash Active",
   "category": "Cash",
   "expected_return": 0.043456521739130435,
-  "expected_volatility": 0.0014696736465747461,
+  "expected_volatility": 0.001469846668777503,
   "confidence": 0.55,
   "regime": "late-cycle",
   "curve_regime": "bear-parallel",

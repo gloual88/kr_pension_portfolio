@@ -205,18 +205,20 @@ active_risk_budget:
     kr-treasuries-10y: 0.40
   max_tracking_error: 0.06    # 6%
 
-# Constraints — DC/IRP regulatory cap: risky assets ≤ 70%
-# Equity (8) + RealAssets (2) sum ≤ 70%. Cash + FixedIncome ≥ 30%.
+# Constraints — DC/IRP CIO mandate: 위험자산을 법적 한도 70%에 고정 운영.
+# Equity 55% + RealAssets 15% = 위험자산 70% (locked).
+# FixedIncome 25–30% + Cash 0–5% = 안전자산 30% (complement).
+# 모델의 자유도는 카테고리 내부 비중 결정(어느 ETF에 얼마)과 FI duration/credit tilt에 한정.
 constraints:
   position_limits:
     min: 0.0
     max: 0.25
   category_bounds:
-    Equity:      {min: 0.20, max: 0.55}
-    RealAssets:  {min: 0.00, max: 0.15}
-    FixedIncome: {min: 0.20, max: 0.70}
-    Cash:        {min: 0.00, max: 0.30}
-  # DC/IRP regulation enforced by category bounds: Equity 55% + RealAssets 15% = 70% max
+    Equity:      {min: 0.55, max: 0.55}
+    RealAssets:  {min: 0.15, max: 0.15}
+    FixedIncome: {min: 0.25, max: 0.30}
+    Cash:        {min: 0.00, max: 0.05}
+  # 위험자산 70% lock: Equity 55 + RealAssets 15. 안전 30%: FI 25-30 + Cash 0-5.
   rebalancing:
     frequency: "quarterly"
     drift_trigger: 0.05

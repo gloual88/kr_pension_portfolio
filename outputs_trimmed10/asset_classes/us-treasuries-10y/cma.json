@@ -3,9 +3,10 @@
   "name": "US Treasuries 10Y Futures",
   "category": "FixedIncome",
   "expected_return": 0.043456521739130435,
-  "expected_volatility": 0.07696722298422408,
+  "expected_volatility": 0.07697594446044088,
   "confidence": 0.55,
   "regime": "late-cycle",
+  "curve_regime": "bear-parallel",
   "method_weights": {
     "yield_carry": 0.1,
     "rolldown_enhanced": 0.0,

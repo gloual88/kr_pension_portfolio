@@ -188,8 +188,14 @@ class CIOAgent(BaseAgent):
     def _score_portfolio(self, w, mu, Sigma, returns, asset_classes, ips, benchmark_w):
         bt = backtest_metrics(w, returns)
         comp = ips_compliance(w, asset_classes, Sigma, benchmark_w, ips)
+        expected_return = float(w @ mu)
+        # Growth-tilted composite: rewards return/Sharpe over a wider range, de-emphasises
+        # TE (KR 60/40 BM is overly concentrated), and adds explicit return-target reward
+        # so the optimizer can no longer minimize σ for free once Sharpe>0.6.
+        # Sharpe denominator 1.2 (was 0.6) — differentiates ensembles up to high-Sharpe band.
+        # Return reward target 0.07 nominal — IPS objective KR_CPI(~2%) + 4% upper spread + buffer.
         return {
-            "expected_return": float(w @ mu),
+            "expected_return": expected_return,
             "expected_vol": ex_ante_vol(w, Sigma),
             "backtest_sharpe": bt["backtest_sharpe"],
             "backtest_maxdd": bt["backtest_maxdd"],
@@ -198,10 +204,11 @@ class CIOAgent(BaseAgent):
             "tracking_error": comp.get("tracking_error"),
             "diversification": diversification_score(w, Sigma),
             "composite": (
-                0.25 * min(1.0, max(0.0, bt["backtest_sharpe"] / 0.6))
+                0.25 * min(1.0, max(0.0, bt["backtest_sharpe"] / 1.2))
+                + 0.20 * min(1.0, max(0.0, expected_return / 0.07))
                 + 0.20 * comp["compliance_score"]
-                + 0.20 * diversification_score(w, Sigma)
-                + 0.15 * (1.0 - min(1.0, abs((comp.get("tracking_error") or 0) / 0.06)))
+                + 0.10 * diversification_score(w, Sigma)
+                + 0.05 * (1.0 - min(1.0, abs((comp.get("tracking_error") or 0) / 0.06)))
                 + 0.20 * (1.0 - min(1.0, abs(bt["backtest_maxdd"]) / 0.40))
             ),
         }

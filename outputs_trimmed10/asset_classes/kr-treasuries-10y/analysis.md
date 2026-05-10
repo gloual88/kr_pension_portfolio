@@ -3,7 +3,8 @@
 **Slug:** `kr-treasuries-10y`  
 **Category:** FixedIncome  
 **ETF:** 152380  
-**Regime context:** late-cycle (P(rec) 20%)
+**Regime context:** late-cycle (P(rec) 20%)  
+**Yield-curve context:** bear-parallel
 
 ## CMA Decision
 
@@ -24,16 +25,16 @@
 
 ## Historical Statistics (annualized)
 
-- Mean: 2.17%
+- Mean: 2.19%
 - Volatility: 5.43%
 - Sharpe: 0.40
 - Max drawdown: -21.3%
 
 ## Signals
 
-- macro: -0.24
-- momentum: -0.12
+- macro: -0.27
+- momentum: -0.11
 - trend: -0.11
-- mean_reversion: +0.83
-- sentiment: -0.26
-- composite: +0.02
+- mean_reversion: +0.79
+- sentiment: -0.24
+- composite: +0.01

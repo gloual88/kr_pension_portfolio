@@ -214,25 +214,25 @@
   "reviews": {
     "equal-weight": [
       {
-        "score": 0.6840522509825487,
+        "score": 0.6823660264331266,
         "verdict": "approve",
-        "comment": "market-cap-weight reviewing equal-weight (same-category): sharpe=2.20, regime_fit=0.50, ips_ok=0.90. Verdict: approve.",
+        "comment": "market-cap-weight reviewing equal-weight (same-category): sharpe=2.23, regime_fit=0.50, ips_ok=0.90. Verdict: approve.",
         "reviewer": "market-cap-weight",
         "target": "equal-weight",
         "same_category": true
       },
       {
-        "score": 0.6840522509825487,
+        "score": 0.6823660264331266,
         "verdict": "approve",
-        "comment": "volatility-targeting reviewing equal-weight (same-category): sharpe=2.20, regime_fit=0.50, ips_ok=0.90. Verdict: approve.",
+        "comment": "volatility-targeting reviewing equal-weight (same-category): sharpe=2.23, regime_fit=0.50, ips_ok=0.90. Verdict: approve.",
         "reviewer": "volatility-targeting",
         "target": "equal-weight",
         "same_category": true
       },
       {
-        "score": 0.7125544281068217,
+        "score": 0.7107979442011736,
         "verdict": "approve",
-        "comment": "cvar-min reviewing equal-weight (cross-category): sharpe=2.20, regime_fit=0.50, ips_ok=0.90. Verdict: approve.",
+        "comment": "cvar-min reviewing equal-weight (cross-category): sharpe=2.23, regime_fit=0.50, ips_ok=0.90. Verdict: approve.",
         "reviewer": "cvar-min",
         "target": "equal-weight",
         "same_category": false
@@ -240,9 +240,9 @@
     ],
     "market-cap-weight": [
       {
-        "score": 0.6312779844330509,
+        "score": 0.6364809641832576,
         "verdict": "approve",
-        "comment": "equal-weight reviewing market-cap-weight (same-category): sharpe=2.02, regime_fit=0.50, ips_ok=0.90. Verdict: approve.",
+        "comment": "equal-weight reviewing market-cap-weight (same-category): sharpe=2.28, regime_fit=0.50, ips_ok=0.90. Verdict: approve.",
         "reviewer": "equal-weight",
         "target": "market-cap-weight",
         "same_category": true
@@ -250,17 +250,17 @@
     ],
     "inverse-volatility": [
       {
-        "score": 0.6905454935770046,
+        "score": 0.7016534407778964,
         "verdict": "approve",
-        "comment": "risk-parity reviewing inverse-volatility (cross-category): sharpe=2.31, regime_fit=0.50, ips_ok=0.80. Verdict: approve.",
+        "comment": "risk-parity reviewing inverse-volatility (cross-category): sharpe=2.25, regime_fit=0.50, ips_ok=0.90. Verdict: approve.",
         "reviewer": "risk-parity",
         "target": "inverse-volatility",
         "same_category": false
       },
       {
-        "score": 0.6905454935770046,
+        "score": 0.7016534407778964,
         "verdict": "approve",
-        "comment": "hrp reviewing inverse-volatility (cross-category): sharpe=2.31, regime_fit=0.50, ips_ok=0.80. Verdict: approve.",
+        "comment": "hrp reviewing inverse-volatility (cross-category): sharpe=2.25, regime_fit=0.50, ips_ok=0.90. Verdict: approve.",
         "reviewer": "hrp",
         "target": "inverse-volatility",
         "same_category": false
@@ -268,9 +268,9 @@
     ],
     "inverse-variance": [
       {
-        "score": 0.6888247687099234,
+        "score": 0.6992431073577551,
         "verdict": "approve",
-        "comment": "adversarial-diversifier reviewing inverse-variance (cross-category): sharpe=1.98, regime_fit=0.50, ips_ok=0.90. Verdict: approve.",
+        "comment": "adversarial-diversifier reviewing inverse-variance (cross-category): sharpe=2.23, regime_fit=0.50, ips_ok=0.90. Verdict: approve.",
         "reviewer": "adversarial-diversifier",
         "target": "inverse-variance",
         "same_category": false
@@ -278,25 +278,25 @@
     ],
     "volatility-targeting": [
       {
-        "score": 0.6485236738339244,
+        "score": 0.6591873031467805,
         "verdict": "approve",
-        "comment": "inverse-volatility reviewing volatility-targeting (same-category): sharpe=2.31, regime_fit=0.50, ips_ok=0.80. Verdict: approve.",
+        "comment": "inverse-volatility reviewing volatility-targeting (same-category): sharpe=2.25, regime_fit=0.50, ips_ok=0.90. Verdict: approve.",
         "reviewer": "inverse-volatility",
         "target": "volatility-targeting",
         "same_category": true
       },
       {
-        "score": 0.6485236738339244,
+        "score": 0.6591873031467805,
         "verdict": "approve",
-        "comment": "inverse-variance reviewing volatility-targeting (same-category): sharpe=2.31, regime_fit=0.50, ips_ok=0.80. Verdict: approve.",
+        "comment": "inverse-variance reviewing volatility-targeting (same-category): sharpe=2.25, regime_fit=0.50, ips_ok=0.90. Verdict: approve.",
         "reviewer": "inverse-variance",
         "target": "volatility-targeting",
         "same_category": true
       },
       {
-        "score": 0.6755454935770046,
+        "score": 0.6866534407778964,
         "verdict": "approve",
-        "comment": "min-correlation reviewing volatility-targeting (cross-category): sharpe=2.31, regime_fit=0.50, ips_ok=0.80. Verdict: approve.",
+        "comment": "min-correlation reviewing volatility-targeting (cross-category): sharpe=2.25, regime_fit=0.50, ips_ok=0.90. Verdict: approve.",
         "reviewer": "min-correlation",
         "target": "volatility-targeting",
         "same_category": false
@@ -304,17 +304,17 @@
     ],
     "max-sharpe": [
       {
-        "score": 0.6007501374854471,
+        "score": 0.6131398988527613,
         "verdict": "approve",
-        "comment": "black-litterman reviewing max-sharpe (same-category): sharpe=2.30, regime_fit=0.50, ips_ok=0.80. Verdict: approve.",
+        "comment": "black-litterman reviewing max-sharpe (same-category): sharpe=2.26, regime_fit=0.50, ips_ok=0.90. Verdict: approve.",
         "reviewer": "black-litterman",
         "target": "max-sharpe",
         "same_category": true
       },
       {
-        "score": 0.6007501374854471,
+        "score": 0.6131398988527613,
         "verdict": "approve",
-        "comment": "robust-mv reviewing max-sharpe (same-category): sharpe=2.30, regime_fit=0.50, ips_ok=0.80. Verdict: approve.",
+        "comment": "robust-mv reviewing max-sharpe (same-category): sharpe=2.26, regime_fit=0.50, ips_ok=0.90. Verdict: approve.",
         "reviewer": "robust-mv",
         "target": "max-sharpe",
         "same_category": true
@@ -322,9 +322,9 @@
     ],
     "black-litterman": [
       {
-        "score": 0.7084712805826107,
+        "score": 0.7034135826050353,
         "verdict": "approve",
-        "comment": "max-sharpe reviewing black-litterman (same-category): sharpe=2.13, regime_fit=0.75, ips_ok=0.90. Verdict: approve.",
+        "comment": "max-sharpe reviewing black-litterman (same-category): sharpe=2.20, regime_fit=0.75, ips_ok=0.90. Verdict: approve.",
         "reviewer": "max-sharpe",
         "target": "black-litterman",
         "same_category": true
@@ -332,17 +332,17 @@
     ],
     "robust-mv": [
       {
-        "score": 0.6843540401947631,
+        "score": 0.6918789330610737,
         "verdict": "approve",
-        "comment": "volatility-targeting reviewing robust-mv (cross-category): sharpe=2.29, regime_fit=0.50, ips_ok=0.80. Verdict: approve.",
+        "comment": "volatility-targeting reviewing robust-mv (cross-category): sharpe=2.35, regime_fit=0.50, ips_ok=0.90. Verdict: approve.",
         "reviewer": "volatility-targeting",
         "target": "robust-mv",
         "same_category": false
       },
       {
-        "score": 0.6569798785869726,
+        "score": 0.6642037757386308,
         "verdict": "approve",
-        "comment": "resampled-ef reviewing robust-mv (same-category): sharpe=2.29, regime_fit=0.50, ips_ok=0.80. Verdict: approve.",
+        "comment": "resampled-ef reviewing robust-mv (same-category): sharpe=2.35, regime_fit=0.50, ips_ok=0.90. Verdict: approve.",
         "reviewer": "resampled-ef",
         "target": "robust-mv",
         "same_category": true
@@ -350,9 +350,9 @@
     ],
     "resampled-ef": [
       {
-        "score": 0.6367842406024871,
+        "score": 0.6491178636399819,
         "verdict": "approve",
-        "comment": "mean-downside reviewing resampled-ef (same-category): sharpe=2.30, regime_fit=0.50, ips_ok=0.80. Verdict: approve.",
+        "comment": "mean-downside reviewing resampled-ef (same-category): sharpe=2.26, regime_fit=0.50, ips_ok=0.90. Verdict: approve.",
         "reviewer": "mean-downside",
         "target": "resampled-ef",
         "same_category": true
@@ -360,9 +360,9 @@
     ],
     "mean-downside": [
       {
-        "score": 0.6632508188727642,
+        "score": 0.6597538519045889,
         "verdict": "approve",
-        "comment": "max-diversification reviewing mean-downside (cross-category): sharpe=2.26, regime_fit=0.50, ips_ok=0.90. Verdict: approve.",
+        "comment": "max-diversification reviewing mean-downside (cross-category): sharpe=2.30, regime_fit=0.50, ips_ok=0.90. Verdict: approve.",
         "reviewer": "max-diversification",
         "target": "mean-downside",
         "same_category": false
@@ -371,17 +371,17 @@
     "gmv": [],
     "risk-parity": [
       {
-        "score": 0.7738061902285932,
+        "score": 0.777411335110943,
         "verdict": "approve",
-        "comment": "resampled-ef reviewing risk-parity (cross-category): sharpe=2.35, regime_fit=0.85, ips_ok=0.80. Verdict: approve.",
+        "comment": "resampled-ef reviewing risk-parity (cross-category): sharpe=2.26, regime_fit=0.85, ips_ok=0.90. Verdict: approve.",
         "reviewer": "resampled-ef",
         "target": "risk-parity",
         "same_category": false
       },
       {
-        "score": 0.7738061902285932,
+        "score": 0.777411335110943,
         "verdict": "approve",
-        "comment": "max-dd-constrained reviewing risk-parity (cross-category): sharpe=2.35, regime_fit=0.85, ips_ok=0.80. Verdict: approve.",
+        "comment": "max-dd-constrained reviewing risk-parity (cross-category): sharpe=2.26, regime_fit=0.85, ips_ok=0.90. Verdict: approve.",
         "reviewer": "max-dd-constrained",
         "target": "risk-parity",
         "same_category": false
@@ -389,33 +389,33 @@
     ],
     "hrp": [
       {
-        "score": 0.7521128666128344,
+        "score": 0.7623809934301792,
         "verdict": "approve",
-        "comment": "market-cap-weight reviewing hrp (cross-category): sharpe=1.97, regime_fit=0.80, ips_ok=0.90. Verdict: approve.",
+        "comment": "market-cap-weight reviewing hrp (cross-category): sharpe=2.23, regime_fit=0.80, ips_ok=0.90. Verdict: approve.",
         "reviewer": "market-cap-weight",
         "target": "hrp",
         "same_category": false
       },
       {
-        "score": 0.7521128666128344,
+        "score": 0.7623809934301792,
         "verdict": "approve",
-        "comment": "inverse-variance reviewing hrp (cross-category): sharpe=1.97, regime_fit=0.80, ips_ok=0.90. Verdict: approve.",
+        "comment": "inverse-variance reviewing hrp (cross-category): sharpe=2.23, regime_fit=0.80, ips_ok=0.90. Verdict: approve.",
         "reviewer": "inverse-variance",
         "target": "hrp",
         "same_category": false
       },
       {
-        "score": 0.7220283519483209,
+        "score": 0.7318857536929719,
         "verdict": "approve",
-        "comment": "max-diversification reviewing hrp (same-category): sharpe=1.97, regime_fit=0.80, ips_ok=0.90. Verdict: approve.",
+        "comment": "max-diversification reviewing hrp (same-category): sharpe=2.23, regime_fit=0.80, ips_ok=0.90. Verdict: approve.",
         "reviewer": "max-diversification",
         "target": "hrp",
         "same_category": true
       },
       {
-        "score": 0.7521128666128344,
+        "score": 0.7623809934301792,
         "verdict": "approve",
-        "comment": "tpa reviewing hrp (cross-category): sharpe=1.97, regime_fit=0.80, ips_ok=0.90. Verdict: approve.",
+        "comment": "tpa reviewing hrp (cross-category): sharpe=2.23, regime_fit=0.80, ips_ok=0.90. Verdict: approve.",
         "reviewer": "tpa",
         "target": "hrp",
         "same_category": false
@@ -423,41 +423,41 @@
     ],
     "max-diversification": [
       {
-        "score": 0.7708234788680807,
+        "score": 0.7748701147367906,
         "verdict": "approve",
-        "comment": "mean-downside reviewing max-diversification (cross-category): sharpe=2.43, regime_fit=0.90, ips_ok=0.80. Verdict: approve.",
+        "comment": "mean-downside reviewing max-diversification (cross-category): sharpe=2.26, regime_fit=0.90, ips_ok=0.90. Verdict: approve.",
         "reviewer": "mean-downside",
         "target": "max-diversification",
         "same_category": false
       },
       {
-        "score": 0.7399905397133574,
+        "score": 0.7438753101473189,
         "verdict": "approve",
-        "comment": "gmv reviewing max-diversification (same-category): sharpe=2.43, regime_fit=0.90, ips_ok=0.80. Verdict: approve.",
+        "comment": "gmv reviewing max-diversification (same-category): sharpe=2.26, regime_fit=0.90, ips_ok=0.90. Verdict: approve.",
         "reviewer": "gmv",
         "target": "max-diversification",
         "same_category": true
       },
       {
-        "score": 0.7399905397133574,
+        "score": 0.7438753101473189,
         "verdict": "approve",
-        "comment": "hrp reviewing max-diversification (same-category): sharpe=2.43, regime_fit=0.90, ips_ok=0.80. Verdict: approve.",
+        "comment": "hrp reviewing max-diversification (same-category): sharpe=2.26, regime_fit=0.90, ips_ok=0.90. Verdict: approve.",
         "reviewer": "hrp",
         "target": "max-diversification",
         "same_category": true
       },
       {
-        "score": 0.7399905397133574,
+        "score": 0.7438753101473189,
         "verdict": "approve",
-        "comment": "min-correlation reviewing max-diversification (same-category): sharpe=2.43, regime_fit=0.90, ips_ok=0.80. Verdict: approve.",
+        "comment": "min-correlation reviewing max-diversification (same-category): sharpe=2.26, regime_fit=0.90, ips_ok=0.90. Verdict: approve.",
         "reviewer": "min-correlation",
         "target": "max-diversification",
         "same_category": true
       },
       {
-        "score": 0.7708234788680807,
+        "score": 0.7748701147367906,
         "verdict": "approve",
-        "comment": "tail-risk-parity reviewing max-diversification (cross-category): sharpe=2.43, regime_fit=0.90, ips_ok=0.80. Verdict: approve.",
+        "comment": "tail-risk-parity reviewing max-diversification (cross-category): sharpe=2.26, regime_fit=0.90, ips_ok=0.90. Verdict: approve.",
         "reviewer": "tail-risk-parity",
         "target": "max-diversification",
         "same_category": false
@@ -465,17 +465,17 @@
     ],
     "min-correlation": [
       {
-        "score": 0.6718141055717544,
+        "score": 0.6802521966093368,
         "verdict": "approve",
-        "comment": "max-sharpe reviewing min-correlation (cross-category): sharpe=2.27, regime_fit=0.50, ips_ok=0.80. Verdict: approve.",
+        "comment": "max-sharpe reviewing min-correlation (cross-category): sharpe=2.25, regime_fit=0.50, ips_ok=0.90. Verdict: approve.",
         "reviewer": "max-sharpe",
         "target": "min-correlation",
         "same_category": false
       },
       {
-        "score": 0.6449415413488842,
+        "score": 0.6530421087449633,
         "verdict": "approve",
-        "comment": "risk-parity reviewing min-correlation (same-category): sharpe=2.27, regime_fit=0.50, ips_ok=0.80. Verdict: approve.",
+        "comment": "risk-parity reviewing min-correlation (same-category): sharpe=2.25, regime_fit=0.50, ips_ok=0.90. Verdict: approve.",
         "reviewer": "risk-parity",
         "target": "min-correlation",
         "same_category": true
@@ -483,17 +483,17 @@
     ],
     "cvar-min": [
       {
-        "score": 0.6675544281068218,
+        "score": 0.6657979442011737,
         "verdict": "approve",
-        "comment": "equal-weight reviewing cvar-min (cross-category): sharpe=2.20, regime_fit=0.50, ips_ok=0.90. Verdict: approve.",
+        "comment": "equal-weight reviewing cvar-min (cross-category): sharpe=2.23, regime_fit=0.50, ips_ok=0.90. Verdict: approve.",
         "reviewer": "equal-weight",
         "target": "cvar-min",
         "same_category": false
       },
       {
-        "score": 0.6408522509825488,
+        "score": 0.6391660264331267,
         "verdict": "approve",
-        "comment": "tpa reviewing cvar-min (same-category): sharpe=2.20, regime_fit=0.50, ips_ok=0.90. Verdict: approve.",
+        "comment": "tpa reviewing cvar-min (same-category): sharpe=2.23, regime_fit=0.50, ips_ok=0.90. Verdict: approve.",
         "reviewer": "tpa",
         "target": "cvar-min",
         "same_category": true
@@ -501,9 +501,9 @@
     ],
     "max-dd-constrained": [
       {
-        "score": 0.645253353879333,
+        "score": 0.6636394281004347,
         "verdict": "approve",
-        "comment": "gmv reviewing max-dd-constrained (cross-category): sharpe=2.23, regime_fit=0.50, ips_ok=0.80. Verdict: approve.",
+        "comment": "gmv reviewing max-dd-constrained (cross-category): sharpe=2.44, regime_fit=0.50, ips_ok=0.90. Verdict: approve.",
         "reviewer": "gmv",
         "target": "max-dd-constrained",
         "same_category": false
@@ -511,9 +511,9 @@
     ],
     "tail-risk-parity": [
       {
-        "score": 0.7434412713285005,
+        "score": 0.7408705553919813,
         "verdict": "approve",
-        "comment": "max-entropy reviewing tail-risk-parity (cross-category): sharpe=2.17, regime_fit=0.80, ips_ok=0.90. Verdict: approve.",
+        "comment": "max-entropy reviewing tail-risk-parity (cross-category): sharpe=2.20, regime_fit=0.80, ips_ok=0.90. Verdict: approve.",
         "reviewer": "max-entropy",
         "target": "tail-risk-parity",
         "same_category": false
@@ -521,33 +521,33 @@
     ],
     "tpa": [
       {
-        "score": 0.6375104108058753,
+        "score": 0.6496999816936562,
         "verdict": "approve",
-        "comment": "cvar-min reviewing tpa (same-category): sharpe=2.26, regime_fit=0.50, ips_ok=0.80. Verdict: approve.",
+        "comment": "cvar-min reviewing tpa (same-category): sharpe=2.27, regime_fit=0.50, ips_ok=0.90. Verdict: approve.",
         "reviewer": "cvar-min",
         "target": "tpa",
         "same_category": true
       },
       {
-        "score": 0.6375104108058753,
+        "score": 0.6496999816936562,
         "verdict": "approve",
-        "comment": "max-dd-constrained reviewing tpa (same-category): sharpe=2.26, regime_fit=0.50, ips_ok=0.80. Verdict: approve.",
+        "comment": "max-dd-constrained reviewing tpa (same-category): sharpe=2.27, regime_fit=0.50, ips_ok=0.90. Verdict: approve.",
         "reviewer": "max-dd-constrained",
         "target": "tpa",
         "same_category": true
       },
       {
-        "score": 0.6375104108058753,
+        "score": 0.6496999816936562,
         "verdict": "approve",
-        "comment": "max-entropy reviewing tpa (same-category): sharpe=2.26, regime_fit=0.50, ips_ok=0.80. Verdict: approve.",
+        "comment": "max-entropy reviewing tpa (same-category): sharpe=2.27, regime_fit=0.50, ips_ok=0.90. Verdict: approve.",
         "reviewer": "max-entropy",
         "target": "tpa",
         "same_category": true
       },
       {
-        "score": 0.6375104108058753,
+        "score": 0.6496999816936562,
         "verdict": "approve",
-        "comment": "adversarial-diversifier reviewing tpa (same-category): sharpe=2.26, regime_fit=0.50, ips_ok=0.80. Verdict: approve.",
+        "comment": "adversarial-diversifier reviewing tpa (same-category): sharpe=2.27, regime_fit=0.50, ips_ok=0.90. Verdict: approve.",
         "reviewer": "adversarial-diversifier",
         "target": "tpa",
         "same_category": true
@@ -555,17 +555,17 @@
     ],
     "max-entropy": [
       {
-        "score": 0.7275544281068218,
+        "score": 0.7257979442011737,
         "verdict": "approve",
-        "comment": "inverse-volatility reviewing max-entropy (cross-category): sharpe=2.20, regime_fit=0.65, ips_ok=0.90. Verdict: approve.",
+        "comment": "inverse-volatility reviewing max-entropy (cross-category): sharpe=2.23, regime_fit=0.65, ips_ok=0.90. Verdict: approve.",
         "reviewer": "inverse-volatility",
         "target": "max-entropy",
         "same_category": false
       },
       {
-        "score": 0.7275544281068218,
+        "score": 0.7257979442011737,
         "verdict": "approve",
-        "comment": "robust-mv reviewing max-entropy (cross-category): sharpe=2.20, regime_fit=0.65, ips_ok=0.90. Verdict: approve.",
+        "comment": "robust-mv reviewing max-entropy (cross-category): sharpe=2.23, regime_fit=0.65, ips_ok=0.90. Verdict: approve.",
         "reviewer": "robust-mv",
         "target": "max-entropy",
         "same_category": false
@@ -573,17 +573,17 @@
     ],
     "adversarial-diversifier": [
       {
-        "score": 0.6070375632117659,
+        "score": 0.6317339064660462,
         "verdict": "approve",
-        "comment": "black-litterman reviewing adversarial-diversifier (cross-category): sharpe=1.51, regime_fit=0.50, ips_ok=0.80. Verdict: approve.",
+        "comment": "black-litterman reviewing adversarial-diversifier (cross-category): sharpe=2.21, regime_fit=0.50, ips_ok=0.90. Verdict: approve.",
         "reviewer": "black-litterman",
         "target": "adversarial-diversifier",
         "same_category": false
       },
       {
-        "score": 0.5827560606832953,
+        "score": 0.6064645502074043,
         "verdict": "approve",
-        "comment": "tail-risk-parity reviewing adversarial-diversifier (same-category): sharpe=1.51, regime_fit=0.50, ips_ok=0.80. Verdict: approve.",
+        "comment": "tail-risk-parity reviewing adversarial-diversifier (same-category): sharpe=2.21, regime_fit=0.50, ips_ok=0.90. Verdict: approve.",
         "reviewer": "tail-risk-parity",
         "target": "adversarial-diversifier",
         "same_category": true
@@ -598,7 +598,7 @@
         "max-diversification",
         "hrp",
         "max-entropy",
-        "black-litterman"
+        "volatility-targeting"
       ],
       "bottom": "max-sharpe"
     },
@@ -606,8 +606,8 @@
       "voter": "market-cap-weight",
       "top5": [
         "black-litterman",
-        "risk-parity",
         "hrp",
+        "risk-parity",
         "max-diversification",
         "tail-risk-parity"
       ],
@@ -633,25 +633,25 @@
         "tail-risk-parity",
         "equal-weight"
       ],
-      "bottom": "max-sharpe"
+      "bottom": "market-cap-weight"
     },
     {
       "voter": "volatility-targeting",
       "top5": [
-        "tail-risk-parity",
         "max-diversification",
-        "risk-parity",
+        "tail-risk-parity",
         "hrp",
+        "risk-parity",
         "black-litterman"
       ],
-      "bottom": "max-sharpe"
+      "bottom": "market-cap-weight"
     },
     {
       "voter": "max-sharpe",
       "top5": [
         "black-litterman",
-        "risk-parity",
         "hrp",
+        "risk-parity",
         "max-diversification",
         "max-entropy"
       ],
@@ -666,27 +666,27 @@
         "max-entropy",
         "tail-risk-parity"
       ],
-      "bottom": "max-dd-constrained"
+      "bottom": "mean-downside"
     },
     {
       "voter": "robust-mv",
       "top5": [
         "risk-parity",
         "max-diversification",
-        "tail-risk-parity",
         "inverse-variance",
-        "black-litterman"
+        "tail-risk-parity",
+        "hrp"
       ],
-      "bottom": "adversarial-diversifier"
+      "bottom": "market-cap-weight"
     },
     {
       "voter": "resampled-ef",
       "top5": [
         "max-diversification",
         "tail-risk-parity",
-        "black-litterman",
+        "hrp",
         "risk-parity",
-        "hrp"
+        "black-litterman"
       ],
       "bottom": "max-dd-constrained"
     },
@@ -710,16 +710,16 @@
         "max-entropy",
         "black-litterman"
       ],
-      "bottom": "adversarial-diversifier"
+      "bottom": "max-sharpe"
     },
     {
       "voter": "risk-parity",
       "top5": [
-        "tail-risk-parity",
         "hrp",
+        "tail-risk-parity",
         "max-entropy",
-        "black-litterman",
-        "max-diversification"
+        "max-diversification",
+        "black-litterman"
       ],
       "bottom": "adversarial-diversifier"
     },
@@ -730,7 +730,7 @@
         "max-entropy",
         "tail-risk-parity",
         "max-diversification",
-        "equal-weight"
+        "inverse-variance"
       ],
       "bottom": "adversarial-diversifier"
     },
@@ -750,9 +750,9 @@
       "top5": [
         "risk-parity",
         "max-diversification",
+        "inverse-volatility",
         "max-entropy",
-        "tail-risk-parity",
-        "equal-weight"
+        "hrp"
       ],
       "bottom": "adversarial-diversifier"
     },
@@ -761,8 +761,8 @@
       "top5": [
         "risk-parity",
         "max-diversification",
-        "tail-risk-parity",
         "hrp",
+        "tail-risk-parity",
         "equal-weight"
       ],
       "bottom": "max-sharpe"
@@ -771,8 +771,8 @@
       "voter": "max-dd-constrained",
       "top5": [
         "hrp",
-        "tail-risk-parity",
         "max-diversification",
+        "tail-risk-parity",
         "max-entropy",
         "risk-parity"
       ],
@@ -795,8 +795,8 @@
         "max-diversification",
         "risk-parity",
         "hrp",
-        "black-litterman",
-        "tail-risk-parity"
+        "tail-risk-parity",
+        "black-litterman"
       ],
       "bottom": "max-sharpe"
     },
@@ -806,8 +806,8 @@
         "risk-parity",
         "max-diversification",
         "black-litterman",
-        "tail-risk-parity",
-        "hrp"
+        "hrp",
+        "tail-risk-parity"
       ],
       "bottom": "min-correlation"
     },
@@ -815,95 +815,100 @@
       "voter": "adversarial-diversifier",
       "top5": [
         "max-diversification",
-        "equal-weight",
         "hrp",
+        "equal-weight",
         "risk-parity",
         "max-entropy"
       ],
-      "bottom": "max-sharpe"
+      "bottom": "cvar-min"
     }
   ],
   "vote_points": {
-    "risk-parity": 75,
-    "max-diversification": 76,
-    "hrp": 54,
-    "max-entropy": 24,
-    "black-litterman": 28,
-    "max-sharpe": -18,
-    "tail-risk-parity": 43,
-    "adversarial-diversifier": -16,
-    "equal-weight": 13,
+    "risk-parity": 72,
+    "max-diversification": 79,
+    "hrp": 65,
+    "max-entropy": 23,
+    "volatility-targeting": 1,
+    "max-sharpe": -14,
+    "black-litterman": 22,
+    "tail-risk-parity": 36,
+    "adversarial-diversifier": -12,
+    "equal-weight": 10,
+    "market-cap-weight": -6,
     "tpa": -2,
-    "max-dd-constrained": -4,
-    "inverse-variance": 2,
-    "min-correlation": -2
+    "mean-downside": -2,
+    "inverse-variance": 4,
+    "max-dd-constrained": -2,
+    "inverse-volatility": 3,
+    "min-correlation": -2,
+    "cvar-min": -2
   },
   "metric_scores": {
-    "equal-weight": 0.7125544281068217,
-    "market-cap-weight": 0.6575812337844281,
-    "inverse-volatility": 0.6905454935770046,
-    "inverse-variance": 0.6888247687099234,
-    "volatility-targeting": 0.6755454935770046,
-    "max-sharpe": 0.6257813932140075,
-    "black-litterman": 0.7379909172735528,
-    "robust-mv": 0.6843540401947631,
-    "resampled-ef": 0.6633169172942573,
-    "mean-downside": 0.6632508188727642,
-    "gmv": 0.6722540047847015,
-    "risk-parity": 0.7738061902285932,
-    "hrp": 0.7521128666128344,
-    "max-diversification": 0.7708234788680807,
-    "min-correlation": 0.6718141055717544,
-    "cvar-min": 0.6675544281068218,
-    "max-dd-constrained": 0.645253353879333,
-    "tail-risk-parity": 0.7434412713285005,
-    "tpa": 0.6640733445894536,
-    "max-entropy": 0.7275544281068218,
-    "adversarial-diversifier": 0.6070375632117659
+    "equal-weight": 0.7107979442011736,
+    "market-cap-weight": 0.66300100435756,
+    "inverse-volatility": 0.7016534407778964,
+    "inverse-variance": 0.6992431073577551,
+    "volatility-targeting": 0.6866534407778964,
+    "max-sharpe": 0.638687394638293,
+    "black-litterman": 0.7327224818802451,
+    "robust-mv": 0.6918789330610737,
+    "resampled-ef": 0.6761644412916479,
+    "mean-downside": 0.6597538519045889,
+    "gmv": 0.6840404352986942,
+    "risk-parity": 0.777411335110943,
+    "hrp": 0.7623809934301792,
+    "max-diversification": 0.7748701147367906,
+    "min-correlation": 0.6802521966093368,
+    "cvar-min": 0.6657979442011737,
+    "max-dd-constrained": 0.6636394281004347,
+    "tail-risk-parity": 0.7408705553919813,
+    "tpa": 0.6767708142642253,
+    "max-entropy": 0.7257979442011737,
+    "adversarial-diversifier": 0.6317339064660462
   },
   "composite": {
-    "cvar-min": 0.16329563713459902,
-    "adversarial-diversifier": 0.01170212765957447,
-    "volatility-targeting": 0.18485832267028685,
-    "min-correlation": 0.2684067559132763,
-    "max-dd-constrained": 0.18503444378679013,
-    "tpa": 0.24751947930528517,
-    "risk-parity": 0.9941489361702128,
-    "resampled-ef": 0.1518613530023589,
-    "robust-mv": 0.208626857849217,
-    "max-entropy": 0.5709412731172038,
-    "gmv": 0.17597673634897656,
-    "hrp": 0.8127404321885314,
-    "tail-risk-parity": 0.7249797374100748,
-    "mean-downside": 0.15168299637615165,
-    "market-cap-weight": 0.13638447569279924,
-    "inverse-variance": 0.33771172139059946,
-    "max-diversification": 0.9919516030308554,
-    "inverse-volatility": 0.22533356145317207,
-    "black-litterman": 0.6225068211749147,
-    "equal-weight": 0.4661043322066586,
-    "max-sharpe": 0.05057739966976895
+    "tpa": 0.21008749918066727,
+    "max-dd-constrained": 0.16952442891869962,
+    "market-cap-weight": 0.14389641338016226,
+    "min-correlation": 0.22084154714728116,
+    "black-litterman": 0.5248586149090825,
+    "max-diversification": 0.9921501279985104,
+    "max-sharpe": 0.021479440614911558,
+    "cvar-min": 0.17619212105445414,
+    "inverse-variance": 0.3149886572748777,
+    "robust-mv": 0.18578898748780537,
+    "hrp": 0.8707753256378263,
+    "mean-downside": 0.1575218194245906,
+    "inverse-volatility": 0.3165202388038836,
+    "risk-parity": 0.9586021505376344,
+    "volatility-targeting": 0.25835703233371765,
+    "tail-risk-parity": 0.6328238484308244,
+    "resampled-ef": 0.1372466610476595,
+    "equal-weight": 0.38616561143269335,
+    "gmv": 0.16157573752944016,
+    "max-entropy": 0.5093825813437198,
+    "adversarial-diversifier": 0.011827956989247313
   },
   "rank": [
-    "risk-parity",
     "max-diversification",
+    "risk-parity",
     "hrp",
     "tail-risk-parity",
     "black-litterman",
     "max-entropy",
     "equal-weight",
+    "inverse-volatility",
     "inverse-variance",
+    "volatility-targeting",
     "min-correlation",
     "tpa",
-    "inverse-volatility",
     "robust-mv",
-    "max-dd-constrained",
-    "volatility-targeting",
-    "gmv",
     "cvar-min",
-    "resampled-ef",
+    "max-dd-constrained",
+    "gmv",
     "mean-downside",
     "market-cap-weight",
+    "resampled-ef",
     "max-sharpe",
     "adversarial-diversifier"
   ]

@@ -3,7 +3,7 @@
   "name": "KR Short Term Bonds (MSB)",
   "category": "FixedIncome",
   "expected_return": 0.043456521739130435,
-  "expected_volatility": 0.10157728026182672,
+  "expected_volatility": 0.10153443874594965,
   "confidence": 0.55,
   "regime": "late-cycle",
   "curve_regime": "bear-parallel",

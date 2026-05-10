@@ -4,683 +4,671 @@
     "name": "Equal Weight (1/N)",
     "category": "A_Heuristic",
     "metrics": {
-      "ex_ante_vol": 0.07342679061175703,
-      "ex_ante_var95": -0.06864569733334538,
-      "backtest_sharpe": 2.1957298997343093,
-      "backtest_vol": 0.08030297142635677,
-      "backtest_maxdd": -0.0727550295189876,
-      "hhi": 0.05555555555555555,
-      "effective_n": 18.0,
-      "top3": 0.16666666666666666,
+      "ex_ante_vol": 0.09132409474383439,
+      "ex_ante_var95": -0.09593928769070309,
+      "backtest_sharpe": 2.228103792724117,
+      "backtest_vol": 0.0988723503330042,
+      "backtest_maxdd": -0.09218224734930613,
+      "hhi": 0.060933781998525255,
+      "effective_n": 16.411257716191034,
+      "top3": 0.2187499838502308,
       "ips_compliance": 0.9,
       "ips_flags": [
-        "tracking_error=8.39% exceeds budget 6.00%"
+        "tracking_error=8.65% exceeds budget 6.00%"
       ],
-      "tracking_error": 0.08392843845712421,
+      "tracking_error": 0.08648606557384109,
       "factor_tilts": {
-        "growth": 0.44444444444444453,
-        "rates": -0.5555555555555557,
-        "inflation": -0.33333333333333337,
+        "growth": 0.5824119620827539,
+        "rates": -0.6298051242219527,
+        "inflation": -0.2023241990539572,
         "dollar": 0.0
       },
-      "diversification": 0.3336961873788115,
+      "diversification": 0.2945915905597597,
       "regime_fit": 0.5,
       "estimation_robustness": 0.85,
-      "cma_utilization": 0.0
+      "cma_utilization": 0.08218411234419334
     },
     "severity": "YELLOW",
-    "commentary": "\u03c3=7.34%, VaR95=-6.86%, backtestDD=-7.3%, EffN=18.0. Compliance flags: 1 (YELLOW)."
+    "commentary": "\u03c3=9.13%, VaR95=-9.59%, backtestDD=-9.2%, EffN=16.4. Compliance flags: 1 (YELLOW)."
   },
   "market-cap-weight": {
     "slug": "market-cap-weight",
     "name": "Market-Cap Weight",
     "category": "A_Heuristic",
     "metrics": {
-      "ex_ante_vol": 0.08260821451038294,
-      "ex_ante_var95": -0.08278376117209846,
-      "backtest_sharpe": 2.02473756223102,
-      "backtest_vol": 0.08693664640196593,
-      "backtest_maxdd": -0.08615222566972947,
-      "hhi": 0.08116713542519752,
-      "effective_n": 12.320257389415767,
-      "top3": 0.33146551097159216,
+      "ex_ante_vol": 0.0917460434298309,
+      "ex_ante_var95": -0.09696792336560217,
+      "backtest_sharpe": 2.2806748574649203,
+      "backtest_vol": 0.09422186600735036,
+      "backtest_maxdd": -0.09587542266107629,
+      "hhi": 0.07499623760771984,
+      "effective_n": 13.334002236627716,
+      "top3": 0.33059158561934554,
       "ips_compliance": 0.9,
       "ips_flags": [
-        "tracking_error=9.53% exceeds budget 6.00%"
+        "tracking_error=9.66% exceeds budget 6.00%"
       ],
-      "tracking_error": 0.09526448069399039,
+      "tracking_error": 0.09662908931527832,
       "factor_tilts": {
-        "growth": 0.5189655542629796,
-        "rates": -0.6010775880480245,
-        "inflation": -0.5228448065873958,
+        "growth": 0.5849331458650314,
+        "rates": -0.6512164968857056,
+        "inflation": -0.29382638559719304,
         "dollar": 0.0
       },
-      "diversification": 0.254870773859963,
+      "diversification": 0.2801979027827301,
       "regime_fit": 0.5,
       "estimation_robustness": 0.55,
-      "cma_utilization": 0.037012354108673116
+      "cma_utilization": 0.06942637880300824
     },
     "severity": "YELLOW",
-    "commentary": "\u03c3=8.26%, VaR95=-8.28%, backtestDD=-8.6%, EffN=12.3. Compliance flags: 1 (YELLOW)."
+    "commentary": "\u03c3=9.17%, VaR95=-9.70%, backtestDD=-9.6%, EffN=13.3. Compliance flags: 1 (YELLOW)."
   },
   "inverse-volatility": {
     "slug": "inverse-volatility",
     "name": "Inverse Volatility",
     "category": "A_Heuristic",
     "metrics": {
-      "ex_ante_vol": 0.0415079759534424,
-      "ex_ante_var95": -0.019759466475592298,
-      "backtest_sharpe": 2.309145989548598,
-      "backtest_vol": 0.0483536489609828,
-      "backtest_maxdd": -0.03777855517814932,
-      "hhi": 0.09067743012326436,
-      "effective_n": 11.02810256797781,
-      "top3": 0.44011165997687784,
-      "ips_compliance": 0.8,
+      "ex_ante_vol": 0.09054506028003627,
+      "ex_ante_var95": -0.09462766164699514,
+      "backtest_sharpe": 2.2546616124969994,
+      "backtest_vol": 0.09830576415883437,
+      "backtest_maxdd": -0.0905504063314696,
+      "hhi": 0.06349973480249402,
+      "effective_n": 15.748097265450689,
+      "top3": 0.2303190565722782,
+      "ips_compliance": 0.9,
       "ips_flags": [
-        "vol=4.15% outside [6.00%,12.00%]",
-        "tracking_error=8.88% exceeds budget 6.00%"
+        "tracking_error=8.59% exceeds budget 6.00%"
       ],
-      "tracking_error": 0.08881184329732353,
+      "tracking_error": 0.08588203605732579,
       "factor_tilts": {
-        "growth": 0.29817629960600445,
-        "rates": -0.2779868787587902,
-        "inflation": -0.5376696358947775,
+        "growth": 0.6228908381795624,
+        "rates": -0.62759405395698,
+        "inflation": -0.17381663362654487,
         "dollar": 0.0
       },
-      "diversification": 0.3829619475401829,
+      "diversification": 0.2832458371154549,
       "regime_fit": 0.5,
       "estimation_robustness": 0.8,
-      "cma_utilization": -0.1379759710804562
+      "cma_utilization": 0.08333130421156423
     },
     "severity": "YELLOW",
-    "commentary": "\u03c3=4.15%, VaR95=-1.98%, backtestDD=-3.8%, EffN=11.0. Compliance flags: 2 (YELLOW)."
+    "commentary": "\u03c3=9.05%, VaR95=-9.46%, backtestDD=-9.1%, EffN=15.7. Compliance flags: 1 (YELLOW)."
   },
   "inverse-variance": {
     "slug": "inverse-variance",
     "name": "Inverse Variance",
     "category": "A_Heuristic",
     "metrics": {
-      "ex_ante_vol": 0.06244494062724799,
-      "ex_ante_var95": -0.051503756509492134,
-      "backtest_sharpe": 1.9797919989150279,
-      "backtest_vol": 0.0724688522891876,
-      "backtest_maxdd": -0.06081390247841845,
-      "hhi": 0.08714059460089556,
-      "effective_n": 11.475707786709581,
-      "top3": 0.3876243599838167,
+      "ex_ante_vol": 0.09122765857508214,
+      "ex_ante_var95": -0.09577823123128781,
+      "backtest_sharpe": 2.233581127177025,
+      "backtest_vol": 0.0987662493410918,
+      "backtest_maxdd": -0.09194437586670745,
+      "hhi": 0.06237367431332213,
+      "effective_n": 16.032404872874615,
+      "top3": 0.21916587153533146,
       "ips_compliance": 0.9,
       "ips_flags": [
-        "tracking_error=8.23% exceeds budget 6.00%"
+        "tracking_error=8.64% exceeds budget 6.00%"
       ],
-      "tracking_error": 0.08234824632193255,
+      "tracking_error": 0.08638361286411447,
       "factor_tilts": {
-        "growth": 0.4429854474851358,
-        "rates": -0.23562578556044902,
-        "inflation": -0.5493405757089289,
+        "growth": 0.6041665926331371,
+        "rates": -0.6185221429564148,
+        "inflation": -0.19107897389385226,
         "dollar": 0.0
       },
-      "diversification": 0.2572973635691904,
+      "diversification": 0.28752862584176836,
       "regime_fit": 0.5,
       "estimation_robustness": 0.78,
-      "cma_utilization": -0.03539671650910268
+      "cma_utilization": 0.08227626962979531
     },
     "severity": "YELLOW",
-    "commentary": "\u03c3=6.24%, VaR95=-5.15%, backtestDD=-6.1%, EffN=11.5. Compliance flags: 1 (YELLOW)."
+    "commentary": "\u03c3=9.12%, VaR95=-9.58%, backtestDD=-9.2%, EffN=16.0. Compliance flags: 1 (YELLOW)."
   },
   "volatility-targeting": {
     "slug": "volatility-targeting",
     "name": "Volatility Targeting",
     "category": "A_Heuristic",
     "metrics": {
-      "ex_ante_vol": 0.0415079759534424,
-      "ex_ante_var95": -0.019759466475592298,
-      "backtest_sharpe": 2.309145989548598,
-      "backtest_vol": 0.0483536489609828,
-      "backtest_maxdd": -0.03777855517814932,
-      "hhi": 0.09067743012326436,
-      "effective_n": 11.02810256797781,
-      "top3": 0.44011165997687784,
-      "ips_compliance": 0.8,
+      "ex_ante_vol": 0.09054506028003627,
+      "ex_ante_var95": -0.09462766164699514,
+      "backtest_sharpe": 2.2546616124969994,
+      "backtest_vol": 0.09830576415883437,
+      "backtest_maxdd": -0.0905504063314696,
+      "hhi": 0.06349973480249402,
+      "effective_n": 15.748097265450689,
+      "top3": 0.2303190565722782,
+      "ips_compliance": 0.9,
       "ips_flags": [
-        "vol=4.15% outside [6.00%,12.00%]",
-        "tracking_error=8.88% exceeds budget 6.00%"
+        "tracking_error=8.59% exceeds budget 6.00%"
       ],
-      "tracking_error": 0.08881184329732353,
+      "tracking_error": 0.08588203605732579,
       "factor_tilts": {
-        "growth": 0.29817629960600445,
-        "rates": -0.2779868787587902,
-        "inflation": -0.5376696358947775,
+        "growth": 0.6228908381795624,
+        "rates": -0.62759405395698,
+        "inflation": -0.17381663362654487,
         "dollar": 0.0
       },
-      "diversification": 0.3829619475401829,
+      "diversification": 0.2832458371154549,
       "regime_fit": 0.5,
       "estimation_robustness": 0.7,
-      "cma_utilization": -0.1379759710804562
+      "cma_utilization": 0.08333130421156423
     },
     "severity": "YELLOW",
-    "commentary": "\u03c3=4.15%, VaR95=-1.98%, backtestDD=-3.8%, EffN=11.0. Compliance flags: 2 (YELLOW)."
+    "commentary": "\u03c3=9.05%, VaR95=-9.46%, backtestDD=-9.1%, EffN=15.7. Compliance flags: 1 (YELLOW)."
   },
   "max-sharpe": {
     "slug": "max-sharpe",
     "name": "Maximum Sharpe Ratio",
     "category": "B_ReturnOptimized",
     "metrics": {
-      "ex_ante_vol": 0.0338999284380576,
-      "ex_ante_var95": -0.008384247687284324,
-      "backtest_sharpe": 2.2978466712561048,
-      "backtest_vol": 0.03950575911630395,
-      "backtest_maxdd": -0.026613352685033287,
-      "hhi": 0.1316741567269265,
-      "effective_n": 7.594504683814744,
-      "top3": 0.5500000133384557,
-      "ips_compliance": 0.8,
+      "ex_ante_vol": 0.09119693423745283,
+      "ex_ante_var95": -0.09573273782645836,
+      "backtest_sharpe": 2.26248346403039,
+      "backtest_vol": 0.09802444191044567,
+      "backtest_maxdd": -0.08994859893983653,
+      "hhi": 0.07489994021994728,
+      "effective_n": 13.351145502432336,
+      "top3": 0.29125083110981764,
+      "ips_compliance": 0.9,
       "ips_flags": [
-        "vol=3.39% outside [6.00%,12.00%]",
-        "tracking_error=9.22% exceeds budget 6.00%"
+        "tracking_error=8.63% exceeds budget 6.00%"
       ],
-      "tracking_error": 0.09220771664224629,
+      "tracking_error": 0.086276711590265,
       "factor_tilts": {
-        "growth": 0.3084208690959122,
-        "rates": -0.3027463325886297,
-        "inflation": -0.5526888968788375,
+        "growth": 0.6803136224713564,
+        "rates": -0.6273709546587263,
+        "inflation": -0.13747754892368505,
         "dollar": 0.0
       },
-      "diversification": 0.36540504539981733,
+      "diversification": 0.26388798257902585,
       "regime_fit": 0.5,
       "estimation_robustness": 0.4,
-      "cma_utilization": -0.1805872719193007
+      "cma_utilization": 0.0820839450287854
     },
     "severity": "YELLOW",
-    "commentary": "\u03c3=3.39%, VaR95=-0.84%, backtestDD=-2.7%, EffN=7.6. Compliance flags: 2 (YELLOW)."
+    "commentary": "\u03c3=9.12%, VaR95=-9.57%, backtestDD=-9.0%, EffN=13.4. Compliance flags: 1 (YELLOW)."
   },
   "black-litterman": {
     "slug": "black-litterman",
     "name": "Black-Litterman",
     "category": "B_ReturnOptimized",
     "metrics": {
-      "ex_ante_vol": 0.07015480954944073,
-      "ex_ante_var95": -0.06302066923985777,
-      "backtest_sharpe": 2.1253019486904448,
-      "backtest_vol": 0.08065736756322596,
-      "backtest_maxdd": -0.06832508791734626,
-      "hhi": 0.06011091956862244,
-      "effective_n": 16.635912529310136,
-      "top3": 0.23000422322951727,
+      "ex_ante_vol": 0.09123694066912913,
+      "ex_ante_var95": -0.09565564748238262,
+      "backtest_sharpe": 2.1959329715209477,
+      "backtest_vol": 0.09959413912742639,
+      "backtest_maxdd": -0.0917405134391539,
+      "hhi": 0.06252959901454076,
+      "effective_n": 15.992426239091312,
+      "top3": 0.2212348473844934,
       "ips_compliance": 0.9,
       "ips_flags": [
-        "tracking_error=8.38% exceeds budget 6.00%"
+        "tracking_error=8.64% exceeds budget 6.00%"
       ],
-      "tracking_error": 0.08384391164143706,
+      "tracking_error": 0.08644100162338769,
       "factor_tilts": {
-        "growth": 0.38013910945212726,
-        "rates": -0.6790289865304664,
-        "inflation": -0.34417271188684245,
+        "growth": 0.5542602141826308,
+        "rates": -0.6716660253726073,
+        "inflation": -0.20712301731379862,
         "dollar": 0.0
       },
-      "diversification": 0.36683746853127364,
+      "diversification": 0.3056412811258247,
       "regime_fit": 0.75,
       "estimation_robustness": 0.65,
-      "cma_utilization": 0.009305939877235188
+      "cma_utilization": 0.08752579422742741
     },
     "severity": "YELLOW",
-    "commentary": "\u03c3=7.02%, VaR95=-6.30%, backtestDD=-6.8%, EffN=16.6. Compliance flags: 1 (YELLOW)."
+    "commentary": "\u03c3=9.12%, VaR95=-9.57%, backtestDD=-9.2%, EffN=16.0. Compliance flags: 1 (YELLOW)."
   },
   "robust-mv": {
     "slug": "robust-mv",
     "name": "Robust Mean-Variance",
     "category": "B_ReturnOptimized",
     "metrics": {
-      "ex_ante_vol": 0.04192242169229623,
-      "ex_ante_var95": -0.019651360572875844,
-      "backtest_sharpe": 2.285325905808859,
-      "backtest_vol": 0.05097895198816417,
-      "backtest_maxdd": -0.0369002433554414,
-      "hhi": 0.07418476023576667,
-      "effective_n": 13.479857545160204,
-      "top3": 0.30401123294959864,
-      "ips_compliance": 0.8,
+      "ex_ante_vol": 0.08234218282437869,
+      "ex_ante_var95": -0.08051547261251696,
+      "backtest_sharpe": 2.351161789455008,
+      "backtest_vol": 0.09472420334889183,
+      "backtest_maxdd": -0.07834470290086137,
+      "hhi": 0.06777970242395168,
+      "effective_n": 14.753679408994051,
+      "top3": 0.3082585200892181,
+      "ips_compliance": 0.9,
       "ips_flags": [
-        "vol=4.19% outside [6.00%,12.00%]",
-        "tracking_error=9.26% exceeds budget 6.00%"
+        "tracking_error=8.42% exceeds budget 6.00%"
       ],
-      "tracking_error": 0.09257005333856193,
+      "tracking_error": 0.08419090675097549,
       "factor_tilts": {
-        "growth": 0.1975533736550283,
-        "rates": -0.455768072294731,
-        "inflation": -0.5027769391849478,
+        "growth": 0.5387296536216934,
+        "rates": -0.6094470203208947,
+        "inflation": -0.1948355697184275,
         "dollar": 0.0
       },
-      "diversification": 0.43174024885943174,
+      "diversification": 0.31024690631880164,
       "regime_fit": 0.5,
       "estimation_robustness": 0.7,
-      "cma_utilization": -0.10813994268303409
+      "cma_utilization": 0.10683794226507105
     },
     "severity": "YELLOW",
-    "commentary": "\u03c3=4.19%, VaR95=-1.97%, backtestDD=-3.7%, EffN=13.5. Compliance flags: 2 (YELLOW)."
+    "commentary": "\u03c3=8.23%, VaR95=-8.05%, backtestDD=-7.8%, EffN=14.8. Compliance flags: 1 (YELLOW)."
   },
   "resampled-ef": {
     "slug": "resampled-ef",
     "name": "Resampled Efficient Frontier",
     "category": "B_ReturnOptimized",
     "metrics": {
-      "ex_ante_vol": 0.034133899972696,
-      "ex_ante_var95": -0.008732624499385902,
-      "backtest_sharpe": 2.302160963209659,
-      "backtest_vol": 0.039981207840573685,
-      "backtest_maxdd": -0.026838089947778143,
-      "hhi": 0.13101441768082658,
-      "effective_n": 7.632747736483249,
-      "top3": 0.550000008347219,
-      "ips_compliance": 0.8,
+      "ex_ante_vol": 0.09119190860806417,
+      "ex_ante_var95": -0.09572061720530056,
+      "backtest_sharpe": 2.2614399062154447,
+      "backtest_vol": 0.09818028277320291,
+      "backtest_maxdd": -0.089972007386106,
+      "hhi": 0.07500193977020705,
+      "effective_n": 13.332988494215305,
+      "top3": 0.29216476640814504,
+      "ips_compliance": 0.9,
       "ips_flags": [
-        "vol=3.41% outside [6.00%,12.00%]",
-        "tracking_error=9.19% exceeds budget 6.00%"
+        "tracking_error=8.62% exceeds budget 6.00%"
       ],
-      "tracking_error": 0.09192636450417728,
+      "tracking_error": 0.0861683061537725,
       "factor_tilts": {
-        "growth": 0.31344083097050923,
-        "rates": -0.30556000971657393,
-        "inflation": -0.5466813311640433,
+        "growth": 0.6827872425521391,
+        "rates": -0.6296384924701125,
+        "inflation": -0.13609130153659557,
         "dollar": 0.0
       },
-      "diversification": 0.3651902192986176,
+      "diversification": 0.2636860234656402,
       "regime_fit": 0.5,
       "estimation_robustness": 0.65,
-      "cma_utilization": -0.17923231201070539
+      "cma_utilization": 0.08223075543603536
     },
     "severity": "YELLOW",
-    "commentary": "\u03c3=3.41%, VaR95=-0.87%, backtestDD=-2.7%, EffN=7.6. Compliance flags: 2 (YELLOW)."
+    "commentary": "\u03c3=9.12%, VaR95=-9.57%, backtestDD=-9.0%, EffN=13.3. Compliance flags: 1 (YELLOW)."
   },
   "mean-downside": {
     "slug": "mean-downside",
     "name": "Mean-Downside Risk (Sortino)",
     "category": "B_ReturnOptimized",
     "metrics": {
-      "ex_ante_vol": 0.06106705604241422,
-      "ex_ante_var95": -0.048744541043743615,
-      "backtest_sharpe": 2.256126862688156,
-      "backtest_vol": 0.06349154898838187,
-      "backtest_maxdd": -0.055196664604137746,
-      "hhi": 0.06160814658417415,
-      "effective_n": 16.231619606243424,
-      "top3": 0.2236922994168346,
+      "ex_ante_vol": 0.08872382201547907,
+      "ex_ante_var95": -0.09092923463481489,
+      "backtest_sharpe": 2.2962621364333886,
+      "backtest_vol": 0.09219284047339578,
+      "backtest_maxdd": -0.08730616661885815,
+      "hhi": 0.06409393139039031,
+      "effective_n": 15.602101139795762,
+      "top3": 0.2732425161484566,
       "ips_compliance": 0.9,
       "ips_flags": [
-        "tracking_error=9.29% exceeds budget 6.00%"
+        "tracking_error=9.34% exceeds budget 6.00%"
       ],
-      "tracking_error": 0.09291641270296058,
+      "tracking_error": 0.09341114084076589,
       "factor_tilts": {
-        "growth": 0.34017536063309595,
-        "rates": -0.53172524507517,
-        "inflation": -0.4333771053652128,
+        "growth": 0.5673837127267689,
+        "rates": -0.6259418671432116,
+        "inflation": -0.22723079325761364,
         "dollar": 0.0
       },
-      "diversification": 0.360510593838661,
+      "diversification": 0.29501788910606785,
       "regime_fit": 0.5,
       "estimation_robustness": 0.5,
-      "cma_utilization": -0.01651540406069908
+      "cma_utilization": 0.11002337077357643
     },
     "severity": "YELLOW",
-    "commentary": "\u03c3=6.11%, VaR95=-4.87%, backtestDD=-5.5%, EffN=16.2. Compliance flags: 1 (YELLOW)."
+    "commentary": "\u03c3=8.87%, VaR95=-9.09%, backtestDD=-8.7%, EffN=15.6. Compliance flags: 1 (YELLOW)."
   },
   "gmv": {
     "slug": "gmv",
     "name": "Global Minimum Variance",
     "category": "C_RiskStructured",
     "metrics": {
-      "ex_ante_vol": 0.03358857383602645,
-      "ex_ante_var95": -0.008045567557306676,
-      "backtest_sharpe": 2.325260257047526,
-      "backtest_vol": 0.03857975270447908,
-      "backtest_maxdd": -0.02606098790760847,
-      "hhi": 0.12326297636382173,
-      "effective_n": 8.112736115087877,
-      "top3": 0.5115494514622807,
-      "ips_compliance": 0.8,
+      "ex_ante_vol": 0.0913060495040279,
+      "ex_ante_var95": -0.09595786010634577,
+      "backtest_sharpe": 2.267803965492892,
+      "backtest_vol": 0.09794021683300941,
+      "backtest_maxdd": -0.08980953980504802,
+      "hhi": 0.07107859297036752,
+      "effective_n": 14.068933531322116,
+      "top3": 0.2653040539823278,
+      "ips_compliance": 0.9,
       "ips_flags": [
-        "vol=3.36% outside [6.00%,12.00%]",
-        "tracking_error=9.23% exceeds budget 6.00%"
+        "tracking_error=8.61% exceeds budget 6.00%"
       ],
-      "tracking_error": 0.09227765653989413,
+      "tracking_error": 0.08610429089774572,
       "factor_tilts": {
-        "growth": 0.21635035032268157,
-        "rates": -0.3022198912826367,
-        "inflation": -0.6057051658959217,
+        "growth": 0.6256031149402543,
+        "rates": -0.6257825891561973,
+        "inflation": -0.16896711911406828,
         "dollar": 0.0
       },
-      "diversification": 0.377365810363976,
+      "diversification": 0.26682112258653923,
       "regime_fit": 0.5,
       "estimation_robustness": 0.7000000000000001,
-      "cma_utilization": -0.18701733539789536
+      "cma_utilization": 0.08034533821426582
     },
     "severity": "YELLOW",
-    "commentary": "\u03c3=3.36%, VaR95=-0.80%, backtestDD=-2.6%, EffN=8.1. Compliance flags: 2 (YELLOW)."
+    "commentary": "\u03c3=9.13%, VaR95=-9.60%, backtestDD=-9.0%, EffN=14.1. Compliance flags: 1 (YELLOW)."
   },
   "risk-parity": {
     "slug": "risk-parity",
     "name": "Risk Parity",
     "category": "C_RiskStructured",
     "metrics": {
-      "ex_ante_vol": 0.03719965533786066,
-      "ex_ante_var95": -0.01333374248586635,
-      "backtest_sharpe": 2.3473976435950257,
-      "backtest_vol": 0.042924896133566134,
-      "backtest_maxdd": -0.03234611000388632,
-      "hhi": 0.09237317231425028,
-      "effective_n": 10.825653974489857,
-      "top3": 0.428700584027804,
-      "ips_compliance": 0.8,
+      "ex_ante_vol": 0.09103758140121193,
+      "ex_ante_var95": -0.09540062189449237,
+      "backtest_sharpe": 2.263362265510692,
+      "backtest_vol": 0.09851065789386011,
+      "backtest_maxdd": -0.09145724578465608,
+      "hhi": 0.06892439748806359,
+      "effective_n": 14.508650585929043,
+      "top3": 0.2505326270313919,
+      "ips_compliance": 0.9,
       "ips_flags": [
-        "vol=3.72% outside [6.00%,12.00%]",
-        "tracking_error=9.22% exceeds budget 6.00%"
+        "tracking_error=8.63% exceeds budget 6.00%"
       ],
-      "tracking_error": 0.09217214431631932,
+      "tracking_error": 0.08634790753678297,
       "factor_tilts": {
-        "growth": 0.20662754718724663,
-        "rates": -0.2925365926830302,
-        "inflation": -0.5837671143320694,
+        "growth": 0.715589646747186,
+        "rates": -0.6172316148127234,
+        "inflation": -0.13253393847746664,
         "dollar": 0.0
       },
-      "diversification": 0.4296321852558272,
+      "diversification": 0.2711590593339021,
       "regime_fit": 0.85,
       "estimation_robustness": 0.8500000000000001,
-      "cma_utilization": -0.16277275119561674
+      "cma_utilization": 0.08474952421715146
     },
     "severity": "YELLOW",
-    "commentary": "\u03c3=3.72%, VaR95=-1.33%, backtestDD=-3.2%, EffN=10.8. Compliance flags: 2 (YELLOW)."
+    "commentary": "\u03c3=9.10%, VaR95=-9.54%, backtestDD=-9.1%, EffN=14.5. Compliance flags: 1 (YELLOW)."
   },
   "hrp": {
     "slug": "hrp",
     "name": "Hierarchical Risk Parity",
     "category": "C_RiskStructured",
     "metrics": {
-      "ex_ante_vol": 0.06295860174348168,
-      "ex_ante_var95": -0.05229245229828283,
-      "backtest_sharpe": 1.9699469177630724,
-      "backtest_vol": 0.07301320724800331,
-      "backtest_maxdd": -0.06140613230928649,
-      "hhi": 0.08587553506165806,
-      "effective_n": 11.644760050484772,
-      "top3": 0.37819200338515735,
+      "ex_ante_vol": 0.09126694369216946,
+      "ex_ante_var95": -0.0958406122086337,
+      "backtest_sharpe": 2.232028469539968,
+      "backtest_vol": 0.09879268276094844,
+      "backtest_maxdd": -0.09201425667021768,
+      "hhi": 0.062228082417743,
+      "effective_n": 16.06991507928696,
+      "top3": 0.21891585852399909,
       "ips_compliance": 0.9,
       "ips_flags": [
-        "tracking_error=8.24% exceeds budget 6.00%"
+        "tracking_error=8.64% exceeds budget 6.00%"
       ],
-      "tracking_error": 0.08238739139362253,
+      "tracking_error": 0.08642828638216168,
       "factor_tilts": {
-        "growth": 0.43538373700401417,
-        "rates": -0.23559193458834693,
-        "inflation": -0.5566107581931664,
+        "growth": 0.599894039046563,
+        "rates": -0.6188343352539317,
+        "inflation": -0.19401463871298064,
         "dollar": 0.0
       },
-      "diversification": 0.2584993234542639,
+      "diversification": 0.28841938172714215,
       "regime_fit": 0.8,
       "estimation_robustness": 0.8,
-      "cma_utilization": -0.03324063810610595
+      "cma_utilization": 0.08236172342215521
     },
     "severity": "YELLOW",
-    "commentary": "\u03c3=6.30%, VaR95=-5.23%, backtestDD=-6.1%, EffN=11.6. Compliance flags: 1 (YELLOW)."
+    "commentary": "\u03c3=9.13%, VaR95=-9.58%, backtestDD=-9.2%, EffN=16.1. Compliance flags: 1 (YELLOW)."
   },
   "max-diversification": {
     "slug": "max-diversification",
     "name": "Maximum Diversification",
     "category": "C_RiskStructured",
     "metrics": {
-      "ex_ante_vol": 0.03759671854944927,
-      "ex_ante_var95": -0.013999772374912269,
-      "backtest_sharpe": 2.429878699585686,
-      "backtest_vol": 0.04093573201559118,
-      "backtest_maxdd": -0.03259079434855061,
-      "hhi": 0.09075855429740128,
-      "effective_n": 11.01824514219519,
-      "top3": 0.42854240014541584,
-      "ips_compliance": 0.8,
+      "ex_ante_vol": 0.0903680721183797,
+      "ex_ante_var95": -0.09435004031215025,
+      "backtest_sharpe": 2.2615385178963012,
+      "backtest_vol": 0.09691099257548055,
+      "backtest_maxdd": -0.0900502922937908,
+      "hhi": 0.06329538261693135,
+      "effective_n": 15.798940754526738,
+      "top3": 0.23216326317846098,
+      "ips_compliance": 0.9,
       "ips_flags": [
-        "vol=3.76% outside [6.00%,12.00%]",
-        "tracking_error=9.32% exceeds budget 6.00%"
+        "tracking_error=8.69% exceeds budget 6.00%"
       ],
-      "tracking_error": 0.09324016811910463,
+      "tracking_error": 0.08687316859439646,
       "factor_tilts": {
-        "growth": 0.21261779885851373,
-        "rates": -0.2746180645885534,
-        "inflation": -0.570156917597507,
+        "growth": 0.6013332051041959,
+        "rates": -0.6214809847599955,
+        "inflation": -0.18654247185694786,
         "dollar": 0.0
       },
-      "diversification": 0.44324084293811705,
+      "diversification": 0.2881953870040155,
       "regime_fit": 0.9,
       "estimation_robustness": 0.75,
-      "cma_utilization": -0.16325295145273847
+      "cma_utilization": 0.08281613372376449
     },
     "severity": "YELLOW",
-    "commentary": "\u03c3=3.76%, VaR95=-1.40%, backtestDD=-3.3%, EffN=11.0. Compliance flags: 2 (YELLOW)."
+    "commentary": "\u03c3=9.04%, VaR95=-9.44%, backtestDD=-9.0%, EffN=15.8. Compliance flags: 1 (YELLOW)."
   },
   "min-correlation": {
     "slug": "min-correlation",
     "name": "Minimum Correlation",
     "category": "C_RiskStructured",
     "metrics": {
-      "ex_ante_vol": 0.04147136785057635,
-      "ex_ante_var95": -0.019826970146528212,
-      "backtest_sharpe": 2.2746212559920513,
-      "backtest_vol": 0.04685748053484432,
-      "backtest_maxdd": -0.03794075124955587,
-      "hhi": 0.08436118972836174,
-      "effective_n": 11.853792048451941,
-      "top3": 0.4042172661261062,
-      "ips_compliance": 0.8,
+      "ex_ante_vol": 0.09069859947014945,
+      "ex_ante_var95": -0.09488247398331207,
+      "backtest_sharpe": 2.2502940155312916,
+      "backtest_vol": 0.09781049785374084,
+      "backtest_maxdd": -0.09079319725301105,
+      "hhi": 0.061692308493636244,
+      "effective_n": 16.209476098680163,
+      "top3": 0.22423633801839316,
+      "ips_compliance": 0.9,
       "ips_flags": [
-        "vol=4.15% outside [6.00%,12.00%]",
-        "tracking_error=9.09% exceeds budget 6.00%"
+        "tracking_error=8.67% exceeds budget 6.00%"
       ],
-      "tracking_error": 0.09093513660502602,
+      "tracking_error": 0.08673806345989092,
       "factor_tilts": {
-        "growth": 0.23592059832331966,
-        "rates": -0.27946059204834184,
-        "inflation": -0.5796152026552565,
+        "growth": 0.5953003570561808,
+        "rates": -0.6274310572526082,
+        "inflation": -0.19198561268506373,
         "dollar": 0.0
       },
-      "diversification": 0.40968689103603273,
+      "diversification": 0.2905993220614483,
       "regime_fit": 0.5,
       "estimation_robustness": 0.65,
-      "cma_utilization": -0.1427785616730108
+      "cma_utilization": 0.0832459660023904
     },
     "severity": "YELLOW",
-    "commentary": "\u03c3=4.15%, VaR95=-1.98%, backtestDD=-3.8%, EffN=11.9. Compliance flags: 2 (YELLOW)."
+    "commentary": "\u03c3=9.07%, VaR95=-9.49%, backtestDD=-9.1%, EffN=16.2. Compliance flags: 1 (YELLOW)."
   },
   "cvar-min": {
     "slug": "cvar-min",
     "name": "CVaR Minimization",
     "category": "D_NonTraditional",
     "metrics": {
-      "ex_ante_vol": 0.07342679061175703,
-      "ex_ante_var95": -0.06864569733334538,
-      "backtest_sharpe": 2.1957298997343093,
-      "backtest_vol": 0.08030297142635677,
-      "backtest_maxdd": -0.0727550295189876,
-      "hhi": 0.05555555555555555,
-      "effective_n": 18.0,
-      "top3": 0.16666666666666666,
+      "ex_ante_vol": 0.09132409474383439,
+      "ex_ante_var95": -0.09593928769070309,
+      "backtest_sharpe": 2.228103792724117,
+      "backtest_vol": 0.0988723503330042,
+      "backtest_maxdd": -0.09218224734930613,
+      "hhi": 0.060933781998525255,
+      "effective_n": 16.411257716191034,
+      "top3": 0.2187499838502308,
       "ips_compliance": 0.9,
       "ips_flags": [
-        "tracking_error=8.39% exceeds budget 6.00%"
+        "tracking_error=8.65% exceeds budget 6.00%"
       ],
-      "tracking_error": 0.08392843845712421,
+      "tracking_error": 0.08648606557384109,
       "factor_tilts": {
-        "growth": 0.44444444444444453,
-        "rates": -0.5555555555555557,
-        "inflation": -0.33333333333333337,
+        "growth": 0.5824119620827539,
+        "rates": -0.6298051242219527,
+        "inflation": -0.2023241990539572,
         "dollar": 0.0
       },
-      "diversification": 0.3336961873788115,
+      "diversification": 0.2945915905597597,
       "regime_fit": 0.5,
       "estimation_robustness": 0.55,
-      "cma_utilization": 0.0
+      "cma_utilization": 0.08218411234419334
     },
     "severity": "YELLOW",
-    "commentary": "\u03c3=7.34%, VaR95=-6.86%, backtestDD=-7.3%, EffN=18.0. Compliance flags: 1 (YELLOW)."
+    "commentary": "\u03c3=9.13%, VaR95=-9.59%, backtestDD=-9.2%, EffN=16.4. Compliance flags: 1 (YELLOW)."
   },
   "max-dd-constrained": {
     "slug": "max-dd-constrained",
     "name": "Max Drawdown Constrained",
     "category": "D_NonTraditional",
     "metrics": {
-      "ex_ante_vol": 0.03271404067731497,
-      "ex_ante_var95": -0.007032280352639739,
-      "backtest_sharpe": 2.2250650447405977,
-      "backtest_vol": 0.03234918965849637,
-      "backtest_maxdd": -0.024451336992694306,
-      "hhi": 0.12764822448512825,
-      "effective_n": 7.834029842824063,
-      "top3": 0.43117778616415364,
-      "ips_compliance": 0.8,
+      "ex_ante_vol": 0.07797079373004742,
+      "ex_ante_var95": -0.0734615649061383,
+      "backtest_sharpe": 2.4392298714579765,
+      "backtest_vol": 0.09985622133853524,
+      "backtest_maxdd": -0.07151857640578152,
+      "hhi": 0.13147209304952664,
+      "effective_n": 7.60617692169312,
+      "top3": 0.5640340102507224,
+      "ips_compliance": 0.9,
       "ips_flags": [
-        "vol=3.27% outside [6.00%,12.00%]",
-        "tracking_error=10.44% exceeds budget 6.00%"
+        "tracking_error=7.12% exceeds budget 6.00%"
       ],
-      "tracking_error": 0.10435442262148518,
+      "tracking_error": 0.07124275151977576,
       "factor_tilts": {
-        "growth": 0.08092927956484128,
-        "rates": -0.26048008409709855,
-        "inflation": -0.6778659763414774,
+        "growth": 0.501471226461791,
+        "rates": -0.6363491674198327,
+        "inflation": -0.12321534558170155,
         "dollar": 0.0
       },
-      "diversification": 0.3525928818915941,
+      "diversification": 0.2737164958099131,
       "regime_fit": 0.5,
       "estimation_robustness": 0.55,
-      "cma_utilization": -0.2027115680881215
+      "cma_utilization": 0.1016390745789558
     },
     "severity": "YELLOW",
-    "commentary": "\u03c3=3.27%, VaR95=-0.70%, backtestDD=-2.4%, EffN=7.8. Compliance flags: 2 (YELLOW)."
+    "commentary": "\u03c3=7.80%, VaR95=-7.35%, backtestDD=-7.2%, EffN=7.6. Compliance flags: 1 (YELLOW)."
   },
   "tail-risk-parity": {
     "slug": "tail-risk-parity",
     "name": "Tail Risk Parity",
     "category": "D_NonTraditional",
     "metrics": {
-      "ex_ante_vol": 0.07103961638709091,
-      "ex_ante_var95": -0.06522311596063532,
-      "backtest_sharpe": 2.1741341540498174,
-      "backtest_vol": 0.07914826543089551,
-      "backtest_maxdd": -0.06670499927249895,
-      "hhi": 0.05875981491451218,
-      "effective_n": 17.01843345583829,
-      "top3": 0.17637454606034755,
+      "ex_ante_vol": 0.09192707686016743,
+      "ex_ante_var95": -0.09690990335228926,
+      "backtest_sharpe": 2.198227697955283,
+      "backtest_vol": 0.10107798186175179,
+      "backtest_maxdd": -0.09091691051435902,
+      "hhi": 0.06255283570523397,
+      "effective_n": 15.986485484243637,
+      "top3": 0.22404775455652903,
       "ips_compliance": 0.9,
       "ips_flags": [
-        "tracking_error=8.12% exceeds budget 6.00%"
+        "tracking_error=8.40% exceeds budget 6.00%"
       ],
-      "tracking_error": 0.08117495921938715,
+      "tracking_error": 0.08397687524055505,
       "factor_tilts": {
-        "growth": 0.4120848464655082,
-        "rates": -0.5296678771724066,
-        "inflation": -0.29450181575860984,
+        "growth": 0.5822217150393931,
+        "rates": -0.6161951052120911,
+        "inflation": -0.17015703832515855,
         "dollar": 0.0
       },
-      "diversification": 0.3460557846878988,
+      "diversification": 0.29480531446288905,
       "regime_fit": 0.8,
       "estimation_robustness": 0.65,
-      "cma_utilization": -0.019341927493687357
+      "cma_utilization": 0.08299516445095678
     },
     "severity": "YELLOW",
-    "commentary": "\u03c3=7.10%, VaR95=-6.52%, backtestDD=-6.7%, EffN=17.0. Compliance flags: 1 (YELLOW)."
+    "commentary": "\u03c3=9.19%, VaR95=-9.69%, backtestDD=-9.1%, EffN=16.0. Compliance flags: 1 (YELLOW)."
   },
   "tpa": {
     "slug": "tpa",
     "name": "Total Portfolio Allocation (two-factor)",
     "category": "D_NonTraditional",
     "metrics": {
-      "ex_ante_vol": 0.032948985875056305,
-      "ex_ante_var95": -0.007016665070231264,
-      "backtest_sharpe": 2.2568251982834093,
-      "backtest_vol": 0.039046396972413425,
-      "backtest_maxdd": -0.026712598535459597,
-      "hhi": 0.1249659133167084,
-      "effective_n": 8.002182142786744,
-      "top3": 0.5139029314798504,
-      "ips_compliance": 0.8,
+      "ex_ante_vol": 0.09094103589990625,
+      "ex_ante_var95": -0.09534430506278047,
+      "backtest_sharpe": 2.269488925013323,
+      "backtest_vol": 0.0979076751389823,
+      "backtest_maxdd": -0.0895512418344615,
+      "hhi": 0.07095365761476322,
+      "effective_n": 14.093706140272769,
+      "top3": 0.26410366196687457,
+      "ips_compliance": 0.9,
       "ips_flags": [
-        "vol=3.29% outside [6.00%,12.00%]",
-        "tracking_error=9.23% exceeds budget 6.00%"
+        "tracking_error=8.58% exceeds budget 6.00%"
       ],
-      "tracking_error": 0.09234568750552567,
+      "tracking_error": 0.08579866905568692,
       "factor_tilts": {
-        "growth": 0.21471226073263455,
-        "rates": -0.3058292031730422,
-        "inflation": -0.6120058474106338,
+        "growth": 0.6258910847389212,
+        "rates": -0.6264999037714738,
+        "inflation": -0.16647571564088143,
         "dollar": 0.0
       },
-      "diversification": 0.37311452580562704,
+      "diversification": 0.268190479718271,
       "regime_fit": 0.5,
       "estimation_robustness": 0.65,
-      "cma_utilization": -0.18787668562781143
+      "cma_utilization": 0.08084484612969178
     },
     "severity": "YELLOW",
-    "commentary": "\u03c3=3.29%, VaR95=-0.70%, backtestDD=-2.7%, EffN=8.0. Compliance flags: 2 (YELLOW)."
+    "commentary": "\u03c3=9.09%, VaR95=-9.53%, backtestDD=-9.0%, EffN=14.1. Compliance flags: 1 (YELLOW)."
   },
   "max-entropy": {
     "slug": "max-entropy",
     "name": "Maximum Entropy",
     "category": "E_Researcher",
     "metrics": {
-      "ex_ante_vol": 0.07342679061175703,
-      "ex_ante_var95": -0.06864569733334538,
-      "backtest_sharpe": 2.1957298997343093,
-      "backtest_vol": 0.08030297142635677,
-      "backtest_maxdd": -0.0727550295189876,
-      "hhi": 0.05555555555555555,
-      "effective_n": 18.0,
-      "top3": 0.16666666666666666,
+      "ex_ante_vol": 0.09132409474383439,
+      "ex_ante_var95": -0.09593928769070309,
+      "backtest_sharpe": 2.228103792724117,
+      "backtest_vol": 0.0988723503330042,
+      "backtest_maxdd": -0.09218224734930613,
+      "hhi": 0.060933781998525255,
+      "effective_n": 16.411257716191034,
+      "top3": 0.2187499838502308,
       "ips_compliance": 0.9,
       "ips_flags": [
-        "tracking_error=8.39% exceeds budget 6.00%"
+        "tracking_error=8.65% exceeds budget 6.00%"
       ],
-      "tracking_error": 0.08392843845712421,
+      "tracking_error": 0.08648606557384109,
       "factor_tilts": {
-        "growth": 0.44444444444444453,
-        "rates": -0.5555555555555557,
-        "inflation": -0.33333333333333337,
+        "growth": 0.5824119620827539,
+        "rates": -0.6298051242219527,
+        "inflation": -0.2023241990539572,
         "dollar": 0.0
       },
-      "diversification": 0.3336961873788115,
+      "diversification": 0.2945915905597597,
       "regime_fit": 0.65,
       "estimation_robustness": 0.75,
-      "cma_utilization": 0.0
+      "cma_utilization": 0.08218411234419334
     },
     "severity": "YELLOW",
-    "commentary": "\u03c3=7.34%, VaR95=-6.86%, backtestDD=-7.3%, EffN=18.0. Compliance flags: 1 (YELLOW)."
+    "commentary": "\u03c3=9.13%, VaR95=-9.59%, backtestDD=-9.2%, EffN=16.4. Compliance flags: 1 (YELLOW)."
   },
   "adversarial-diversifier": {
     "slug": "adversarial-diversifier",
     "name": "Adversarial Diversifier",
     "category": "D_NonTraditional",
     "metrics": {
-      "ex_ante_vol": 0.04322916416501805,
-      "ex_ante_var95": -0.024063575168300294,
-      "backtest_sharpe": 1.5086732920088428,
-      "backtest_vol": 0.049070050043203466,
-      "backtest_maxdd": -0.04981503625393846,
-      "hhi": 0.14301586026727728,
-      "effective_n": 6.9922314779013695,
-      "top3": 0.5769385487154968,
-      "ips_compliance": 0.8,
+      "ex_ante_vol": 0.09111311109052374,
+      "ex_ante_var95": -0.09559221870350518,
+      "backtest_sharpe": 2.206943785848926,
+      "backtest_vol": 0.09960325061893159,
+      "backtest_maxdd": -0.09240090528702061,
+      "hhi": 0.07302716153308896,
+      "effective_n": 13.693535104015993,
+      "top3": 0.2649314220842721,
+      "ips_compliance": 0.9,
       "ips_flags": [
-        "vol=4.32% outside [6.00%,12.00%]",
-        "tracking_error=10.07% exceeds budget 6.00%"
+        "tracking_error=8.79% exceeds budget 6.00%"
       ],
-      "tracking_error": 0.10073835631586978,
+      "tracking_error": 0.08790874366215545,
       "factor_tilts": {
-        "growth": -0.11364040521317754,
-        "rates": -0.3245203297674373,
-        "inflation": -0.7571399754622119,
+        "growth": 0.5366894779431599,
+        "rates": -0.6514388360816039,
+        "inflation": -0.1991895653824684,
         "dollar": 0.0
       },
-      "diversification": 0.3445520171152948,
+      "diversification": 0.3174979945151749,
       "regime_fit": 0.5,
       "estimation_robustness": 0.3,
-      "cma_utilization": -0.19290478711056702
+      "cma_utilization": 0.08218414577539805
     },
     "severity": "YELLOW",
-    "commentary": "\u03c3=4.32%, VaR95=-2.41%, backtestDD=-5.0%, EffN=7.0. Compliance flags: 2 (YELLOW)."
+    "commentary": "\u03c3=9.11%, VaR95=-9.56%, backtestDD=-9.2%, EffN=13.7. Compliance flags: 1 (YELLOW)."
   }
 }

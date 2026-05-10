@@ -3,7 +3,7 @@
   "name": "Crude Oil Futures Enhanced (H)",
   "category": "RealAssets",
   "expected_return": 0.03872608695652174,
-  "expected_volatility": 0.3211145138922386,
+  "expected_volatility": 0.3212074419883451,
   "confidence": 0.55,
   "regime": "late-cycle",
   "curve_regime": "bear-parallel",

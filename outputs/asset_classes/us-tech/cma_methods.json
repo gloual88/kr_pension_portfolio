@@ -19,11 +19,11 @@
     "rationale": "Regime 'late-cycle' applies -2.00% adjustment to historical ERP."
   },
   "bl_equilibrium": {
-    "estimate": 0.03344725791302523,
+    "estimate": 0.033445635206739044,
     "confidence": 0.55,
     "components": {
       "lambda": 2.5,
-      "var": 0.06757806330420184,
+      "var": 0.06756508165391233,
       "w_mkt": 0.05,
       "rf": 0.025
     },
@@ -58,7 +58,7 @@
     "rationale": "Consensus survey of analysts / macro view."
   },
   "auto_blend": {
-    "estimate": 0.06042953595451196,
+    "estimate": 0.06042926134267891,
     "confidence": 0.7,
     "components": {
       "historical_erp": 0.55,

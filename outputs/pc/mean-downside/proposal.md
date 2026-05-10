@@ -7,22 +7,22 @@
 
 | Asset class | Weight |
 |-------------|--------|
-| money-market | 7.5% |
-| kofr-cash | 7.5% |
-| emerging-markets | 7.4% |
-| kr-short-bonds | 7.4% |
-| kr-credit | 7.0% |
-| us-dividend | 6.9% |
-| us-treasuries-10y | 6.7% |
-| kr-treasuries-10y | 6.6% |
+| us-dividend | 9.3% |
+| gold | 9.2% |
+| emerging-markets | 8.8% |
+| us-large-cap | 8.5% |
+| us-tech | 7.3% |
+| kr-dividend | 6.3% |
+| intl-developed | 6.1% |
+| commodities | 5.8% |
 
 ## Diagnostics
 
-- E[r]: 5.17%, σ: 6.11%
-- Backtest Sharpe: 2.26, MaxDD: -5.5%
-- Effective N: 16.2, Top-3 weight: 22%
+- E[r]: 5.50%, σ: 8.87%
+- Backtest Sharpe: 2.30, MaxDD: -8.7%
+- Effective N: 15.6, Top-3 weight: 27%
 - IPS compliance: 0.90 (flags: 1)
-- Diversification score: 0.36
+- Diversification score: 0.30
 - Regime fit: 0.50
 - Estimation robustness: 0.50
-- CMA utilization: -0.02
+- CMA utilization: +0.11

@@ -130,16 +130,17 @@ active_risk_budget:
     kr-treasuries-10y: 0.40
   max_tracking_error: 0.06
 
-# Constraints (동일 — 카테고리 cap이 trimmed에서도 그대로 유지됨)
+# Constraints — 위험자산 70% lock (ips.yaml과 동일).
+# Equity 55 + RealAssets 15 = risky 70. FI 25-30 + Cash 0-5 = safe 30.
 constraints:
   position_limits:
     min: 0.0
     max: 0.25
   category_bounds:
-    Equity:      {min: 0.20, max: 0.55}
-    RealAssets:  {min: 0.00, max: 0.15}
-    FixedIncome: {min: 0.20, max: 0.70}
-    Cash:        {min: 0.00, max: 0.30}
+    Equity:      {min: 0.55, max: 0.55}
+    RealAssets:  {min: 0.15, max: 0.15}
+    FixedIncome: {min: 0.25, max: 0.30}
+    Cash:        {min: 0.00, max: 0.05}
   rebalancing:
     frequency: "quarterly"
     drift_trigger: 0.05

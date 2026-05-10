@@ -2,8 +2,8 @@
   "slug": "intl-developed",
   "name": "Japan Nikkei 225",
   "category": "Equity",
-  "expected_return": 0.05708746231395208,
-  "expected_volatility": 0.22637822390141146,
+  "expected_return": 0.05708757418642796,
+  "expected_volatility": 0.22641715697041506,
   "confidence": 0.55,
   "regime": "late-cycle",
   "curve_regime": "bear-parallel",
@@ -21,10 +21,10 @@
   "candidates": {
     "historical_erp": 0.065,
     "regime_adjusted": 0.045,
-    "bl_equilibrium": 0.04422017569457051,
+    "bl_equilibrium": 0.044226786340872404,
     "inverse_gordon": 0.066,
     "implied_erp": 0.05714285714285714,
     "survey_analyst": 0.066,
-    "auto_blend": 0.056446051710949297
+    "auto_blend": 0.05644717043570808
   }
 }

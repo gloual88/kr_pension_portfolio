@@ -2,10 +2,11 @@
   "slug": "kr-dividend",
   "name": "KR Dividend Growth",
   "category": "Equity",
-  "expected_return": 0.05946971866741962,
-  "expected_volatility": 0.18151119715438935,
+  "expected_return": 0.05946983674309074,
+  "expected_volatility": 0.1816648697275153,
   "confidence": 0.55,
   "regime": "late-cycle",
+  "curve_regime": "bear-parallel",
   "method_weights": {
     "historical_erp": 0.05000000000000001,
     "regime_adjusted": 0.25000000000000006,
@@ -20,10 +21,10 @@
   "candidates": {
     "historical_erp": 0.08499999999999999,
     "regime_adjusted": 0.065,
-    "bl_equilibrium": 0.02911973943843152,
+    "bl_equilibrium": 0.02912671663717989,
     "inverse_gordon": 0.06,
     "implied_erp": 0.05,
     "survey_analyst": 0.07,
-    "auto_blend": 0.0596971866741961
+    "auto_blend": 0.05969836743090736
   }
 }

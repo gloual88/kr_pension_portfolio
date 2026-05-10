@@ -25,16 +25,16 @@
 
 ## Historical Statistics (annualized)
 
-- Mean: 11.01%
+- Mean: 11.14%
 - Volatility: 18.31%
-- Sharpe: 0.60
+- Sharpe: 0.61
 - Max drawdown: -44.9%
 
 ## Signals
 
-- macro: +0.55
-- momentum: +0.79
-- trend: +0.55
-- mean_reversion: -0.48
-- sentiment: +0.29
-- composite: +0.34
+- macro: +0.59
+- momentum: +0.82
+- trend: +0.51
+- mean_reversion: -0.57
+- sentiment: +0.24
+- composite: +0.32

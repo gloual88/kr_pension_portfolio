@@ -3,7 +3,8 @@
 **Slug:** `us-treasuries-10y`  
 **Category:** FixedIncome  
 **ETF:** 305080  
-**Regime context:** late-cycle (P(rec) 20%)
+**Regime context:** late-cycle (P(rec) 20%)  
+**Yield-curve context:** bear-parallel
 
 ## CMA Decision
 
@@ -24,16 +25,16 @@
 
 ## Historical Statistics (annualized)
 
-- Mean: 4.59%
+- Mean: 4.60%
 - Volatility: 7.70%
 - Sharpe: 0.60
 - Max drawdown: -17.2%
 
 ## Signals
 
-- macro: -0.13
-- momentum: +0.15
+- macro: -0.15
+- momentum: +0.12
 - trend: +0.14
-- mean_reversion: -0.37
-- sentiment: +0.20
-- composite: -0.00
+- mean_reversion: -0.42
+- sentiment: +0.32
+- composite: +0.00

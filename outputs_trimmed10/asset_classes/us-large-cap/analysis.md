@@ -3,7 +3,8 @@
 **Slug:** `us-large-cap`  
 **Category:** Equity  
 **ETF:** 360750  
-**Regime context:** late-cycle (P(rec) 20%)
+**Regime context:** late-cycle (P(rec) 20%)  
+**Yield-curve context:** bear-parallel
 
 ## CMA Decision
 
@@ -26,17 +27,17 @@
 
 ## Historical Statistics (annualized)
 
-- Mean: 12.19%
+- Mean: 12.24%
 - Volatility: 18.99%
 - Sharpe: 0.64
 - Max drawdown: -55.2%
 
 ## Signals
 
-- macro: +0.21
-- momentum: +0.45
-- trend: +0.22
-- mean_reversion: -0.76
-- sentiment: +0.22
+- macro: +0.18
+- momentum: +0.43
+- trend: +0.23
+- mean_reversion: -0.81
+- sentiment: +0.27
 - valuation: -0.70
-- composite: -0.06
+- composite: -0.07

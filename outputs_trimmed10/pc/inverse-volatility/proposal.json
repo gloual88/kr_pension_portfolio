@@ -4,43 +4,42 @@
   "category": "A_Heuristic",
   "method": "inverse_volatility",
   "weights": {
-    "kr-large-cap": 0.08698854177414078,
-    "kr-dividend": 0.08678277172029716,
-    "us-large-cap": 0.08490234698212594,
-    "us-tech": 0.0738021082797557,
-    "kr-treasuries-10y": 0.14283700601477853,
-    "us-treasuries-10y": 0.10071637937301728,
-    "us-ig-credit": 0.08181374481733986,
-    "gold": 0.04215709570315345,
-    "kofr-cash": 0.1500000026676957,
-    "money-market": 0.1500000026676957
+    "kr-large-cap": 0.13909127509230906,
+    "kr-dividend": 0.1390699949021912,
+    "us-large-cap": 0.1382856646580421,
+    "us-tech": 0.1335530225296238,
+    "kr-treasuries-10y": 0.0995403089053785,
+    "us-treasuries-10y": 0.08156758412979012,
+    "us-ig-credit": 0.07351916279138387,
+    "gold": 0.14999999809947226,
+    "kofr-cash": 0.022686494445904513,
+    "money-market": 0.022686494445904513
   },
-  "expected_return": 0.049670361707566495,
-  "expected_vol": 0.05139781848640014,
+  "expected_return": 0.05520229120776553,
+  "expected_vol": 0.08870491364036302,
   "metrics": {
-    "ex_ante_vol": 0.05139781848640014,
-    "ex_ante_var95": -0.03487904970256173,
-    "backtest_sharpe": 2.478133686121944,
-    "backtest_vol": 0.06310555993644958,
-    "backtest_maxdd": -0.04462984604062015,
-    "hhi": 0.11177032609811323,
-    "effective_n": 8.946918515046551,
-    "top3": 0.4428370113501699,
-    "ips_compliance": 0.8,
+    "ex_ante_vol": 0.08870491364036302,
+    "ex_ante_var95": -0.09071729173063166,
+    "backtest_sharpe": 2.4352491776704586,
+    "backtest_vol": 0.10920625701801767,
+    "backtest_maxdd": -0.0780126267268384,
+    "hhi": 0.12114214583123893,
+    "effective_n": 8.25476545044103,
+    "top3": 0.4281612680939726,
+    "ips_compliance": 0.9,
     "ips_flags": [
-      "vol=5.14% outside [6.00%,12.00%]",
-      "tracking_error=8.29% exceeds budget 6.00%"
+      "tracking_error=8.06% exceeds budget 6.00%"
     ],
-    "tracking_error": 0.08285951313505016,
+    "tracking_error": 0.08056029017992962,
     "factor_tilts": {
-      "growth": 0.17073612818586362,
-      "rates": -0.3132172176089201,
-      "inflation": -0.6601007502819154,
+      "growth": 0.4424112269383815,
+      "rates": -0.7701840273141908,
+      "inflation": -0.3483195710151713,
       "dollar": 0.0
     },
-    "diversification": 0.441216544482959,
+    "diversification": 0.3623027698091776,
     "regime_fit": 0.5,
     "estimation_robustness": 0.8,
-    "cma_utilization": -0.08321527063231199
+    "cma_utilization": 0.12931743460861325
   }
 }

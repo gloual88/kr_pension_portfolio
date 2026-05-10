@@ -2,8 +2,8 @@
   "slug": "emerging-markets",
   "name": "Emerging Markets MSCI",
   "category": "Equity",
-  "expected_return": 0.07502686747838871,
-  "expected_volatility": 0.25874251051316954,
+  "expected_return": 0.07502693844026906,
+  "expected_volatility": 0.25878302690951466,
   "confidence": 0.55,
   "regime": "late-cycle",
   "curve_regime": "bear-parallel",
@@ -21,10 +21,10 @@
   "candidates": {
     "historical_erp": 0.097,
     "regime_adjusted": 0.07699999999999999,
-    "bl_equilibrium": 0.03839181952716506,
+    "bl_equilibrium": 0.03839601272918506,
     "inverse_gordon": 0.06899999999999999,
     "implied_erp": 0.07692307692307693,
     "survey_analyst": 0.069,
-    "auto_blend": 0.07149944401465633
+    "auto_blend": 0.07150015363345973
   }
 }

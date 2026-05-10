@@ -2,8 +2,8 @@
   "slug": "us-tech",
   "name": "US Tech (Nasdaq 100)",
   "category": "Equity",
-  "expected_return": 0.059542953595451205,
-  "expected_volatility": 0.25993896422411283,
+  "expected_return": 0.0595429261342679,
+  "expected_volatility": 0.259914004265051,
   "confidence": 0.55,
   "regime": "late-cycle",
   "curve_regime": "bear-parallel",
@@ -21,10 +21,10 @@
   "candidates": {
     "historical_erp": 0.08499999999999999,
     "regime_adjusted": 0.065,
-    "bl_equilibrium": 0.03344725791302523,
+    "bl_equilibrium": 0.033445635206739044,
     "inverse_gordon": 0.06,
     "implied_erp": 0.05,
     "survey_analyst": 0.07,
-    "auto_blend": 0.06042953595451196
+    "auto_blend": 0.06042926134267891
   }
 }

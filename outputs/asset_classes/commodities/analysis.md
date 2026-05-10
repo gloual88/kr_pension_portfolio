@@ -9,7 +9,7 @@
 ## CMA Decision
 
 - Expected return (3y, nominal): **3.87%**
-- Expected volatility (annualized): **32.11%**
+- Expected volatility (annualized): **32.12%**
 - Dispersion across methods: tight
 - Rationale: Dispersion tight (1.3pp). Non-equity: lean on yield/regime adjusted blend.
 
@@ -25,16 +25,16 @@
 
 ## Historical Statistics (annualized)
 
-- Mean: 3.97%
-- Volatility: 32.11%
-- Sharpe: 0.12
+- Mean: 3.67%
+- Volatility: 32.12%
+- Sharpe: 0.11
 - Max drawdown: -93.2%
 
 ## Signals
 
-- macro: +0.63
-- momentum: +0.94
-- trend: +0.95
-- mean_reversion: -0.95
-- sentiment: -0.05
-- composite: +0.30
+- macro: +0.68
+- momentum: +0.96
+- trend: +0.96
+- mean_reversion: -0.92
+- sentiment: +0.32
+- composite: +0.40

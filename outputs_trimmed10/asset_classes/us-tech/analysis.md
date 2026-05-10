@@ -3,14 +3,15 @@
 **Slug:** `us-tech`  
 **Category:** Equity  
 **ETF:** 133690  
-**Regime context:** late-cycle (P(rec) 20%)
+**Regime context:** late-cycle (P(rec) 20%)  
+**Yield-curve context:** bear-parallel
 
 ## CMA Decision
 
 - Expected return (3y, nominal): **5.95%**
-- Expected volatility (annualized): **26.08%**
+- Expected volatility (annualized): **26.07%**
 - Dispersion across methods: moderate
-- Rationale: Dispersion moderate (5.1pp). Late-cycle: tilt to valuation + regime-adjusted.
+- Rationale: Dispersion moderate (5.2pp). Late-cycle: tilt to valuation + regime-adjusted.
 
 ### Method weights (judge)
 
@@ -26,16 +27,16 @@
 
 ## Historical Statistics (annualized)
 
-- Mean: 14.25%
-- Volatility: 26.08%
+- Mean: 14.38%
+- Volatility: 26.07%
 - Sharpe: 0.55
 - Max drawdown: -83.0%
 
 ## Signals
 
-- macro: +0.21
-- momentum: +0.54
-- trend: +0.21
-- mean_reversion: -0.82
-- sentiment: -0.32
+- macro: +0.18
+- momentum: +0.51
+- trend: +0.23
+- mean_reversion: -0.89
+- sentiment: -0.24
 - composite: -0.04

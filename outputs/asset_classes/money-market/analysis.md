@@ -32,9 +32,9 @@
 
 ## Signals
 
-- macro: -0.55
+- macro: -0.59
 - momentum: +0.07
 - trend: +0.04
 - mean_reversion: -0.83
-- sentiment: +0.38
-- composite: -0.18
+- sentiment: -0.04
+- composite: -0.27

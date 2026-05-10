@@ -227,8 +227,28 @@ def main(
 
     benchmark_w = _benchmark_kr_60_40(asset_classes)
 
+    # Per-quarter checkpoint (resume-friendly): one JSON line per completed quarter.
+    # Allows restart after segfault / interruption without losing prior LLM-priced quarters.
+    checkpoint_path = out_path / "quarter_runs.jsonl"
+    completed_dates: set[str] = set()
     quarter_runs = []
+    if checkpoint_path.exists():
+        with open(checkpoint_path, "r", encoding="utf-8") as f:
+            for line in f:
+                line = line.strip()
+                if not line:
+                    continue
+                rec = json.loads(line)
+                rec["as_of"] = pd.Timestamp(rec["as_of"])
+                quarter_runs.append(rec)
+                completed_dates.add(rec["as_of"].strftime("%Y-%m-%d"))
+        print(f"[backtest-kr] resume: {len(quarter_runs)} quarters loaded from checkpoint")
+
     for i, t in enumerate(rebal_dates):
+        date_str = t.strftime("%Y-%m-%d")
+        if date_str in completed_dates:
+            print(f"[{i+1:2d}/{len(rebal_dates)}] {t.date()} SKIP (cached)")
+            continue
         t0 = time.time()
         result = _run_quarter(t, macro_panel, data.prices, data.returns,
                               asset_classes, pc_cfg, ips, out_path, benchmark_w)
@@ -239,6 +259,10 @@ def main(
         print(f"[{i+1:2d}/{len(rebal_dates)}] {t.date()} regime={result['regime']:<11} "
               f"conf={result['regime_conf']:.2f} ens={result['chosen_ensemble']:<22} ({elapsed:.1f}s)")
         quarter_runs.append(result)
+        # Persist immediately so a crash leaves us at most one quarter behind.
+        rec_serial = {**result, "as_of": result["as_of"].isoformat()}
+        with open(checkpoint_path, "a", encoding="utf-8") as f:
+            f.write(json.dumps(rec_serial, default=float) + "\n")
 
     if not quarter_runs:
         print("[backtest-kr] No successful quarter runs — aborting.")

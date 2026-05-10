@@ -2,8 +2,8 @@
   "slug": "us-large-cap",
   "name": "US Large Cap (S&P 500)",
   "category": "Equity",
-  "expected_return": 0.060799636035674065,
-  "expected_volatility": 0.18932896410080058,
+  "expected_return": 0.060799538785028306,
+  "expected_volatility": 0.1893087353577659,
   "confidence": 0.55,
   "regime": "late-cycle",
   "curve_regime": "bear-parallel",
@@ -21,10 +21,10 @@
   "candidates": {
     "historical_erp": 0.11299999999999999,
     "regime_adjusted": 0.093,
-    "bl_equilibrium": 0.051887583926194206,
+    "bl_equilibrium": 0.05188183729712682,
     "inverse_gordon": 0.043,
     "implied_erp": 0.04,
     "survey_analyst": 0.073,
-    "auto_blend": 0.06999636035674055
+    "auto_blend": 0.069995387850283
   }
 }
